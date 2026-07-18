@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
+import { ArrowRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const products = [
@@ -84,11 +84,8 @@ export default function V7Home() {
 
       <section id="featured" className="featured-section section-shell">
         <Reveal className="featured-copy">
-            <span className="featured-badge">Professional</span>
-            <div className="featured-card">
-              <h2 className="featured-card-model">Handheld<br />Garment Steamer</h2>
-              <div className="featured-card-arrow"><ArrowUpRight size={28} /></div>
-            </div>
+            <h2 className="featured-title">Handheld</h2>
+            <h2 className="featured-title-second">Garment Steamer</h2>
             <h3 className="featured-subtitle">OEM &amp; ODM Manufacturing</h3>
             <p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p>
             <Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link>
