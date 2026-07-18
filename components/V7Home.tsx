@@ -97,7 +97,6 @@ export default function V7Home() {
         <div className="v72-factory-photo" aria-hidden="true"><Image src="/images/v7/factory-locked.png" alt="" fill sizes="100vw" unoptimized /></div>
         <div className="v72-factory-overlay" aria-hidden="true" />
         <div className="v72-factory-content" data-crisp-text>
-          <span className="eyebrow">OUR FACTORY</span>
           <h2>Advanced Production<br/>For Superior Quality</h2>
           <p>Strict quality control at every step<br/>to ensure reliable and consistent<br/>product performance.</p>
           <div className="factory-stats">
@@ -110,4 +109,8 @@ export default function V7Home() {
       <section className="service-strip section-shell">{["Factory Direct","OEM/ODM Service","Quality Assurance","Global Support"].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
     </div>
   );
+}
+);
+}
+
 }
