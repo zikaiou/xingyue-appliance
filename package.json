@@ -1,6 +1,6 @@
 {
   "name": "xing-official-website",
-  "version": "0.7.0",
+  "version": "7.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.2.6",
+    "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "framer-motion": "^12.6.3",
