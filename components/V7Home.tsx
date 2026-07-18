@@ -84,7 +84,7 @@ export default function V7Home() {
 
       <section id="featured" className="featured-section section-shell">
         <Reveal className="featured-copy"><h2>Professional Garment Steamer</h2><h3>OEM &amp; ODM Manufacturing</h3><p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p><Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link></Reveal>
-        <Reveal className="featured-product-wrap"><div className="product-glow" /><Image src="/images/v7/st-812.png" alt="ST-812 handheld garment steamer" width={620} height={620} className="featured-product-image" /></Reveal>
+        <Reveal className="featured-product-wrap"><div className="product-glow" /><img src="/images/v7/st-812.png" alt="Professional Garment Steamer" className="featured-product-image" /></Reveal>
         <Reveal className="feature-list">{[["Rapid Heat-Up","Ready in 15 seconds"],["Strong Penetrating Steam","Removes wrinkles easily"],["Smart Fabric Modes","Care for every fabric"],["Lightweight & Portable","Easy to hold, easy to use"],["Dry & Wet Ironing","Horizontal & Vertical"]].map(([title,text],index)=><div className="feature-row" key={title}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</Reveal>
       </section>
 
