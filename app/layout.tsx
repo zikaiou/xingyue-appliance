@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+import "./xing-v7.1-font-fix.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -24,12 +26,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-v7-font-fix>
       <body>
         <Header />
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <Script src="/xing-v7.1-motion-fix.js" strategy="afterInteractive" />
       </body>
     </html>
   );
