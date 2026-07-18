@@ -47,7 +47,7 @@ export default function V7Home() {
   };
 
   return (
-    <div className="v7-page">
+    <div className="v7-page xing-v71">
       <section id="hero" className="locked-hero" aria-label="XING hero — locked design">
         <Image src="/images/v7/hero-locked.png" alt="Powerful Steam. Effortless Style." fill priority sizes="100vw" className="locked-hero-image" />
       </section>
