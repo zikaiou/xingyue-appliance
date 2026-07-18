@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const items = [
-  ["Smart Touch Control", "Simple control with visible heat and steam settings."],
   ["Rapid Heating", "Designed to reach working temperature quickly."],
   ["Steam Penetration", "Helps relax fabric fibers for faster wrinkle removal."],
   ["Smooth Soleplate", "Even heat distribution and effortless glide."],
+  ["Flexible Garment Care", "Suitable for both horizontal and vertical use."],
 ];
 
 export default function TechnologySection() {
@@ -22,8 +22,8 @@ export default function TechnologySection() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_50%,rgba(219,59,107,.18),transparent_45%)]" />
           </div>
           <div>
-            <p className="eyebrow text-pink-300">Technology</p>
-            <h2 className="section-title text-white">Precision engineered for daily performance.</h2>
+            <p className="eyebrow text-pink-300">Performance</p>
+            <h2 className="section-title text-white">Engineered for effortless daily care.</h2>
             <div className="mt-9 grid gap-4 sm:grid-cols-2">
               {items.map(([title, text], index) => (
                 <article key={title} className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">

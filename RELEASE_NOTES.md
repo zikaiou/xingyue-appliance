@@ -1,20 +1,8 @@
-# Release Notes
+# XING Official Website V7 — Release Notes
 
-## v0.2.0 — Complete Homepage & Brand Experience
-
-- Added full commercial homepage
-- Added trust bar and product showcase
-- Added technology section
-- Added factory capability section
-- Added FAQ and conversion contact band
-- Expanded Products and OEM pages
-- Added functional WhatsApp and email inquiry routes
-- Added contact form using the visitor's email client
-- Added sitemap and robots metadata routes
-- Preserved Next.js 15, TypeScript, Tailwind and Vercel compatibility
-
-## Deployment note
-
-This version can be deployed for review. Before public launch, replace
-`NEXT_PUBLIC_SITE_URL`, verify all product specifications and connect a
-server-side form service if required.
+- First screen locked to the approved original artwork; no visual changes.
+- Brand video added as a full-screen page background, inspired by LuxoPack-style integration.
+- Featured model updated from ST-717 to ST-812.
+- Added 12 clickable product cards in a 4-column × 3-row catalogue.
+- Factory block locked to the approved assembly-line version.
+- Added V7 motion system: scroll reveals, hover elevation, subtle floating product, pulsing brand light, and video play/mute controls.
