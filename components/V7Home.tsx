@@ -86,9 +86,7 @@ export default function V7Home() {
         <Reveal className="featured-copy">
             <span className="featured-badge">Professional</span>
             <div className="featured-card">
-              <span className="featured-card-label">Garment Steamer</span>
-              <h2 className="featured-card-model">ST-812</h2>
-              <span className="featured-card-type">Handheld Garment Steamer</span>
+              <h2 className="featured-card-model">Handheld<br />Garment Steamer</h2>
               <div className="featured-card-arrow"><ArrowUpRight size={28} /></div>
             </div>
             <h3 className="featured-subtitle">OEM &amp; ODM Manufacturing</h3>
