@@ -224,7 +224,7 @@ body { background:#050507; color:#fff; }
 
 /* V7.2 crisp HTML reconstruction — Hero and Factory text are live HTML, not raster text */
 body{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.site-logo{display:block;width:146px;height:auto;object-fit:contain}.site-logo--footer{width:168px}
+.site-logo{display:block;width:146px;max-height:56px;height:auto;object-fit:contain}.site-logo--footer{width:168px;max-height:none}
 .v72-hero{position:relative;min-height:clamp(620px,56.25vw,940px);overflow:hidden;background:radial-gradient(circle at 78% 44%,rgba(255,24,108,.24),transparent 29%),linear-gradient(105deg,#030304 0%,#07070a 52%,#18040d 100%)}
 .v72-hero-grid{position:absolute;inset:0;opacity:.18;background-image:radial-gradient(circle,rgba(255,62,132,.7) 1px,transparent 1.35px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent 36%,#000 75%,transparent)}
 .v72-hero-orbit{position:absolute;width:1000px;height:420px;right:-210px;top:100px;border-radius:50%;border:2px solid rgba(255,45,126,.72);transform:rotate(-18deg);box-shadow:0 0 22px rgba(255,31,112,.56),inset 0 0 14px rgba(255,31,112,.25)}
