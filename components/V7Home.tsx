@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const products = [
@@ -83,7 +83,18 @@ export default function V7Home() {
       </section>
 
       <section id="featured" className="featured-section section-shell">
-        <Reveal className="featured-copy"><h2>Professional Garment Steamer</h2><h3>OEM &amp; ODM Manufacturing</h3><p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p><Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link></Reveal>
+        <Reveal className="featured-copy">
+            <span className="featured-badge">Professional</span>
+            <div className="featured-card">
+              <span className="featured-card-label">Garment Steamer</span>
+              <h2 className="featured-card-model">ST-812</h2>
+              <span className="featured-card-type">Handheld Garment Steamer</span>
+              <div className="featured-card-arrow"><ArrowUpRight size={28} /></div>
+            </div>
+            <h3 className="featured-subtitle">OEM &amp; ODM Manufacturing</h3>
+            <p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p>
+            <Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link>
+          </Reveal>
         <Reveal className="featured-product-wrap"><div className="product-glow" /><img src="/images/v7/st-812.png" alt="Professional Garment Steamer" className="featured-product-image" /></Reveal>
         <Reveal className="feature-list">{[["Rapid Heat-Up","Ready in 15 seconds"],["Strong Penetrating Steam","Removes wrinkles easily"],["Smart Fabric Modes","Care for every fabric"],["Lightweight & Portable","Easy to hold, easy to use"],["Dry & Wet Ironing","Horizontal & Vertical"]].map(([title,text],index)=><div className="feature-row" key={title}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</Reveal>
       </section>
