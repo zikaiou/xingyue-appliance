@@ -8,18 +8,21 @@ const categories = [
   {
     name: "Travel Iron",
     products: [
-      { model: "ST-718" },
-      { model: "ST-717" },
-      { model: "ST-588" },
-      { model: "8801" },
+      { model: "ST-718", name: "Travel Iron ST-718", image: "/images/products/ST-718.jpg", features: "Travel size design" },
+      { model: "ST-717", name: "Travel Iron ST-717", image: "/images/products/ST-717.jpg", features: "Travel size design" },
+      { model: "ST-588", name: "Travel Iron ST-588", image: "/images/products/ST-588.png", features: "Travel size design" },
+      { model: "8801", name: "Travel Iron 8801", image: "/images/products/8801.jpg", features: "Travel size design" },
     ],
   },
   {
     name: "Garment Steamer",
     products: [
-      { model: "ST-815" },
-      { model: "6617" },
-      { model: "6618" },
+      { model: "ST-815", name: "Garment Steamer ST-815", image: "/images/products/ST-815.png",
+        features: "1800W / 260ml tank / 3 steam adjustments" },
+      { model: "6617", name: "Garment Steamer 6617", image: "/images/products/6617.jpg",
+        features: "1800W / Ceramic base plate / 260ml tank" },
+      { model: "6618", name: "Garment Steamer 6618", image: "/images/products/6618.jpg",
+        features: "150ml tank / Stainless steel panel / Foldable" },
     ],
   },
   {
@@ -46,8 +49,7 @@ export default function ProductsPage() {
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
-      {/* Header */}
-      <section className="pt-28 pb-16 text-center px-6">
+      <section className="pt-28 pb-12 text-center px-6">
         <h1 className="text-4xl md:text-5xl font-black tracking-tight">
           Our Products
         </h1>
@@ -56,7 +58,6 @@ export default function ProductsPage() {
         </p>
       </section>
 
-      {/* Category Tabs */}
       <div className="flex justify-center gap-1 px-4 pb-2 overflow-x-auto">
         {categories.map((cat, i) => (
           <button
@@ -73,7 +74,6 @@ export default function ProductsPage() {
         ))}
       </div>
 
-      {/* Product Grid */}
       <section className="max-w-6xl mx-auto px-6 py-12">
         {categories[active].products.length > 0 ? (
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -82,12 +82,19 @@ export default function ProductsPage() {
                 key={p.model}
                 className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition group"
               >
-                <div className="aspect-square bg-[#0d0d12] flex items-center justify-center p-8">
-                  <span className="text-white/15 text-5xl font-black">{p.model}</span>
+                <div className="aspect-square bg-[#0d0d12] flex items-center justify-center p-6">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    width={300}
+                    height={300}
+                    className="object-contain w-full h-full"
+                    unoptimized
+                  />
                 </div>
                 <div className="p-5">
                   <h3 className="text-base font-bold">{p.model}</h3>
-                  <p className="text-sm text-white/50 mt-1">{categories[active].name}</p>
+                  <p className="text-xs text-white/50 mt-1">{p.features}</p>
                   <Link
                     href={`/products/${p.model.toLowerCase()}`}
                     className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#ff2f7d] hover:underline"
@@ -109,7 +116,6 @@ export default function ProductsPage() {
         )}
       </section>
 
-      {/* Bottom Modules */}
       <section className="border-t border-white/8 bg-[#0a0a0e]">
         <div className="max-w-6xl mx-auto px-6 py-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {bottomModules.map((m) => (
