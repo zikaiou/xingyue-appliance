@@ -55,8 +55,8 @@ export default function V7Home() {
         <div className="v72-hero-inner">
           <div className="v72-hero-copy" data-crisp-text>
             <span className="hero-kicker">SMART CLOTHING CARE</span>
-            <h1><span className="hero-line">Powerful Steam.</span><em>Effortless Style.</em></h1>
-            <p>Professional garment care with powerful steam performance<br className="desktop-only" /> and premium design.</p>
+            <h1><span className="hero-line">Professional Garment</span><em>Steamer Manufacturer</em></h1>
+            <p>OEM &amp; ODM Solutions<br className="desktop-only" /> for Global Brands</p>
             <div className="hero-actions">
               <Link href="/contact" className="hero-cta hero-cta-primary">Request Quote <ArrowRight size={17} /></Link>
               <Link href="/products" className="hero-cta hero-cta-secondary">Explore Products <ArrowRight size={17} /></Link>
