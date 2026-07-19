@@ -11,7 +11,7 @@ const categories = [
       { model: "ST-718", name: "Travel Iron ST-718", image: "/images/products/ST-718.jpg", features: "Travel size design" },
       { model: "ST-717", name: "Travel Iron ST-717", image: "/images/products/ST-717.jpg", features: "Travel size design" },
       { model: "ST-588", name: "Travel Iron ST-588", image: "/images/products/ST-588.png", features: "Travel size design" },
-      { model: "8801", name: "Travel Iron 8801", image: "/images/products/8801.jpg", features: "Travel size design" },
+      { model: "ST-812", name: "Travel Iron ST-812", image: "/images/products/ST-812.png", features: "Travel size design" },
     ],
   },
   {
