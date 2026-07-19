@@ -23,6 +23,8 @@ const categories = [
         features: "1800W / Ceramic base plate / 260ml tank" },
       { model: "6618", name: "Garment Steamer 6618", image: "/images/products/6618.jpg",
         features: "150ml tank / Stainless steel panel / Foldable" },
+      { model: "900A", name: "Garment Steamer 900A", image: "/images/products/900A.png",
+        features: "Garment Steamer" },
     ],
   },
   {
