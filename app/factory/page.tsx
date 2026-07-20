@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 
@@ -6,8 +7,6 @@ const manufacturing = [
   { title: "Production Line", desc: "Organized assembly lines ensuring consistent output quality" },
   { title: "Quality Control", desc: "Multi-stage inspection from raw material to finished product" },
 ];
-
-const gallery = ["Assembly Line", "Production Workshop", "Quality Inspection", "Warehouse"];
 
 const oemFeatures = [
   "Logo Customization",
@@ -64,15 +63,29 @@ export default function FactoryPage() {
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">Factory Gallery</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {gallery.map((g) => (
-            <div key={g} className="bg-white/4 border border-white/8 rounded-2xl aspect-[4/3] flex items-center justify-center">
-              <span className="text-white/15 text-sm">{g}</span>
+          {[
+            { src: "/images/factory/gallery1.jpg", label: "Assembly Line" },
+            { src: "/images/factory/gallery2.jpg", label: "Production Workshop" },
+            { src: "/images/factory/gallery3.jpg", label: "Quality Inspection" },
+            { src: "/images/factory/gallery4.jpg", label: "Warehouse" },
+          ].map((img) => (
+            <div key={img.label} className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
+              <div className="aspect-[4/3] relative">
+                <Image src={img.src} alt={img.label} fill className="object-cover" unoptimized />
+              </div>
+              <p className="text-center text-xs text-white/40 py-3">{img.label}</p>
             </div>
           ))}
         </div>
-        <p className="text-center text-white/25 text-xs mt-4">
-          Real factory images to be provided by XINGYUE
-        </p>
+      </section>
+
+      {/* Factory Video */}
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto">
+          <video controls className="w-full aspect-video" poster="/images/factory/gallery1.jpg" preload="metadata">
+            <source src="/videos/factory.mp4" type="video/mp4" />
+          </video>
+        </div>
       </section>
 
       {/* 5. Quality Control */}
