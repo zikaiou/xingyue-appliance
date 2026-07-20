@@ -82,7 +82,7 @@ export default function FactoryPage() {
       {/* Factory Video */}
       <section className="max-w-4xl mx-auto px-6 pb-16">
         <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto">
-          <video controls className="w-full aspect-video" poster="/images/factory/gallery1.jpg" preload="metadata">
+          <video controls className="w-full aspect-video" poster="/images/factory/video-poster.jpg" preload="metadata">
             <source src="/videos/factory.mp4" type="video/mp4" />
           </video>
         </div>
