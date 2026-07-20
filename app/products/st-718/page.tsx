@@ -97,9 +97,9 @@ export default function ST718Page() {
       </section>
 
       {/* Video */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-8">Experience ST-718</h2>
-        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black">
+        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto">
           <video controls className="w-full" poster="/images/products/st718/main.jpg" preload="metadata">
             <source src="/videos/st718.mp4" type="video/mp4" />
           </video>
