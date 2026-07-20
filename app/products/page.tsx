@@ -8,23 +8,27 @@ const categories = [
   {
     name: "Travel Iron",
     products: [
-      { model: "ST-718", name: "Travel Iron ST-718", image: "/images/products/ST-718.jpg", features: "Travel size design" },
-      { model: "ST-717", name: "Travel Iron ST-717", image: "/images/products/ST-717.jpg", features: "Travel size design" },
-      { model: "ST-588", name: "Travel Iron ST-588", image: "/images/products/ST-588.png", features: "Travel size design" },
-      { model: "ST-812", name: "Travel Iron ST-812", image: "/images/products/ST-812.png", features: "Travel size design" },
+      { model: "ST-718", name: "Travel Iron ST-718", image: "/images/products/ST-718.jpg",
+        features: ["Compact Travel Design", "Fast Heating", "Portable Ironing Solution"] },
+      { model: "ST-717", name: "Travel Iron ST-717", image: "/images/products/ST-717.jpg",
+        features: ["Portable Design", "Convenient Travel Use", "Efficient Ironing Performance"] },
+      { model: "ST-588", name: "Travel Iron ST-588", image: "/images/products/ST-588.png",
+        features: ["Compact Structure", "Easy Carry Design", "Daily Travel Solution"] },
+      { model: "ST-812", name: "Travel Iron ST-812", image: "/images/products/ST-812.png",
+        features: ["Lightweight Travel Design", "Quick Wrinkle Removal", "Portable Garment Care"] },
     ],
   },
   {
     name: "Garment Steamer",
     products: [
       { model: "ST-815", name: "Garment Steamer ST-815", image: "/images/products/ST-815.png",
-        features: "1800W / 260ml tank / 3 steam adjustments" },
+        features: ["1800W Powerful Steam", "260ml Water Tank", "Vertical & Horizontal Steaming"] },
       { model: "6617", name: "Garment Steamer 6617", image: "/images/products/6617.jpg",
-        features: "1800W / Ceramic base plate / 260ml tank" },
-      { model: "6618", name: "Garment Steamer 6618", image: "/images/products/6618.jpg",
-        features: "150ml tank / Stainless steel panel / Foldable" },
+        features: ["Ceramic Steam Panel", "3 Steam Levels", "Auto Power Off"] },
       { model: "900A", name: "Garment Steamer 900A", image: "/images/products/900A.png",
-        features: "Garment Steamer" },
+        features: ["Stainless Steel Panel", "20±5g/min Continuous Steam", "Compact Portable Design"] },
+      { model: "6618", name: "Garment Steamer 6618", image: "/images/products/6618.jpg",
+        features: ["Stainless Steel Panel", "3 Steam Modes", "Travel Friendly Design"] },
     ],
   },
   {
@@ -96,13 +100,29 @@ export default function ProductsPage() {
                 </div>
                 <div className="p-5">
                   <h3 className="text-base font-bold">{p.model}</h3>
-                  <p className="text-xs text-white/50 mt-1">{p.features}</p>
-                  <Link
-                    href={`/products/${p.model.toLowerCase()}`}
-                    className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#ff2f7d] hover:underline"
-                  >
-                    View Details →
-                  </Link>
+                  <p className="text-xs text-white/45 mt-1">{p.name}</p>
+                  <ul className="mt-3 space-y-1">
+                    {p.features.map((f) => (
+                      <li key={f} className="text-xs text-white/60 flex items-start gap-1.5">
+                        <span className="text-[#ff2f7d] mt-0.5 shrink-0">•</span>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex gap-3">
+                    <Link
+                      href={`/products/${p.model.toLowerCase()}`}
+                      className="text-xs font-semibold text-[#ff2f7d] hover:underline"
+                    >
+                      View Details →
+                    </Link>
+                    <Link
+                      href={`/contact?product=${p.model}`}
+                      className="text-xs font-semibold text-white/70 hover:text-white transition"
+                    >
+                      Get Quote
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -127,6 +147,9 @@ export default function ProductsPage() {
             </div>
           ))}
         </div>
+        <p className="text-center pb-10 text-xs text-white/30">
+          Professional garment care solutions and OEM manufacturing services for global brands.
+        </p>
       </section>
     </div>
   );
