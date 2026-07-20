@@ -11,6 +11,8 @@ const images = [
   "/images/products/st717/detail2.jpg",
   "/images/products/st717/detail3.jpg",
   "/images/products/st717/detail4.jpg",
+  "/images/products/st717/detail6.jpg",
+  "/images/products/st717/detail7.jpg",
 ];
 
 const features = [
