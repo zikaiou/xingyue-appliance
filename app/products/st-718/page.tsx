@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 const images = [
@@ -37,8 +37,14 @@ const specs = [
 
 export default function ST718Page() {
   const [imgIdx, setImgIdx] = useState(0);
+  const touchX = useRef(0);
   const prev = () => setImgIdx((i) => (i === 0 ? images.length - 1 : i - 1));
   const next = () => setImgIdx((i) => (i === images.length - 1 ? 0 : i + 1));
+  const onTouchStart = (e: React.TouchEvent) => { touchX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const diff = touchX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
+  };
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
@@ -71,7 +77,7 @@ export default function ST718Page() {
 
         {/* Gallery */}
         <div className="relative bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8">
-          <div className="aspect-square relative">
+          <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
             <Image src={images[imgIdx]} alt="ST-718" fill className="object-contain p-4" unoptimized />
             <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition">
               <ArrowLeft size={18} />
