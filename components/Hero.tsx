@@ -40,7 +40,7 @@ export default function Hero() {
           <div className="mb-7 flex items-center gap-4">
             <span className="h-px w-12 bg-pink-500" />
             <p className="text-xs font-extrabold uppercase tracking-[0.32em] text-pink-400 sm:text-sm">
-              Smart Clothing Care
+              Professional Garment Care
             </p>
           </div>
 
