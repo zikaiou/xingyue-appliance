@@ -18,14 +18,14 @@ const categories = [
   { image: "", name: "Vacuum Steamer", desc: "", status: "Coming Soon" },
 ];
 
+const process = ["Idea", "Design", "Prototype", "Testing", "Mass Production", "Shipping"];
+
 const customizations = [
   { title: "Logo Customization", desc: "Custom branding on product body and packaging" },
   { title: "Color Customization", desc: "Tailored color options to match your brand" },
   { title: "Packaging Design", desc: "Custom box design with your brand identity" },
   { title: "Product Modification", desc: "Specification adjustments for your market" },
 ];
-
-const process = ["Idea", "Design", "Prototype", "Testing", "Mass Production", "Shipping"];
 
 const whyUs = [
   { title: "Professional Manufacturing", desc: "16+ years dedicated to garment care products" },
@@ -62,7 +62,39 @@ export default function OEMPage() {
         </Link>
       </section>
 
-      {/* 2. OEM Product Capability */}
+      {/* 2. OEM Process */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">OEM PROCESS</h2>
+        <div className="flex flex-wrap justify-center items-center gap-2">
+          {process.map((step, i) => (
+            <span key={step} className="flex items-center">
+              <span className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-3 pr-5 py-3">
+                <span className="w-7 h-7 rounded-full bg-[#ff2f7d] flex items-center justify-center text-xs font-bold shrink-0">{i + 1}</span>
+                <span className="text-sm font-semibold whitespace-nowrap">{step}</span>
+              </span>
+              {i < process.length - 1 && <ArrowRight size={16} className="mx-1 text-[#ff2f7d] shrink-0" />}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* 3. Why Choose XINGYUE */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">WHY CHOOSE XINGYUE</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {whyUs.map((w) => (
+            <div key={w.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex gap-4">
+              <Check size={20} className="text-[#ff2f7d] shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-bold">{w.title}</h3>
+                <p className="text-sm text-white/50 mt-2">{w.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. OEM Product Capability */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">OEM PRODUCT CAPABILITY</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -87,23 +119,7 @@ export default function OEMPage() {
         </div>
       </section>
 
-      {/* 3. OEM Process */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">OEM PROCESS</h2>
-        <div className="flex flex-wrap justify-center items-center gap-2">
-          {process.map((step, i) => (
-            <span key={step} className="flex items-center">
-              <span className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-3 pr-5 py-3">
-                <span className="w-7 h-7 rounded-full bg-[#ff2f7d] flex items-center justify-center text-xs font-bold shrink-0">{i + 1}</span>
-                <span className="text-sm font-semibold whitespace-nowrap">{step}</span>
-              </span>
-              {i < process.length - 1 && <ArrowRight size={16} className="mx-1 text-[#ff2f7d] shrink-0" />}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. Customization Service */}
+      {/* 5. Customization Service */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">CUSTOMIZATION SERVICE</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -117,23 +133,7 @@ export default function OEMPage() {
         </div>
       </section>
 
-      {/* 5. Why Choose XINGYUE */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">WHY CHOOSE XINGYUE</h2>
-        <div className="grid gap-6 sm:grid-cols-2">
-          {whyUs.map((w) => (
-            <div key={w.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex gap-4">
-              <Check size={20} className="text-[#ff2f7d] shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold">{w.title}</h3>
-                <p className="text-sm text-white/50 mt-2">{w.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 5. OEM Inquiry Form */}
+      {/* 6. OEM Inquiry Form */}
       <section id="inquiry" className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-4">START YOUR OEM PROJECT</h2>
         <p className="text-center text-white/40 text-sm mb-10">Tell us your requirements and get a custom solution within 24 hours.</p>
