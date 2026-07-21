@@ -12,10 +12,10 @@ const stats = [
 ];
 
 const categories = [
-  { image: "/images/products/st718/main.jpg", name: "Travel Iron", desc: "Compact & portable" },
-  { image: "/images/products/st815/main.jpg", name: "Garment Steamer", desc: "Powerful steam care" },
-  { image: "/images/products/steam-iron-1.png", name: "Steam Iron", desc: "Professional ironing" },
-  { image: "/images/products/steam-iron-1.png", name: "Vacuum Steamer", desc: "Advanced technology" },
+  { image: "/images/oem/travel-iron.jpg", name: "Travel Iron", desc: "Portable Travel Iron Solutions", badge: "OEM / ODM Available" },
+  { image: "/images/oem/garment-steamer.jpg", name: "Garment Steamer", desc: "Handheld Steam Solutions", badge: "OEM / ODM Available" },
+  { image: "", name: "Steam Iron", desc: "", status: "Coming Soon" },
+  { image: "", name: "Vacuum Steamer", desc: "", status: "Coming Soon" },
 ];
 
 const customizations = [
@@ -68,12 +68,19 @@ export default function OEMPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c) => (
             <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition">
-              <div className="aspect-square bg-[#0d0d12] relative">
-                <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
-              </div>
+              {c.status ? (
+                <div className="aspect-square bg-[#0d0d12] flex items-center justify-center">
+                  <p className="text-white/15 text-lg font-bold">{c.status}</p>
+                </div>
+              ) : (
+                <div className="aspect-square bg-[#0d0d12] relative">
+                  <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
+                </div>
+              )}
               <div className="p-5 text-center">
                 <h3 className="font-bold">{c.name}</h3>
-                <p className="text-xs text-white/45 mt-1">{c.desc}</p>
+                {c.badge && <span className="inline-block mt-1.5 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#ff2f7d]/15 text-[#ff2f7d]">{c.badge}</span>}
+                {c.desc && <p className="text-xs text-white/45 mt-2">{c.desc}</p>}
               </div>
             </div>
           ))}
