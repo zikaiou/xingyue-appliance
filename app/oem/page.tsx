@@ -1,36 +1,40 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Shirt, Accessibility, Thermometer, Wind } from "lucide-react";
+import { useState } from "react";
+
+const stats = [
+  ["16+", "Years Experience"],
+  ["35,000 m²", "Factory"],
+  ["100+", "Export Markets"],
+];
+
+const categories = [
+  { icon: Shirt, name: "Travel Iron", desc: "Compact & portable" },
+  { icon: Accessibility, name: "Garment Steamer", desc: "Powerful steam care" },
+  { icon: Thermometer, name: "Steam Iron", desc: "Professional ironing" },
+  { icon: Wind, name: "Vacuum Steamer", desc: "Advanced technology" },
+];
+
+const process = ["Idea", "Design", "Prototype", "Testing", "Mass Production", "Shipping"];
 
 const whyUs = [
-  { title: "16+ Years", desc: "Manufacturing Experience" },
-  { title: "Complete OEM", desc: "Solution Provider" },
-  { title: "Advanced", desc: "Production Capability" },
-  { title: "Global", desc: "Export Experience" },
-];
-
-const process = ["Concept", "Industrial Design", "Prototype", "Testing", "Mass Production"];
-
-const services = [
-  { title: "Logo Customization", desc: "Custom branding on product body and packaging" },
-  { title: "Color Customization", desc: "Tailored color options to match your brand" },
-  { title: "Packaging Design", desc: "Custom box design with your brand identity" },
-  { title: "Product Modification", desc: "Specification adjustments for your market" },
-];
-
-const manufacture = [
-  "Material Inspection",
-  "Assembly",
-  "Product Testing",
-  "Final Inspection",
-  "Shipping",
+  { title: "Professional Manufacturing", desc: "16+ years dedicated to garment care products" },
+  { title: "Complete Production", desc: "From design to delivery, all in-house capability" },
+  { title: "Quality Assurance", desc: "Multi-stage inspection and international certifications" },
+  { title: "Global Support", desc: "Dedicated account management and logistics worldwide" },
 ];
 
 export default function OEMPage() {
+  const [form, setForm] = useState({ name: "", company: "", email: "", country: "", product: "", quantity: "", message: "" });
+  const update = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
+
   return (
     <div className="bg-[#050507] text-white min-h-screen">
-      {/* Hero */}
-      <section className="pt-32 pb-16 text-center px-6">
+      {/* 1. Hero */}
+      <section className="pt-32 pb-12 text-center px-6">
         <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">OEM / ODM Service</p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight max-w-3xl mx-auto">
           YOUR RELIABLE OEM / ODM PARTNER
@@ -38,92 +42,102 @@ export default function OEMPage() {
         <p className="mt-6 text-white/50 max-w-xl mx-auto">
           From product concept to mass production, XINGYUE provides complete garment care solutions for global brands.
         </p>
-        <Link href="/contact" className="mt-8 inline-flex items-center gap-2 px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
+        <div className="mt-10 flex justify-center flex-wrap gap-4">
+          {stats.map(([v, l]) => (
+            <div key={l} className="bg-white/4 border border-white/8 rounded-2xl px-6 py-4 text-center min-w-[120px]">
+              <p className="text-xl font-black">{v}</p>
+              <p className="text-[10px] text-white/40 uppercase tracking-wide mt-1">{l}</p>
+            </div>
+          ))}
+        </div>
+        <Link href="#inquiry" className="mt-8 inline-flex items-center gap-2 px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
           Start Your Project <ArrowRight size={16} />
         </Link>
       </section>
 
-      {/* Why Choose XINGYUE */}
+      {/* 2. OEM Product Capability */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">OEM PRODUCT CAPABILITY</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {categories.map((c) => (
+            <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl p-6 text-center hover:border-[#ff2f7d]/40 transition">
+              <c.icon size={32} className="text-[#ff2f7d] mx-auto mb-4" />
+              <h3 className="font-bold">{c.name}</h3>
+              <p className="text-xs text-white/45 mt-2">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 3. OEM Process */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">OEM PROCESS</h2>
+        <div className="flex flex-wrap justify-center items-center gap-2">
+          {process.map((step, i) => (
+            <span key={step} className="flex items-center">
+              <span className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-3 pr-5 py-3">
+                <span className="w-7 h-7 rounded-full bg-[#ff2f7d] flex items-center justify-center text-xs font-bold shrink-0">{i + 1}</span>
+                <span className="text-sm font-semibold whitespace-nowrap">{step}</span>
+              </span>
+              {i < process.length - 1 && <ArrowRight size={16} className="mx-1 text-[#ff2f7d] shrink-0" />}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. Why Choose XINGYUE */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">WHY CHOOSE XINGYUE</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2">
           {whyUs.map((w) => (
-            <div key={w.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 text-center">
-              <p className="text-2xl font-black">{w.title}</p>
-              <p className="text-xs text-white/40 mt-2">{w.desc}</p>
+            <div key={w.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex gap-4">
+              <Check size={20} className="text-[#ff2f7d] shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-bold">{w.title}</h3>
+                <p className="text-sm text-white/50 mt-2">{w.desc}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* From Idea to Product */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">FROM IDEA TO PRODUCT</h2>
-        <div className="flex flex-wrap justify-center items-center gap-3">
-          {process.map((step, i) => (
-            <span key={step}>
-              <span className="bg-white/5 border border-white/10 rounded-full px-5 py-3 text-sm font-semibold whitespace-nowrap">{step}</span>
-              {i < process.length - 1 && <ArrowRight size={16} className="inline mx-2 text-[#ff2f7d]" />}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      {/* Customization Service */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">CUSTOMIZATION SERVICE</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((s) => (
-            <div key={s.title} className="bg-white/4 border border-white/8 rounded-2xl p-6">
-              <Check size={20} className="text-[#ff2f7d] mb-3" />
-              <h3 className="font-bold text-sm">{s.title}</h3>
-              <p className="text-xs text-white/45 mt-2">{s.desc}</p>
+      {/* 5. OEM Inquiry Form */}
+      <section id="inquiry" className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-4">START YOUR OEM PROJECT</h2>
+        <p className="text-center text-white/40 text-sm mb-10">Tell us your requirements and get a custom solution within 24 hours.</p>
+        <div className="max-w-2xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              { k: "name", label: "Name", ph: "Your name" },
+              { k: "company", label: "Company", ph: "Company name" },
+              { k: "email", label: "Email", ph: "your@email.com", span: 2 },
+              { k: "country", label: "Country", ph: "Your country" },
+              { k: "product", label: "Interested Product", ph: "e.g. Travel Iron" },
+              { k: "quantity", label: "Quantity", ph: "e.g. 1000 pcs" },
+            ].map((f) => (
+              <div key={f.k} className={f.span === 2 ? "sm:col-span-2" : ""}>
+                <label className="text-xs text-white/50 mb-1.5 block">{f.label}</label>
+                <input
+                  className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:border-[#ff2f7d] focus:outline-none transition"
+                  placeholder={f.ph}
+                  value={(form as any)[f.k]}
+                  onChange={(e) => update(f.k, e.target.value)}
+                />
+              </div>
+            ))}
+            <div className="sm:col-span-2">
+              <label className="text-xs text-white/50 mb-1.5 block">Message</label>
+              <textarea
+                className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:border-[#ff2f7d] focus:outline-none transition h-28 resize-none"
+                placeholder="Tell us about your OEM requirements..."
+                value={form.message}
+                onChange={(e) => update("message", e.target.value)}
+              />
             </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Manufacturing Process */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">MANUFACTURING PROCESS</h2>
-        <div className="flex flex-wrap justify-center items-center gap-3">
-          {manufacture.map((step, i) => (
-            <span key={step}>
-              <span className="bg-[#ff2f7d]/10 border border-[#ff2f7d]/30 rounded-full px-5 py-3 text-sm font-semibold whitespace-nowrap text-[#ff2f7d]">{step}</span>
-              {i < manufacture.length - 1 && <ArrowRight size={16} className="inline mx-2 text-white/30" />}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      {/* Global Delivery Support */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">GLOBAL DELIVERY SUPPORT</h2>
-        <div className="max-w-3xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8 grid gap-6 sm:grid-cols-2">
-          {[
-            ["Worldwide Shipping", "Reliable logistics to 100+ countries"],
-            ["Flexible Orders", "Small batch to large volume supported"],
-            ["On-Time Delivery", "Efficient production scheduling"],
-            ["Dedicated Support", "Personal account manager for every client"],
-          ].map(([t, d]) => (
-            <div key={t} className="flex gap-3">
-              <Check size={16} className="text-[#ff2f7d] shrink-0 mt-0.5" />
-              <div><h3 className="text-sm font-bold">{t}</h3><p className="text-xs text-white/45 mt-1">{d}</p></div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* OEM Inquiry CTA */}
-      <section className="pb-20 pt-12 text-center px-6">
-        <div className="max-w-2xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-10">
-          <h2 className="text-3xl font-bold">START YOUR OEM PROJECT</h2>
-          <p className="mt-3 text-white/50 text-sm max-w-md mx-auto">
-            Tell us your requirements and get a custom solution within 24 hours.
-          </p>
-          <Link href="/contact" className="mt-8 inline-flex items-center gap-2 px-10 py-4 bg-[#ff2f7d] text-white font-bold rounded-full text-sm hover:bg-[#e6006f] transition">
-            Request OEM Quote <ArrowRight size={16} />
-          </Link>
+          </div>
+          <button className="mt-6 w-full py-3 bg-[#ff2f7d] text-white font-semibold rounded-xl text-sm hover:bg-[#e6006f] transition">
+            Send Inquiry
+          </button>
         </div>
       </section>
     </div>
