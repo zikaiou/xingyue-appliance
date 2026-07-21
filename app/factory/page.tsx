@@ -1,35 +1,60 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, ArrowDown } from "lucide-react";
 
-const manufacturing = [
-  { title: "Product Development", desc: "From concept to prototype with experienced engineering team" },
-  { title: "Production Line", desc: "Organized assembly lines ensuring consistent output quality" },
-  { title: "Quality Control", desc: "Multi-stage inspection from raw material to finished product" },
+const qcSteps = [
+  "Material Inspection",
+  "Assembly Testing",
+  "Steam Performance Test",
+  "Safety Inspection",
+  "Final Quality Check",
 ];
 
-const oemFeatures = [
-  "Logo Customization",
-  "Color Customization",
-  "Packaging Design",
-  "Product Development",
+const oemSteps = [
+  { title: "Product Design", desc: "Custom concept development for your brand" },
+  { title: "Prototype Development", desc: "Rapid sampling with engineering support" },
+  { title: "Mass Production", desc: "Scalable manufacturing with quality control" },
+  { title: "Global Shipping", desc: "Reliable logistics to 100+ countries" },
 ];
 
 export default function FactoryPage() {
   return (
     <div className="bg-[#050507] text-white min-h-screen">
       {/* 1. Factory Hero */}
-      <section className="pt-32 pb-20 text-center px-6">
-        <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">Our Factory</p>
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight max-w-3xl mx-auto">
-          Advanced Manufacturing For Professional Garment Care Solutions
-        </h1>
-        <p className="mt-6 text-white/50 max-w-xl mx-auto">
-          35,000 m² manufacturing base with 16+ years of industry experience.
-        </p>
+      <section className="relative pt-32 pb-20 text-center px-6 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image src="/images/factory/gallery1.jpg" alt=""
+            fill className="object-cover" unoptimized />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#050507]/90 via-[#050507]/70 to-[#050507]" />
+        <div className="relative z-10">
+          <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">OUR FACTORY</p>
+          <h1 className="text-4xl md:text-6xl font-black tracking-tight max-w-3xl mx-auto">
+            Advanced Manufacturing For Professional Garment Care Solutions
+          </h1>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="#capability" className="px-6 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition inline-flex items-center gap-2">
+              Explore Production <ArrowDown size={15} />
+            </a>
+            <Link href="/contact" className="px-6 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition">
+              Request OEM Quote
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* 2. Factory Data */}
+      {/* 2. Factory Video */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center">OUR FACTORY VIDEO</h2>
+        <p className="text-center text-white/40 text-sm mt-2 mb-8">See XINGYUE Manufacturing Capability</p>
+        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto">
+          <video controls className="w-full aspect-video" poster="/images/factory/video-poster.jpg" preload="metadata">
+            <source src="/videos/factory.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      {/* 3. Factory Data */}
       <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
@@ -46,91 +71,89 @@ export default function FactoryPage() {
         </div>
       </section>
 
-      {/* 3. Manufacturing Capability */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">Manufacturing Capability</h2>
-        <div className="grid gap-6 md:grid-cols-3">
-          {manufacturing.map((m) => (
-            <div key={m.title} className="bg-white/4 border border-white/8 rounded-2xl p-6">
-              <h3 className="text-lg font-bold">{m.title}</h3>
-              <p className="mt-3 text-sm text-white/55 leading-relaxed">{m.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. Factory Gallery */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">Factory Gallery</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {/* 4. Manufacturing Capability */}
+      <section id="capability" className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">MANUFACTURING CAPABILITY</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {[
-            { src: "/images/factory/gallery1.jpg", label: "Assembly Line" },
-            { src: "/images/factory/gallery2.jpg", label: "Production Workshop" },
-            { src: "/images/factory/gallery3.jpg", label: "Quality Inspection" },
-            { src: "/images/factory/gallery4.jpg", label: "Warehouse" },
-          ].map((img) => (
-            <div key={img.label} className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
+            { img: "/images/factory/gallery3.jpg", title: "Product Development",
+              items: ["Industrial Design", "Engineering Support", "Prototype Development"] },
+            { img: "/images/factory/gallery1.jpg", title: "Assembly Production",
+              items: ["Advanced Assembly Lines", "Efficient Manufacturing Process", "Large Scale Production"] },
+            { img: "/images/factory/gallery3.jpg", title: "Quality Control",
+              items: ["Incoming Inspection", "Production Testing", "Final Inspection"] },
+            { img: "/images/factory/gallery4.jpg", title: "Packaging & Shipping",
+              items: ["Professional Packaging", "Warehouse Management", "Global Delivery"] },
+          ].map((m) => (
+            <div key={m.title} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden group">
               <div className="aspect-[4/3] relative">
-                <Image src={img.src} alt={img.label} fill className="object-cover" unoptimized />
+                <Image src={m.img} alt={m.title} fill className="object-cover" unoptimized />
               </div>
-              <p className="text-center text-xs text-white/40 py-3">{img.label}</p>
+              <div className="p-5">
+                <h3 className="font-bold">{m.title}</h3>
+                <ul className="mt-2 space-y-1">
+                  {m.items.map((t) => (<li key={t} className="text-xs text-white/50 flex items-center gap-1.5"><Check size={12} className="text-[#ff2f7d] shrink-0" />{t}</li>))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Factory Video */}
-      <section className="max-w-4xl mx-auto px-6 pb-16">
-        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto">
-          <video controls className="w-full aspect-video" poster="/images/factory/video-poster.jpg" preload="metadata">
-            <source src="/videos/factory.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
-
-      {/* 5. Quality Control */}
+      {/* 5. Quality Control Timeline */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">Quality Control</h2>
-        <div className="max-w-3xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8 grid gap-6 sm:grid-cols-2">
-          {[
-            ["Raw Material Inspection", "All materials checked before production begins"],
-            ["In-Process Testing", "Continuous monitoring during manufacturing"],
-            ["Final Product Audit", "Every unit inspected before packaging"],
-            ["Batch Sampling", "Random quality sampling per production batch"],
-          ].map(([t, d]) => (
-            <div key={t} className="flex gap-3">
-              <Check size={18} className="text-[#ff2f7d] shrink-0 mt-0.5" />
-              <div>
-                <h3 className="text-sm font-bold">{t}</h3>
-                <p className="text-xs text-white/45 mt-1">{d}</p>
+        <h2 className="text-2xl font-bold text-center mb-10">QUALITY CONTROL PROCESS</h2>
+        <div className="max-w-3xl mx-auto">
+          {qcSteps.map((step, i) => (
+            <div key={step} className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-full bg-[#ff2f7d] flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</div>
+              <div className="bg-white/4 border border-white/8 rounded-xl px-5 py-4 flex-1">
+                <p className="font-semibold text-sm">{step}</p>
               </div>
+              {i < qcSteps.length - 1 && (
+                <div className="hidden sm:flex items-center text-[#ff2f7d]">
+                  <ArrowDown size={20} className="rotate-[-90deg]" />
+                </div>
+              )}
             </div>
           ))}
+          {/* Mobile arrows */}
+          <div className="sm:hidden flex flex-col items-center gap-0">
+            {qcSteps.slice(0, -1).map((_, i) => (
+              <ArrowDown key={i} size={16} className="text-[#ff2f7d] my-1" />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* 6. OEM / ODM Service */}
+      {/* 6. OEM / ODM */}
       <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-2xl font-bold">Your Reliable OEM / ODM Partner</h2>
+        <h2 className="text-2xl font-bold">YOUR RELIABLE OEM / ODM PARTNER</h2>
         <p className="mt-3 text-white/50 max-w-lg mx-auto text-sm">
-          Custom manufacturing solutions tailored to your brand requirements.
+          From product concept to mass production, XINGYUE provides complete customization solutions for global brands.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {oemFeatures.map((f) => (
-            <div key={f} className="bg-white/4 border border-white/8 rounded-xl p-5 flex items-center gap-3">
-              <Check size={16} className="text-[#ff2f7d] shrink-0" />
-              <span className="text-sm font-medium">{f}</span>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {oemSteps.map((o, i) => (
+            <div key={o.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 text-center">
+              <div className="w-12 h-12 rounded-full bg-[#ff2f7d]/15 flex items-center justify-center mx-auto mb-4">
+                <span className="text-[#ff2f7d] font-bold">{i + 1}</span>
+              </div>
+              <h3 className="font-bold text-sm">{o.title}</h3>
+              <p className="text-xs text-white/45 mt-2">{o.desc}</p>
             </div>
           ))}
         </div>
+        <Link href="/contact" className="mt-8 inline-flex items-center gap-2 px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
+          Start Your OEM Project <ArrowRight size={16} />
+        </Link>
       </section>
 
-      {/* 7. Certificates */}
+      {/* 7. Certifications */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">Certificates</h2>
+        <h2 className="text-2xl font-bold text-center mb-10">CERTIFICATIONS</h2>
         <div className="flex justify-center flex-wrap gap-6">
-          {["CE", "RoHS", "CB", "ISO 9001"].map((cert) => (
-            <div key={cert} className="bg-white/4 border border-white/8 rounded-xl px-8 py-6 text-center min-w-[120px]">
+          {["CE", "CB", "RoHS", "GS", "ETL"].map((cert) => (
+            <div key={cert} className="bg-white/4 border border-white/8 rounded-xl px-8 py-6 text-center min-w-[110px]">
               <p className="text-xl font-black">{cert}</p>
               <p className="text-xs text-white/30 mt-1">Certified</p>
             </div>
@@ -138,14 +161,14 @@ export default function FactoryPage() {
         </div>
       </section>
 
-      {/* 8. Contact CTA */}
+      {/* 8. Final CTA */}
       <section className="border-t border-white/8 py-20 text-center px-6">
-        <h2 className="text-3xl font-bold">Start Your OEM Project</h2>
-        <p className="mt-3 text-white/50 max-w-md mx-auto">
-          Contact us for factory visit, sample request, or partnership inquiry.
+        <h2 className="text-3xl font-bold">Looking For A Reliable<br />Garment Care Manufacturer?</h2>
+        <p className="mt-3 text-white/50 max-w-md mx-auto text-sm">
+          Partner with XINGYUE for professional OEM/ODM garment care solutions.
         </p>
         <Link href="/contact" className="mt-8 inline-flex items-center gap-2 px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
-          Contact Our Team <ArrowRight size={16} />
+          Request OEM Quote <ArrowRight size={16} />
         </Link>
       </section>
     </div>
