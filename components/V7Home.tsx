@@ -44,13 +44,13 @@ export default function V7Home() {
 
   return (
     <div className="v7-page v72-page">
-      <section id="hero" className="v72-hero" aria-label="Powerful Steam. Effortless Style.">
+      <section id="hero" className="v72-hero" aria-label="Professional Garment. Steamer Manufacturer.">
         <div className="v72-hero-grid" aria-hidden="true" />
         <div className="v72-hero-orbit" aria-hidden="true" />
         <div className="v72-hero-glow" aria-hidden="true" />
         <div className="v72-hero-inner">
           <div className="v72-hero-copy" data-crisp-text>
-            <span className="hero-kicker">SMART CLOTHING CARE</span>
+            <span className="hero-kicker">CLOTHING CARE</span>
             <h1><span className="hero-line">Professional Garment</span><em>Steamer Manufacturer</em></h1>
             <p>OEM &amp; ODM Solutions<br className="desktop-only" /> for Global Brands</p>
             <div className="hero-actions">
@@ -59,7 +59,7 @@ export default function V7Home() {
             </div>
             <div className="hero-features">
               <div><span className="hero-feature-icon"><Waves /></span><strong>Powerful Steam</strong><small>Deep penetration<br/>removes wrinkles<br/>in seconds.</small></div>
-              <div><span className="hero-feature-icon"><Thermometer /></span><strong>120Â°C</strong><small>High-temperature<br/>steam for superior<br/>results.</small></div>
+              <div><span className="hero-feature-icon"><Thermometer /></span><strong>120&#176;C</strong><small>High-temperature<br/>steam for superior<br/>results.</small></div>
               <div><span className="hero-feature-icon"><ShieldCheck /></span><strong>Safe &amp; Reliable</strong><small>Overheat protection<br/>for worry-free<br/>everyday use.</small></div>
             </div>
           </div>
@@ -74,20 +74,20 @@ export default function V7Home() {
           <source src="/videos/brand-film.mp4" type="video/mp4" />
         </video>
         <div className="brand-film-shade" />
-        <Reveal className="brand-film-copy"><h2>Designed for<br />Modern Clothing Care.</h2><p>A cinematic expression of intelligent garment care.</p></Reveal>
+        <Reveal className="brand-film-copy"><h2>Designed for<br />Modern Clothing Care.</h2><p>A cinematic expression of professional garment care.</p></Reveal>
         <div className="video-controls"><button onClick={togglePlay} aria-label={playing ? "Pause video" : "Play video"}>{playing ? <Pause size={18}/> : <Play size={18}/>}</button><button onClick={() => setMuted(!muted)} aria-label={muted ? "Unmute video" : "Mute video"}>{muted ? <VolumeX size={18}/> : <Volume2 size={18}/>}</button></div>
       </section>
 
       <section id="featured" className="featured-section section-shell">
         <Reveal className="featured-copy">
-            <h2 className="featured-title">Handheld</h2>
-            <h2 className="featured-title-second">Garment Steamer</h2>
-            <h3 className="featured-subtitle">OEM &amp; ODM Manufacturing</h3>
-            <p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p>
-            <Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link>
-          </Reveal>
+          <h2 className="featured-title">Handheld</h2>
+          <h2 className="featured-title-second">Garment Steamer</h2>
+          <h3 className="featured-subtitle">OEM &amp; ODM Manufacturing</h3>
+          <p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p>
+          <Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link>
+        </Reveal>
         <Reveal className="featured-product-wrap"><div className="product-glow" /><img src="/images/v7/st-812.png" alt="Professional Garment Steamer" className="featured-product-image" /></Reveal>
-        <Reveal className="feature-list">{[["Rapid Heat-Up","Ready in 15 seconds"],["Strong Penetrating Steam","Removes wrinkles easily"],["Smart Fabric Modes","Care for every fabric"],["Lightweight & Portable","Easy to hold, easy to use"],["Dry & Wet Ironing","Horizontal & Vertical"]].map(([title,text],index)=><div className="feature-row" key={title}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</Reveal>
+        <Reveal className="feature-list">{[["Rapid Heat-Up","Ready in 15 seconds"],["Strong Penetrating Steam","Removes wrinkles easily"],["Fabric Modes","Care for every fabric"],["Lightweight & Portable","Easy to hold, easy to use"],["Dry & Wet Ironing","Horizontal & Vertical"]].map(([title,text],index)=><div className="feature-row" key={title}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</Reveal>
       </section>
 
       <section id="products" className="products-section section-shell">
@@ -109,10 +109,6 @@ export default function V7Home() {
       </section>
 
       <section className="service-strip section-shell">{["Factory Direct","OEM/ODM Service","Quality Assurance","Global Support"].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
-    </div>
-  );
-}
-n-shell">{["Factory Direct","OEM/ODM Service","Quality Assurance","Global Support"].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
     </div>
   );
 }
