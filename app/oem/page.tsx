@@ -135,19 +135,21 @@ export default function OEMPage() {
 
       {/* 6. OEM Inquiry Form */}
       <section id="inquiry" className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-4">START YOUR OEM PROJECT</h2>
-        <p className="text-center text-white/40 text-sm mb-10">Tell us your requirements and get a custom solution within 24 hours.</p>
+        <h2 className="text-2xl font-bold text-center">START YOUR OEM PROJECT</h2>
+        <p className="text-center text-white/40 text-sm mt-2 mb-10">
+          Tell us your requirements. Our team will provide professional manufacturing solutions.
+        </p>
         <div className="max-w-2xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8">
           <div className="grid gap-4 sm:grid-cols-2">
             {[
-              { k: "name", label: "Name", ph: "Your name" },
-              { k: "company", label: "Company", ph: "Company name" },
-              { k: "email", label: "Email", ph: "your@email.com", span: 2 },
-              { k: "country", label: "Country", ph: "Your country" },
-              { k: "product", label: "Interested Product", ph: "e.g. Travel Iron" },
-              { k: "quantity", label: "Quantity", ph: "e.g. 1000 pcs" },
+              { k: "company", label: "Company Name *", ph: "Your company name" },
+              { k: "name", label: "Contact Name *", ph: "Your full name" },
+              { k: "country", label: "Country / Region *", ph: "Your country" },
+              { k: "email", label: "Email *", ph: "your@email.com" },
+              { k: "whatsapp", label: "WhatsApp", ph: "+86 138 0000 0000" },
+              { k: "website", label: "Website", ph: "www.yourcompany.com" },
             ].map((f) => (
-              <div key={f.k} className={f.span === 2 ? "sm:col-span-2" : ""}>
+              <div key={f.k}>
                 <label className="text-xs text-white/50 mb-1.5 block">{f.label}</label>
                 <input
                   className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:border-[#ff2f7d] focus:outline-none transition"
@@ -157,6 +159,34 @@ export default function OEMPage() {
                 />
               </div>
             ))}
+            <div>
+              <label className="text-xs text-white/50 mb-1.5 block">Interested Product</label>
+              <select
+                className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#ff2f7d] focus:outline-none transition appearance-none"
+                value={form.product}
+                onChange={(e) => update("product", e.target.value)}
+              >
+                <option value="" className="bg-[#1a1a1e]">Select product</option>
+                <option value="Travel Iron" className="bg-[#1a1a1e]">Travel Iron</option>
+                <option value="Garment Steamer" className="bg-[#1a1a1e]">Garment Steamer</option>
+                <option value="Steam Iron" className="bg-[#1a1a1e]">Steam Iron</option>
+                <option value="Vacuum Steamer" className="bg-[#1a1a1e]">Vacuum Steamer</option>
+                <option value="Other" className="bg-[#1a1a1e]">Other</option>
+              </select>
+            </div>
+            <div>
+              <label className="text-xs text-white/50 mb-1.5 block">Estimated Quantity</label>
+              <select
+                className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:border-[#ff2f7d] focus:outline-none transition appearance-none"
+                value={form.quantity}
+                onChange={(e) => update("quantity", e.target.value)}
+              >
+                <option value="" className="bg-[#1a1a1e]">Select quantity</option>
+                <option value="1,000-5,000 pcs" className="bg-[#1a1a1e]">1,000-5,000 pcs</option>
+                <option value="5,000-20,000 pcs" className="bg-[#1a1a1e]">5,000-20,000 pcs</option>
+                <option value="20,000+ pcs" className="bg-[#1a1a1e]">20,000+ pcs</option>
+              </select>
+            </div>
             <div className="sm:col-span-2">
               <label className="text-xs text-white/50 mb-1.5 block">Message</label>
               <textarea
@@ -167,9 +197,20 @@ export default function OEMPage() {
               />
             </div>
           </div>
-          <button className="mt-6 w-full py-3 bg-[#ff2f7d] text-white font-semibold rounded-xl text-sm hover:bg-[#e6006f] transition">
-            Send Inquiry
+          <button className="mt-6 w-full py-3 bg-[#ff2f7d] text-white font-semibold rounded-xl text-sm hover:bg-[#e6006f] transition uppercase tracking-wide">
+            Submit Inquiry
           </button>
+          <div className="mt-6 pt-6 border-t border-white/8 flex flex-wrap justify-center gap-6 text-xs text-white/40">
+            <span className="flex items-center gap-1">
+              <span className="text-[#ff2f7d]">Email:</span> info@xingyue-appliance.com
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="text-[#ff2f7d]">WhatsApp:</span> +86 138 0000 0000
+            </span>
+            <span className="flex items-center gap-1">
+              <span className="text-[#ff2f7d]">Response Time:</span> Within 24 hours
+            </span>
+          </div>
         </div>
       </section>
     </div>
