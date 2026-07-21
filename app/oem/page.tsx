@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Check, ArrowRight, Shirt, Accessibility, Thermometer, Wind } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const stats = [
@@ -12,10 +12,17 @@ const stats = [
 ];
 
 const categories = [
-  { icon: Shirt, name: "Travel Iron", desc: "Compact & portable" },
-  { icon: Accessibility, name: "Garment Steamer", desc: "Powerful steam care" },
-  { icon: Thermometer, name: "Steam Iron", desc: "Professional ironing" },
-  { icon: Wind, name: "Vacuum Steamer", desc: "Advanced technology" },
+  { image: "/images/products/st718/main.jpg", name: "Travel Iron", desc: "Compact & portable" },
+  { image: "/images/products/st815/main.jpg", name: "Garment Steamer", desc: "Powerful steam care" },
+  { image: "/images/products/steam-iron-1.png", name: "Steam Iron", desc: "Professional ironing" },
+  { image: "/images/products/steam-iron-1.png", name: "Vacuum Steamer", desc: "Advanced technology" },
+];
+
+const customizations = [
+  { title: "Logo Customization", desc: "Custom branding on product body and packaging" },
+  { title: "Color Customization", desc: "Tailored color options to match your brand" },
+  { title: "Packaging Design", desc: "Custom box design with your brand identity" },
+  { title: "Product Modification", desc: "Specification adjustments for your market" },
 ];
 
 const process = ["Idea", "Design", "Prototype", "Testing", "Mass Production", "Shipping"];
@@ -60,10 +67,14 @@ export default function OEMPage() {
         <h2 className="text-2xl font-bold text-center mb-10">OEM PRODUCT CAPABILITY</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c) => (
-            <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl p-6 text-center hover:border-[#ff2f7d]/40 transition">
-              <c.icon size={32} className="text-[#ff2f7d] mx-auto mb-4" />
-              <h3 className="font-bold">{c.name}</h3>
-              <p className="text-xs text-white/45 mt-2">{c.desc}</p>
+            <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition">
+              <div className="aspect-square bg-[#0d0d12] relative">
+                <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
+              </div>
+              <div className="p-5 text-center">
+                <h3 className="font-bold">{c.name}</h3>
+                <p className="text-xs text-white/45 mt-1">{c.desc}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -85,7 +96,21 @@ export default function OEMPage() {
         </div>
       </section>
 
-      {/* 4. Why Choose XINGYUE */}
+      {/* 4. Customization Service */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center mb-10">CUSTOMIZATION SERVICE</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {customizations.map((s) => (
+            <div key={s.title} className="bg-white/4 border border-white/8 rounded-2xl p-6">
+              <Check size={20} className="text-[#ff2f7d] mb-3" />
+              <h3 className="font-bold text-sm">{s.title}</h3>
+              <p className="text-xs text-white/45 mt-2">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. Why Choose XINGYUE */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">WHY CHOOSE XINGYUE</h2>
         <div className="grid gap-6 sm:grid-cols-2">
