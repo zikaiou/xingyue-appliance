@@ -1,6 +1,6 @@
 export const siteConfig = {
   brand: "XING",
-  tagline: "Smart Clothing Care",
+  tagline: "Professional Garment Care",
   company: "Xingyue Technology Co., Ltd.",
   email: "amy@xingyue.store",
   whatsapp: "8615913881634",
