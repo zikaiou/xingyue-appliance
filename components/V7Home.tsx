@@ -6,18 +6,14 @@ import { ArrowRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCh
 import { useEffect, useRef, useState } from "react";
 
 const products = [
-  ["ST-812", "Handheld Garment Steamer", "/images/v7/st-812.png"],
-  ["ST-680", "Steam Iron", "/images/products/steam-iron-2.png"],
-  ["ST-630", "Steam Iron", "/images/products/steam-iron-3.png"],
-  ["ST-560", "Steam Iron", "/images/products/steam-iron-4.png"],
-  ["ST-588", "Steam Iron", "/images/products/steam-iron-5.png"],
-  ["ST-510", "Vertical Steam Iron", "/images/products/steam-iron-2.png"],
-  ["ST-420", "Travel Iron", "/images/products/steam-iron-3.png"],
-  ["ST-200", "Dry Iron", "/images/products/steam-iron-4.png"],
-  ["ST-160", "Dry Iron", "/images/products/steam-iron-5.png"],
-  ["ST-120", "Dry Iron", "/images/products/steam-iron-2.png"],
-  ["ST-100", "Dry Iron", "/images/products/steam-iron-3.png"],
-  ["ST-90", "Dry Iron", "/images/products/steam-iron-4.png"],
+  ["ST-718", "Travel Iron", "/images/products/ST-718.jpg"],
+  ["ST-717", "Travel Iron", "/images/products/ST-717.jpg"],
+  ["ST-588", "Travel Iron", "/images/products/ST-588.png"],
+  ["ST-812", "Travel Iron", "/images/products/ST-812.png"],
+  ["ST-815", "Garment Steamer", "/images/products/ST-815.png"],
+  ["6617", "Garment Steamer", "/images/products/6617.jpg"],
+  ["900A", "Garment Steamer", "/images/products/900A.png"],
+  ["6618", "Garment Steamer", "/images/products/6618.jpg"],
 ] as const;
 
 function Reveal({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -113,6 +109,10 @@ export default function V7Home() {
       </section>
 
       <section className="service-strip section-shell">{["Factory Direct","OEM/ODM Service","Quality Assurance","Global Support"].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
+    </div>
+  );
+}
+n-shell">{["Factory Direct","OEM/ODM Service","Quality Assurance","Global Support"].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
     </div>
   );
 }

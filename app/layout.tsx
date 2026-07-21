@@ -7,7 +7,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.xingyue-appliance.com"),
   title: {
-    default: "XINGYUE | Travel Iron & Garment Steamer Manufacturer | OEM Garment Care",
+    default: "XINGYUE | Travel Iron & Garment Steamer Manufacturer | OEM/ODM Factory",
     template: "%s | XINGYUE",
   },
   description:
