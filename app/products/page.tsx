@@ -20,7 +20,7 @@ const categories = [
         features: ["Advanced Steam System", "High-Efficiency Heating", "Professional Results"] },
       { model: "ST-8808", name: "Travel Iron ST-8808", image: "/images/products/ST-8808.png",
         features: ["Compact Power Design", "Steady Steam Flow", "Versatile Ironing"] },
-      { model: "ST-817", name: "Travel Iron ST-817", image: "/images/products/ST-817.jpg",
+      { model: "ST-817", name: "Travel Iron ST-817", image: "/images/products/ST-817.png",
         features: ["Digital Control Interface", "Enhanced Steam Output", "Premium Fabric Care"] },
       { model: "ST-200A", name: "Travel Iron ST-200A", image: "/images/products/ST-200A.jpg",
         features: ["Ergonomic Handle", "Multi-Angle Steaming", "Travel Safety Build"] },
