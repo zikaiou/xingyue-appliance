@@ -34,7 +34,7 @@ const categories = [
       { model: "6617", name: "Garment Steamer 6617", image: "/images/products/6617.jpg",
         features: ["Ceramic Steam Panel", "3 Steam Levels", "Auto Power Off"] },
       { model: "900A", name: "Garment Steamer 900A", image: "/images/products/900A.png",
-        features: ["Stainless Steel Panel", "20\u00b15g/min Continuous Steam", "Compact Portable Design"] },
+        features: ["Stainless Steel Panel", "20±5g/min Continuous Steam", "Compact Portable Design"] },
       { model: "6618", name: "Garment Steamer 6618", image: "/images/products/6618.jpg",
         features: ["Stainless Steel Panel", "3 Steam Modes", "Travel Friendly Design"] },
     ],
@@ -54,7 +54,7 @@ const categories = [
 const bottomModules = [
   { title: "Reliable Quality", desc: "Every product undergoes strict inspection before shipment." },
   { title: "OEM / ODM Support", desc: "Custom branding, packaging and specification for your market." },
-  { title: "Strong Production", desc: "35,000 m\u00b2 factory with 500+ skilled workers." },
+  { title: "Strong Production", desc: "35,000 m² factory with 500+ skilled workers." },
   { title: "Global Shipping", desc: "Reliable logistics to over 100 countries worldwide." },
 ];
 
@@ -112,7 +112,7 @@ export default function ProductsPage() {
                   <ul className="mt-3 space-y-1">
                     {p.features.map((f) => (
                       <li key={f} className="text-xs text-white/60 flex items-start gap-1.5">
-                        <span className="text-[#ff2f7d] mt-0.5 shrink-0">\u2022</span>
+                        <span className="text-[#ff2f7d] mt-0.5 shrink-0">·</span>
                         {f}
                       </li>
                     ))}
@@ -122,7 +122,7 @@ export default function ProductsPage() {
                       href={`/products/${p.model.toLowerCase()}`}
                       className="text-xs font-semibold text-[#ff2f7d] hover:underline"
                     >
-                      View Details \u2192
+                      View Details -{">"}
                     </Link>
                     <Link
                       href={`/contact?product=${p.model}`}
@@ -137,7 +137,7 @@ export default function ProductsPage() {
           </div>
         ) : (
           <div className="text-center py-24">
-            <p className="text-5xl mb-4">\ud83d\ude80</p>
+            <p className="text-5xl mb-4">🚀</p>
             <h2 className="text-2xl font-bold text-white/70">Coming Soon</h2>
             <p className="text-white/45 mt-2">
               New {categories[active].name} products are in development.
