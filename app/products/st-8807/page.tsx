@@ -113,7 +113,18 @@ export default function ST8807Page() {
         </div>
       </section>
 
-      {/* 2. Key Features */}
+      {/* 2. Product Video Section */}
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold text-center">Experience ST-8807</h2>
+        <p className="text-center text-white/40 text-sm mt-2 mb-8">Professional Garment Care In Action</p>
+        <div className="rounded-2xl overflow-hidden border border-white/8 bg-black max-w-2xl mx-auto shadow-2xl shadow-[#ff2f7d]/5">
+          <video controls className="w-full aspect-video" poster="/images/products/st8807/main.jpg" preload="metadata">
+            <source src="/videos/st8807.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      {/* 3. Key Features */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold text-center mb-10">Key Features</h2>
         <div className="grid gap-6 sm:grid-cols-2">
