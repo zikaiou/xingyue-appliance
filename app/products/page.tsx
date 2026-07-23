@@ -46,6 +46,8 @@ const categories = [
         features: ["2800W Powerful Steam", "330ml Water Tank", "Auto Shut-Off"] },
       { model: "ST-S1002", name: "Steam Iron", image: "/images/products/ST-S1002.jpg",
         features: ["3000W Powerful Steam", "420ml Water Tank", "Auto Shut-Off"] },
+      { model: "ST-S1003", name: "Steam Iron", image: "/images/products/ST-S1003.jpg",
+        features: ["2800W Powerful Steam", "330ml Water Tank", "Ceramic / Non-stick Soleplate"] },
     ],
   },
   {
@@ -122,7 +124,7 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-4 flex gap-3">
-                    {!["ST-S1001", "ST-S1002"].includes(p.model) && (
+                    {!["ST-S1001", "ST-S1002", "ST-S1003"].includes(p.model) && (
                       <Link
                         href={`/products/${p.model.toLowerCase()}`}
                         className="text-xs font-semibold text-[#ff2f7d] hover:underline"
