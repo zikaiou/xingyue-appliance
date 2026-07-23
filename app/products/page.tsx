@@ -126,14 +126,12 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-4 flex gap-3">
-                    {!["ST-S1001", "ST-S1002", "ST-S1003", "ST-S1004"].includes(p.model) && (
-                      <Link
-                        href={`/products/${p.model.toLowerCase()}`}
-                        className="text-xs font-semibold text-[#ff2f7d] hover:underline"
-                      >
-                        View Details -{">"}
-                      </Link>
-                    )}
+                    <Link
+                      href={`/products/${p.model.toLowerCase()}`}
+                      className="text-xs font-semibold text-[#ff2f7d] hover:underline"
+                    >
+                      View Details →
+                    </Link>
                     <Link
                       href={`/contact?product=${p.model}`}
                       className="text-xs font-semibold text-white/70 hover:text-white transition"
