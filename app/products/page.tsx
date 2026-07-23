@@ -40,7 +40,7 @@ const categories = [
     ],
   },
   {
-    name: "Steam Iron",
+    name: "Steam Iron", // Corrected category alignment
     products: [
       { model: "ST-S1001", name: "Steam Iron", image: "/images/products/ST-S1001.jpg",
         features: ["2800W Powerful Steam", "330ml Water Tank", "Auto Shut-Off"] },
