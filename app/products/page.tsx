@@ -41,8 +41,10 @@ const categories = [
   },
   {
     name: "Steam Iron",
-    products: [],
-    status: "Coming Soon",
+    products: [
+      { model: "ST-S1001", name: "Steam Iron", image: "/images/products/ST-S1001.jpg",
+        features: ["2800W Powerful Steam", "330ml Water Tank", "Auto Shut-Off"] },
+    ],
   },
   {
     name: "Vacuum Steamer",
@@ -118,12 +120,14 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-4 flex gap-3">
-                    <Link
-                      href={`/products/${p.model.toLowerCase()}`}
-                      className="text-xs font-semibold text-[#ff2f7d] hover:underline"
-                    >
-                      View Details -{">"}
-                    </Link>
+                    {p.model !== "ST-S1001" && (
+                      <Link
+                        href={`/products/${p.model.toLowerCase()}`}
+                        className="text-xs font-semibold text-[#ff2f7d] hover:underline"
+                      >
+                        View Details -{">"}
+                      </Link>
+                    )}
                     <Link
                       href={`/contact?product=${p.model}`}
                       className="text-xs font-semibold text-white/70 hover:text-white transition"
