@@ -53,9 +53,11 @@ const categories = [
     ],
   },
   {
-    name: "Vacuum Steamer",
-    products: [],
-    status: "Coming Soon",
+    name: "Vacuum Garment Steamer",
+    products: [
+      { model: "9002", name: "Vacuum Garment Steamer", image: "/images/products/9002.jpg",
+        features: ["1500W Powerful Vacuum Steam", "400ml Detachable Water Tank", "LED Display"] },
+    ],
   },
 ];
 
