@@ -132,12 +132,14 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-4 flex gap-3">
-                    <Link
-                      href={`/products/${p.model.toLowerCase()}`}
-                      className="text-xs font-semibold text-[#ff2f7d] hover:underline"
-                    >
-                      View Details →
-                    </Link>
+                    {!["9002", "9003", "9004", "9005"].includes(p.model) && (
+                      <Link
+                        href={`/products/${p.model.toLowerCase()}`}
+                        className="text-xs font-semibold text-[#ff2f7d] hover:underline"
+                      >
+                        View Details →
+                      </Link>
+                    )}
                     <Link
                       href={`/contact?product=${p.model}`}
                       className="text-xs font-semibold text-white/70 hover:text-white transition"
@@ -171,6 +173,12 @@ export default function ProductsPage() {
         </div>
         <p className="text-center pb-10 text-xs text-white/30">
           Professional garment care solutions and OEM manufacturing services for global brands.
+        </p>
+      </section>
+    </div>
+  );
+}
+nd OEM manufacturing services for global brands.
         </p>
       </section>
     </div>
