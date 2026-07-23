@@ -59,6 +59,8 @@ const categories = [
         features: ["1500W Powerful Vacuum Steam", "400ml Detachable Water Tank", "LED Display"] },
       { model: "9003", name: "3-in-1 Vacuum Garment Steamer", image: "/images/products/9003.png",
         features: ["3-in-1 Dry, Steam & Vacuum", "1500W Powerful Performance", "Dual-Level Steam & Suction"] },
+      { model: "9004", name: "3-in-1 Vacuum Garment Steamer", image: "/images/products/9004.jpg",
+        features: ["3-in-1 Dry, Steam & Vacuum", "Rotatable Ironing Head", "1300W Powerful Performance"] },
     ],
   },
 ];
