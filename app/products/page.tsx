@@ -40,7 +40,7 @@ const categories = [
     ],
   },
   {
-    name: "Steam Iron", // Corrected category alignment
+    name: "Steam Iron",
     products: [
       { model: "ST-S1001", name: "Steam Iron", image: "/images/products/ST-S1001.jpg",
         features: ["2800W Powerful Steam", "330ml Water Tank", "Auto Shut-Off"] },
@@ -61,6 +61,8 @@ const categories = [
         features: ["3-in-1 Dry, Steam & Vacuum", "1500W Powerful Performance", "Dual-Level Steam & Suction"] },
       { model: "9004", name: "3-in-1 Vacuum Garment Steamer", image: "/images/products/9004.jpg",
         features: ["3-in-1 Dry, Steam & Vacuum", "Rotatable Ironing Head", "1300W Powerful Performance"] },
+      { model: "9005", name: "Vacuum Garment Steamer", image: "/images/products/9005.jpg",
+        features: ["1500W Powerful Vacuum Steam", "400ml Detachable Water Tank", "LED Display & Ceramic Soleplate"] },
     ],
   },
 ];
@@ -132,7 +134,7 @@ export default function ProductsPage() {
                     ))}
                   </ul>
                   <div className="mt-4 flex gap-3">
-                    {!["9002", "9003", "9004", "9005"].includes(p.model) && (
+                    {!["9002", "9003", "9004", "9005", "ST-S1001", "ST-S1002", "ST-S1003", "ST-S1004"].includes(p.model) && (
                       <Link
                         href={`/products/${p.model.toLowerCase()}`}
                         className="text-xs font-semibold text-[#ff2f7d] hover:underline"
@@ -173,12 +175,6 @@ export default function ProductsPage() {
         </div>
         <p className="text-center pb-10 text-xs text-white/30">
           Professional garment care solutions and OEM manufacturing services for global brands.
-        </p>
-      </section>
-    </div>
-  );
-}
-nd OEM manufacturing services for global brands.
         </p>
       </section>
     </div>
