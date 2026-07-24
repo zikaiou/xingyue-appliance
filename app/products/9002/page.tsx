@@ -66,8 +66,8 @@ export default function P9002Page() {
   const touchX = useRef(0);
   const prev = () => setImgIdx((i) => (i === 0 ? images.length - 1 : i - 1));
   const next = () => setImgIdx((i) => (i === images.length - 1 ? 0 : i + 1));
-  const onTouchStart = (e) => { touchX.current = e.touches[0].clientX; };
-  const onTouchEnd = (e) => {
+  const onTouchStart = (e: React.TouchEvent) => { touchX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
     const diff = touchX.current - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
   };
