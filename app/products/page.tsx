@@ -88,7 +88,7 @@ export default function ProductsPage() {
         </p>
       </section>
 
-      <div className="flex justify-center gap-1 px-4 pb-2 overflow-x-auto">
+      <div className="flex justify-center flex-wrap gap-2 px-4 pb-2">
         {categories.map((cat, i) => (
           <button
             key={cat.name}
