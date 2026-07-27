@@ -14,8 +14,8 @@ const stats = [
 const categories = [
   { image: "/images/oem/travel-iron.jpg", name: "Travel Iron", desc: "Portable Travel Iron Solutions", badge: "OEM / ODM Available" },
   { image: "/images/oem/garment-steamer.jpg", name: "Garment Steamer", desc: "Handheld Steam Solutions", badge: "OEM / ODM Available" },
-  { image: "", name: "Steam Iron", desc: "", status: "Coming Soon" },
-  { image: "", name: "Vacuum Steamer", desc: "", status: "Coming Soon" },
+  { image: "/images/products/ST-S1001.jpg", name: "Steam Iron", desc: "Professional Steam Iron Solutions", badge: "OEM / ODM Available" },
+  { image: "/images/products/9002.jpg", name: "Vacuum Garment Steamer", desc: "Vacuum Garment Care Solutions", badge: "OEM / ODM Available" },
 ];
 
 const process = ["Idea", "Design", "Prototype", "Testing", "Mass Production", "Shipping"];
