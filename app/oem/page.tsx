@@ -35,11 +35,45 @@ const whyUs = [
 ];
 
 export default function OEMPage() {
-  const [form, setForm] = useState({ name: "", company: "", email: "", country: "", product: "", quantity: "", message: "" });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [form, setForm] = useState({ 
+    company: "", 
+    name: "", 
+    email: "", 
+    country: "", 
+    whatsapp: "", 
+    website: "", 
+    product: "", 
+    quantity: "", 
+    message: "" 
+  });
+
   const update = (k: string, v: string) => setForm((p) => ({ ...p, [k]: v }));
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mjgnlkdj", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setForm({ company: "", name: "", email: "", country: "", whatsapp: "", website: "", product: "", quantity: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    }
+  };
+
   return (
-    <div className="bg-[#050507] text-white min-h-screen">
+    <div className="bg-[#050507] text-white min-h-screen font-sans">
       {/* 1. Hero */}
       <section className="pt-32 pb-12 text-center px-6">
         <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">OEM / ODM Service</p>
@@ -64,7 +98,7 @@ export default function OEMPage() {
 
       {/* 2. OEM Process */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">OEM PROCESS</h2>
+        <h2 className="text-2xl font-bold text-center mb-10 text-[#ff2f7d]">OEM PROCESS</h2>
         <div className="flex flex-wrap justify-center items-center gap-2">
           {process.map((step, i) => (
             <span key={step} className="flex items-center">
@@ -72,7 +106,7 @@ export default function OEMPage() {
                 <span className="w-7 h-7 rounded-full bg-[#ff2f7d] flex items-center justify-center text-xs font-bold shrink-0">{i + 1}</span>
                 <span className="text-sm font-semibold whitespace-nowrap">{step}</span>
               </span>
-              {i < process.length - 1 && <ArrowRight size={16} className="mx-1 text-[#ff2f7d] shrink-0" />}
+              {i < process.length - 1 && <ArrowRight size={16} className="mx-1 text-[#ff2f7d] shrink-0 opacity-40" />}
             </span>
           ))}
         </div>
@@ -80,7 +114,7 @@ export default function OEMPage() {
 
       {/* 3. Why Choose XINGYUE */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">WHY CHOOSE XINGYUE</h2>
+        <h2 className="text-2xl font-bold text-center mb-10 text-[#ff2f7d]">WHY CHOOSE XINGYUE</h2>
         <div className="grid gap-6 sm:grid-cols-2">
           {whyUs.map((w) => (
             <div key={w.title} className="bg-white/4 border border-white/8 rounded-2xl p-6 flex gap-4">
@@ -96,7 +130,7 @@ export default function OEMPage() {
 
       {/* 4. OEM Product Capability */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">OEM PRODUCT CAPABILITY</h2>
+        <h2 className="text-2xl font-bold text-center mb-10 text-[#ff2f7d]">OEM PRODUCT CAPABILITY</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c) => (
             <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition">
@@ -104,9 +138,9 @@ export default function OEMPage() {
                 <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
               </div>
               <div className="p-5 text-center">
-                <h3 className="font-bold">{c.name}</h3>
-                {c.badge && <span className="inline-block mt-1.5 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#ff2f7d]/15 text-[#ff2f7d]">{c.badge}</span>}
-                {c.desc && <p className="text-xs text-white/45 mt-2">{c.desc}</p>}
+                <h3 className="font-bold text-sm">{c.name}</h3>
+                <span className="inline-block mt-1.5 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#ff2f7d]/15 text-[#ff2f7d]">{c.badge}</span>
+                <p className="text-xs text-white/45 mt-2">{c.desc}</p>
               </div>
             </div>
           ))}
@@ -115,7 +149,7 @@ export default function OEMPage() {
 
       {/* 5. Customization Service */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-center mb-10">CUSTOMIZATION SERVICE</h2>
+        <h2 className="text-2xl font-bold text-center mb-10 text-[#ff2f7d]">CUSTOMIZATION SERVICE</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {customizations.map((s) => (
             <div key={s.title} className="bg-white/4 border border-white/8 rounded-2xl p-6">
@@ -133,19 +167,21 @@ export default function OEMPage() {
         <p className="text-center text-white/40 text-sm mt-2 mb-10">
           Tell us your requirements. Our team will provide professional manufacturing solutions.
         </p>
-        <div className="max-w-2xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8">
-          <div className="grid gap-4 sm:grid-cols-2">
+        <div className="max-w-2xl mx-auto bg-white/4 border border-white/8 rounded-2xl p-8 shadow-2xl shadow-black/50">
+          <form onSubmit={handleSubmit} className="grid gap-4 sm:grid-cols-2">
             {[
-              { k: "company", label: "Company Name *", ph: "Your company name" },
-              { k: "name", label: "Contact Name *", ph: "Your full name" },
-              { k: "country", label: "Country / Region *", ph: "Your country" },
-              { k: "email", label: "Email *", ph: "your@email.com" },
+              { k: "company", label: "Company Name *", ph: "Your company name", required: true },
+              { k: "name", label: "Contact Name *", ph: "Your full name", required: true },
+              { k: "country", label: "Country / Region *", ph: "Your country", required: true },
+              { k: "email", label: "Email *", ph: "your@email.com", required: true, type: "email" },
               { k: "whatsapp", label: "WhatsApp", ph: "+86 138 0000 0000" },
               { k: "website", label: "Website", ph: "www.yourcompany.com" },
             ].map((f) => (
               <div key={f.k}>
                 <label className="text-xs text-white/50 mb-1.5 block">{f.label}</label>
                 <input
+                  required={f.required}
+                  type={f.type || "text"}
                   className="w-full bg-white/6 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:border-[#ff2f7d] focus:outline-none transition"
                   placeholder={f.ph}
                   value={(form as any)[f.k]}
@@ -164,7 +200,7 @@ export default function OEMPage() {
                 <option value="Travel Iron" className="bg-[#1a1a1e]">Travel Iron</option>
                 <option value="Garment Steamer" className="bg-[#1a1a1e]">Garment Steamer</option>
                 <option value="Steam Iron" className="bg-[#1a1a1e]">Steam Iron</option>
-                <option value="Vacuum Steamer" className="bg-[#1a1a1e]">Vacuum Steamer</option>
+                <option value="Vacuum Garment Steamer" className="bg-[#1a1a1e]">Vacuum Garment Steamer</option>
                 <option value="Other" className="bg-[#1a1a1e]">Other</option>
               </select>
             </div>
@@ -190,19 +226,31 @@ export default function OEMPage() {
                 onChange={(e) => update("message", e.target.value)}
               />
             </div>
-          </div>
-          <button className="mt-6 w-full py-3 bg-[#ff2f7d] text-white font-semibold rounded-xl text-sm hover:bg-[#e6006f] transition uppercase tracking-wide">
-            Submit Inquiry
-          </button>
-          <div className="mt-6 pt-6 border-t border-white/8 flex flex-wrap justify-center gap-6 text-xs text-white/40">
-            <span className="flex items-center gap-1">
-              <span className="text-[#ff2f7d]">Email:</span> info@xingyue-appliance.com
+            <div className="sm:col-span-2">
+              <button 
+                type="submit"
+                disabled={status === "loading" || status === "success"}
+                className={`w-full py-4 rounded-xl text-sm font-bold uppercase tracking-widest transition flex items-center justify-center gap-2 ${
+                  status === "success" 
+                  ? "bg-green-600 text-white cursor-default" 
+                  : "bg-[#ff2f7d] text-white hover:bg-[#e6006f] active:scale-[0.98]"
+                }`}
+              >
+                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent Successfully!" : "Submit Inquiry"}
+              </button>
+              {status === "error" && <p className="text-red-500 text-xs text-center mt-3">Failed to send. Please check your network or email us directly.</p>}
+            </div>
+          </form>
+          
+          <div className="mt-8 pt-8 border-t border-white/8 flex flex-wrap justify-center gap-6 text-xs text-white/40">
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#ff2f7d] font-bold">Email:</span> info@xingyue-appliance.com
             </span>
-            <span className="flex items-center gap-1">
-              <span className="text-[#ff2f7d]">WhatsApp:</span> +86 138 0000 0000
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#ff2f7d] font-bold">WhatsApp:</span> +86 138 0000 0000
             </span>
-            <span className="flex items-center gap-1">
-              <span className="text-[#ff2f7d]">Response Time:</span> Within 24 hours
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#ff2f7d] font-bold">Response Time:</span> Within 24 hours
             </span>
           </div>
         </div>
