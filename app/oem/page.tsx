@@ -100,15 +100,9 @@ export default function OEMPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c) => (
             <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition">
-              {c.status ? (
-                <div className="aspect-square bg-[#0d0d12] flex items-center justify-center">
-                  <p className="text-white/15 text-lg font-bold">{c.status}</p>
-                </div>
-              ) : (
-                <div className="aspect-square bg-[#0d0d12] relative">
-                  <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
-                </div>
-              )}
+              <div className="aspect-square bg-[#0d0d12] relative">
+                <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
+              </div>
               <div className="p-5 text-center">
                 <h3 className="font-bold">{c.name}</h3>
                 {c.badge && <span className="inline-block mt-1.5 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#ff2f7d]/15 text-[#ff2f7d]">{c.badge}</span>}
