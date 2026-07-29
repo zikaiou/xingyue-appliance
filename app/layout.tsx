@@ -25,6 +25,9 @@ export const metadata: Metadata = {
       "Professional OEM garment care manufacturer. Travel iron and garment steamer factory with 16+ years of experience.",
     type: "website",
   },
+  verification: {
+    google: "Z5MW366T8lGi0vls4B81ys4ZtbOJPW09xSk0eeKGLPk",
+  },
 };
 
 export default function RootLayout({
