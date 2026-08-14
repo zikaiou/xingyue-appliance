@@ -47,16 +47,6 @@ export default function RootLayout({
               description: "Professional travel iron and garment steamer manufacturer providing OEM/ODM services for global brands.",
               foundingDate: "2010",
               areaServed: "Worldwide",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Product Categories",
-                itemListElement: [
-                  { "@type":"Product","name":"Travel Iron" },
-                  { "@type":"Product","name":"Garment Steamer" },
-                  { "@type":"Product","name":"Steam Iron" },
-                  { "@type":"Product","name":"Vacuum Garment Steamer" },
-                ],
-              },
             }),
           }}
         />

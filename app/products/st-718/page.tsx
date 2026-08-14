@@ -5,6 +5,21 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "ST-718 Travel Iron",
+  image: [
+    "https://www.xingyue-appliance.com/images/products/st718/main.jpg",
+    "https://www.xingyue-appliance.com/images/products/st718/detail1.jpg",
+  ],
+  description: "ST-718 compact travel iron with ceramic soleplate, 1000W power and 140ml water tank. Professional garment care by XINGYUE manufacturer.",
+  brand: { "@type": "Brand", name: "XINGYUE" },
+  manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
+  category: "Travel Iron",
+  offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "USD" },
+};
+
 const images = [
   "/images/products/st718/main.jpg",
   "/images/products/st718/detail1.jpg",
@@ -53,6 +68,7 @@ export default function ST718Page() {
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       {/* Back */}
       <div className="max-w-6xl mx-auto px-6 pt-24 pb-4">
         <Link href="/products" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white transition">
