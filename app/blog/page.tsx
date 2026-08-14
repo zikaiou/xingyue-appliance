@@ -42,6 +42,14 @@ const posts = [
     category: "Sourcing Guide",
     readTime: "6 min read",
   },
+  {
+    slug: "steam-iron-guide",
+    title: "How to Choose a Steam Iron for Your Market",
+    excerpt: "Power, soleplate, tank capacity, steam functions, certifications and container planning — the six numbers that define a winning steam iron line.",
+    date: "August 3, 2026",
+    category: "Sourcing Guide",
+    readTime: "7 min read",
+  },
 ];
 
 export default function BlogPage() {
