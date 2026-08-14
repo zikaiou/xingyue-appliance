@@ -10,6 +10,14 @@ const posts = [
     category: "Sourcing Guide",
     readTime: "6 min read",
   },
+  {
+    slug: "oem-guide",
+    title: "How OEM Garment Care Manufacturing Works: A Complete Guide for Brands",
+    excerpt: "From concept to container — the six stages of OEM production, plus everything brands can customize to launch their own line.",
+    date: "August 3, 2026",
+    category: "OEM / ODM Guide",
+    readTime: "7 min read",
+  },
 ];
 
 export default function BlogPage() {
