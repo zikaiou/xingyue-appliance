@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -93,7 +93,7 @@ export default function ST817Page() {
         {/* Gallery */}
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="ST-817" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="ST-817 travel iron with digital LCD display and sterilization function" fill className="object-contain p-4" unoptimized />
             <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition"><ArrowLeft size={18} /></button>
             <button onClick={next} className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition"><ArrowRight size={18} /></button>
           </div>

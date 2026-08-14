@@ -23,7 +23,7 @@ export default function FactoryPage() {
       {/* 1. Factory Hero */}
       <section className="relative pt-32 pb-20 text-center px-6 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <Image src="/images/factory/gallery1.jpg" alt=""
+          <Image src="/images/factory/gallery1.jpg" alt="XINGYUE 35,000 sqm garment care products manufacturing base"
             fill className="object-cover" unoptimized />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#050507]/90 via-[#050507]/70 to-[#050507]" />
@@ -87,7 +87,7 @@ export default function FactoryPage() {
           ].map((m) => (
             <div key={m.title} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden group">
               <div className="aspect-[4/3] relative">
-                <Image src={m.img} alt={m.title} fill className="object-cover" unoptimized />
+                <Image src={m.img} alt={`${m.title} at XINGYUE garment care factory`} fill className="object-cover" unoptimized />
               </div>
               <div className="p-5">
                 <h3 className="font-bold">{m.title}</h3>

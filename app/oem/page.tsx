@@ -135,7 +135,7 @@ export default function OEMPage() {
           {categories.map((c) => (
             <div key={c.name} className="bg-white/4 border border-white/8 rounded-2xl overflow-hidden hover:border-[#ff2f7d]/40 transition">
               <div className="aspect-square bg-[#0d0d12] relative">
-                <Image src={c.image} alt={c.name} fill className="object-contain p-6" unoptimized />
+                <Image src={c.image} alt={`${c.name} OEM and ODM manufacturing capability at XINGYUE factory`} fill className="object-contain p-6" unoptimized />
               </div>
               <div className="p-5 text-center">
                 <h3 className="font-bold text-sm">{c.name}</h3>

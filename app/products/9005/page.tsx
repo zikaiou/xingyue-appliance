@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -81,7 +81,7 @@ export default function P9005Page() {
 
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="9005" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="9005 vacuum garment steamer with LED display and ceramic soleplate" fill className="object-contain p-4" unoptimized />
           </div>
         </div>
       </section>

@@ -115,7 +115,7 @@ export default function ProductsPage() {
                 <div className="aspect-square bg-[#0d0d12] flex items-center justify-center p-6">
                   <Image
                     src={p.image}
-                    alt={p.name}
+                    alt={`${p.model} ${p.name.toLowerCase()} - XINGYUE manufacturer`}
                     width={300}
                     height={300}
                     className="object-contain w-full h-full"

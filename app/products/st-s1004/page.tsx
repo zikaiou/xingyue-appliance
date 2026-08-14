@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -79,7 +79,7 @@ export default function STS1004Page() {
 
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="ST-S1004" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="ST-S1004 self-clean steam iron 2800W with anti-calc, XINGYUE manufacturer" fill className="object-contain p-4" unoptimized />
             {images.length > 1 && (
               <>
                 <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition"><ArrowLeft size={18} /></button>
