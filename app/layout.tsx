@@ -51,8 +51,10 @@ export default function RootLayout({
                 "@type": "OfferCatalog",
                 name: "Product Categories",
                 itemListElement: [
-                  { "@type":"Offer","itemOffered":{ "@type":"Product","name":"Travel Iron" } },
-                  { "@type":"Offer","itemOffered":{ "@type":"Product","name":"Garment Steamer" } },
+                  { "@type":"Product","name":"Travel Iron" },
+                  { "@type":"Product","name":"Garment Steamer" },
+                  { "@type":"Product","name":"Steam Iron" },
+                  { "@type":"Product","name":"Vacuum Garment Steamer" },
                 ],
               },
             }),
