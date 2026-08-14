@@ -34,6 +34,14 @@ const posts = [
     category: "Industry Insight",
     readTime: "7 min read",
   },
+  {
+    slug: "factory-verification-guide",
+    title: "How to Verify a Garment Care Factory in China: A Buyer's Checklist",
+    excerpt: "Six practical checks that separate genuine manufacturers from trading companies — before you commit to an order.",
+    date: "August 3, 2026",
+    category: "Sourcing Guide",
+    readTime: "6 min read",
+  },
 ];
 
 export default function BlogPage() {
