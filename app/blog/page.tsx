@@ -18,6 +18,14 @@ const posts = [
     category: "OEM / ODM Guide",
     readTime: "7 min read",
   },
+  {
+    slug: "garment-steamer-guide",
+    title: "How to Choose a Garment Steamer for Your Market",
+    excerpt: "Steam iron vs steamer, power, tank capacity, panel materials and why vacuum garment steamers are the category worth watching.",
+    date: "August 3, 2026",
+    category: "Sourcing Guide",
+    readTime: "7 min read",
+  },
 ];
 
 export default function BlogPage() {
