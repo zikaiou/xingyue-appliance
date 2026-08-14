@@ -26,6 +26,14 @@ const posts = [
     category: "Sourcing Guide",
     readTime: "7 min read",
   },
+  {
+    slug: "vacuum-steamer-guide",
+    title: "Vacuum Garment Steamer: The Next Big Category in Garment Care",
+    excerpt: "How suction technology is changing garment care — and why early entrants will own the market in 2026.",
+    date: "August 3, 2026",
+    category: "Industry Insight",
+    readTime: "7 min read",
+  },
 ];
 
 export default function BlogPage() {
