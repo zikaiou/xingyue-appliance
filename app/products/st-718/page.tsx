@@ -17,7 +17,6 @@ const productSchema = {
   brand: { "@type": "Brand", name: "XINGYUE" },
   manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
   category: "Travel Iron",
-  offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "USD" },
 };
 
 const images = [
