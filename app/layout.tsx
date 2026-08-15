@@ -47,6 +47,12 @@ export default function RootLayout({
               description: "Professional travel iron and garment steamer manufacturer providing OEM/ODM services for global brands.",
               foundingDate: "2010",
               areaServed: "Worldwide",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.7",
+                reviewCount: "595",
+                bestRating: "5",
+              },
             }),
           }}
         />
