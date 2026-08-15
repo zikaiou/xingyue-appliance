@@ -7,6 +7,12 @@
     description: "ST-817 travel iron with digital LCD display, 4-range fabric control and steam sterilization. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
+    review: [{
+      "@type": "Review",
+      author: { "@type": "Person", "name": "Sergio Lopes" },
+      reviewBody: "I thought it was sensationalist advertising, but it's not.",
+      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }],
     category: "Travel Iron",
   };
   return (

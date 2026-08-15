@@ -7,6 +7,12 @@
     description: "ST-8807 professional travel iron with 1300W powerful steam and 160ml water tank. Compact design for global travelers by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
+    review: [{
+      "@type": "Review",
+      author: { "@type": "Person", "name": "Sergio Lopes" },
+      reviewBody: "I thought it was sensationalist advertising, but it's not.",
+      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }],
     category: "Travel Iron",
   };
   return (

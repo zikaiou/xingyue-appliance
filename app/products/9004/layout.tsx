@@ -7,6 +7,12 @@
     description: "9004 vacuum garment steamer with rotatable ironing head, 1300W power and automatic vacuum grip. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
+    review: [{
+      "@type": "Review",
+      author: { "@type": "Person", "name": "Enguerran TOFFA" },
+      reviewBody: "The cable is long enough, the steam is powerful. I am satisfied.",
+      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }],
     category: "Vacuum Garment Steamer",
   };
   return (

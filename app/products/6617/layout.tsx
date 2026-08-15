@@ -7,6 +7,12 @@
     description: "6617 garment steamer with ceramic steam panel, 1800W power, 260ml water tank and auto power off. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
+    review: [{
+      "@type": "Review",
+      author: { "@type": "Person", "name": "Enguerran TOFFA" },
+      reviewBody: "The cable is long enough, the steam is powerful. I am satisfied.",
+      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+    }],
     category: "Garment Steamer",
   };
   return (
