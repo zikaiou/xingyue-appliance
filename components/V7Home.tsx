@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Pause, Play, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
+import { ArrowRight, Pause, Play, Star, Volume2, VolumeX, Waves, Thermometer, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const products = [
@@ -105,6 +105,35 @@ export default function V7Home() {
             <div><strong>35,000 m\u00b2</strong><small>Manufacturing Base</small></div><div><strong>16+</strong><small>Years Experience</small></div><div><strong>500+</strong><small>Skilled Workers</small></div><div><strong>100+</strong><small>Exporting Countries</small></div>
           </div>
           <Link href="/factory" className="factory-button">Explore Our Factory <ArrowRight size={15}/></Link>
+        </div>
+      </section>
+
+      {/* Customer Reviews */}
+      <section className="reviews-section section-shell">
+        <Reveal className="reviews-heading">
+          <span className="reviews-eyebrow">TRUSTED BY GLOBAL BUYERS</span>
+          <h2>What Our Partners Say</h2>
+        </Reveal>
+        <div className="reviews-summary">
+          <div className="reviews-score">
+            <span className="reviews-big">4.7</span>
+            <div className="reviews-stars">
+              {[0,1,2,3,4].map(i => <Star key={i} size={18} fill="#ff2f7d" stroke="#ff2f7d" />)}
+            </div>
+            <span className="reviews-count">595 verified Alibaba reviews</span>
+          </div>
+          <div className="reviews-grid">
+            <div className="review-card">
+              <div className="review-stars">{[0,1,2,3,4].map(i => <Star key={i} size={14} fill="#ff2f7d" stroke="#ff2f7d" />)}</div>
+              <p className="review-text">"I thought it was sensationalist advertising, but it's not."</p>
+              <div className="review-meta"><strong>Sergio Lopes</strong><span>Portugal · Travel Iron</span></div>
+            </div>
+            <div className="review-card">
+              <div className="review-stars">{[0,1,2,3,4].map(i => <Star key={i} size={14} fill="#ff2f7d" stroke="#ff2f7d" />)}</div>
+              <p className="review-text">"The cable is long enough, the steam is powerful. I am satisfied."</p>
+              <div className="review-meta"><strong>Enguerran TOFFA</strong><span>Benin · Garment Steamer</span></div>
+            </div>
+          </div>
         </div>
       </section>
 
