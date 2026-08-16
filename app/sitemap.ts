@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/steamer-supplier-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/travel-iron-wholesale`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/blog/vacuum-steamer-supplier`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog/steamer-vs-iron`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/blog/private-label-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     ...products.map((p) => ({
       url: `${base}/products/${p}`,

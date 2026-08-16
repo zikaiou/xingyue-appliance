@@ -74,6 +74,22 @@ const posts = [
     category: "Supplier Guide",
     readTime: "5 min read",
   },
+  {
+    slug: "steamer-vs-iron",
+    title: "Steam Iron vs Garment Steamer: Which Should You Source?",
+    excerpt: "A side-by-side comparison for wholesalers — and why the best strategy may be stocking both categories.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "private-label-guide",
+    title: "How to Start a Private Label Appliance Brand",
+    excerpt: "From niche selection to scaling — the complete playbook for launching your own garment care brand with an OEM partner.",
+    date: "August 2026",
+    category: "Brand Guide",
+    readTime: "7 min read",
+  },
 ];
 
 export default function BlogPage() {
