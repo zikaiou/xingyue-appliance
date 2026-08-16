@@ -10,6 +10,7 @@ export const siteConfig = {
     { href: "/products", label: "Products" },
     { href: "/oem", label: "OEM / ODM" },
     { href: "/factory", label: "Factory" },
+    { href: "/case-studies", label: "Case Studies" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
