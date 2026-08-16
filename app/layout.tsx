@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     description:
       "Professional OEM garment care manufacturer. Travel iron and garment steamer factory with 16+ years of experience.",
     type: "website",
+    images: [
+      {
+        url: "/images/og-share.jpg",
+        width: 1200,
+        height: 675,
+        alt: "XINGYUE - Travel Iron & Garment Steamer Manufacturer",
+      },
+    ],
   },
   verification: {
     google: "Z5MW366T8lGi0vls4B81ys4ZtbOJPW09xSk0eeKGLPk",

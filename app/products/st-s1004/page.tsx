@@ -72,9 +72,9 @@ export default function STS1004Page() {
             <Link href="/contact?product=ST-S1004" className="px-5 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
               Request Quote
             </Link>
-            <Link href="#" className="px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
+            <a href="/specs/st-s1004-spec.pdf" download className="px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
               <Download size={15} /> Download Specification
-            </Link>
+            </a>
           </div>
         </div>
 
