@@ -15,11 +15,37 @@
     }],
     category: "Garment Steamer",
   };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xingyue-appliance.com" },
+      { "@type": "ListItem", position: 2, name: "Products", item: "https://www.xingyue-appliance.com/products" },
+      { "@type": "ListItem", position: 3, name: "6617", item: "https://www.xingyue-appliance.com/products/6617" }
+    ],
+  };
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: "6617 Product Demo Video",
+    description: "6617 Garment Steamer product demonstration by XINGYUE manufacturer.",
+    thumbnailUrl: ["https://www.xingyue-appliance.com/images/products/6617/main.jpg"],
+    contentUrl: "https://www.xingyue-appliance.com/videos/6617.mp4",
+    uploadDate: "2026-07-01",
+  };
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
       {children}
     </>

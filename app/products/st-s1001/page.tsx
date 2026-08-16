@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import RelatedProducts from "@/components/RelatedProducts";
 
 const images = [
   "/images/products/sts1001/main.jpg",
@@ -153,7 +154,9 @@ export default function STS1001Page() {
         <Link href="/contact?product=ST-S1001" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Request OEM Quote</Link>
       </section>
 
-      <section className="border-t border-white/8 py-20 text-center px-6">
+            <RelatedProducts title="Related Products" products={relatedItems} />
+
+<section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-S1001?</h2>
         <p className="mt-3 text-white/50 max-w-md mx-auto">Get factory pricing and customization options.</p>
         <Link href="/contact?product=ST-S1001" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Send Inquiry</Link>

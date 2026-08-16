@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import RelatedProducts from "@/components/RelatedProducts";
 
 const images = [
   "/images/products/9002.jpg",
@@ -143,6 +144,7 @@ export default function P9002Page() {
         <Link href="/contact?product=9002" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Request OEM Quote</Link>
       </section>
 
+      <RelatedProducts title="Related Products" products={relatedItems} />
       {/* 6. Final CTA Section */}
       <section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in 9002?</h2>

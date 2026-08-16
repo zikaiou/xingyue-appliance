@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import RelatedProducts from "@/components/RelatedProducts";
 
 const images = [
   "/images/products/st815/main.jpg",
@@ -49,6 +50,8 @@ export default function ST815Page() {
     const diff = touchX.current - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
   };
+
+  const relatedItems = [{ model: "6617", img: "/images/products/6617.jpg", desc: "1800W steamer with ceramic panel" },{ model: "900A", img: "/images/products/900A.png", desc: "Compact steamer with stainless steel panel" },{ model: "6618", img: "/images/products/6618.jpg", desc: "Foldable steamer with 3 steam modes" }];
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
@@ -153,7 +156,9 @@ export default function ST815Page() {
         <Link href="/contact?product=ST-815" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Request OEM Quote</Link>
       </section>
 
-      <section className="border-t border-white/8 py-20 text-center px-6">
+            <RelatedProducts title="Related Products" products={relatedItems} />
+
+<section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-815?</h2>
         <p className="mt-3 text-white/50 max-w-md mx-auto">Get factory pricing and customization options.</p>
         <Link href="/contact?product=ST-815" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Send Inquiry</Link>

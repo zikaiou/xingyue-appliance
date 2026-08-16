@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import RelatedProducts from "@/components/RelatedProducts";
 
 const images = [
   "/images/products/st717/main.jpg",
@@ -48,6 +49,8 @@ export default function ST717Page() {
     const diff = touchX.current - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
   };
+
+  const relatedItems = [{ model: "ST-718", img: "/images/products/ST-718.jpg", desc: "650g compact travel iron with ceramic soleplate" },{ model: "ST-588", img: "/images/products/ST-588.png", desc: "Compact travel iron with dry & steam function" },{ model: "ST-812", img: "/images/products/ST-812.png", desc: "Lightweight travel iron with 160ml tank" },{ model: "ST-8807", img: "/images/products/ST-8807.jpg", desc: "1300W professional travel iron" }];
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
@@ -167,7 +170,9 @@ export default function ST717Page() {
         </Link>
       </section>
 
-      <section className="border-t border-white/8 py-20 text-center px-6">
+            <RelatedProducts title="Related Products" products={relatedItems} />
+
+<section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-717?</h2>
         <p className="mt-3 text-white/50 max-w-md mx-auto">Get factory pricing and customization options.</p>
         <Link href="/contact?product=ST-717" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">

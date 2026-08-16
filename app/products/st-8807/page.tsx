@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import RelatedProducts from "@/components/RelatedProducts";
 
 const images = [
   "/images/products/st8807/main.jpg",
@@ -180,6 +181,7 @@ export default function ST8807Page() {
         </Link>
       </section>
 
+      <RelatedProducts title="Related Products" products={relatedItems} />
       {/* 6. Final CTA Section */}
       <section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-8807?</h2>
