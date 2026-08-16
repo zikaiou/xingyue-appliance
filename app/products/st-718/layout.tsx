@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "@type": "VideoObject",
     name: "ST-718 Product Demo Video",
     description: "ST-718 Travel Iron product demonstration by XINGYUE manufacturer.",
-    thumbnailUrl: ["https://www.xingyue-appliance.com/images/products/st-718/main.jpg"],
+    thumbnailUrl: ["https://www.xingyue-appliance.com/images/products/st718/main.jpg"],
     contentUrl: "https://www.xingyue-appliance.com/videos/st718.mp4",
     uploadDate: "2026-07-01",
   };
