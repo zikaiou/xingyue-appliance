@@ -50,6 +50,14 @@ const posts = [
     category: "Sourcing Guide",
     readTime: "7 min read",
   },
+  {
+    slug: "steamer-supplier-guide",
+    title: "How to Choose a Garment Steamer Supplier",
+    excerpt: "A practical guide to shortlisting, verifying and working with professional garment steamer manufacturers in China.",
+    date: "August 2026",
+    category: "Supplier Guide",
+    readTime: "6 min read",
+  },
 ];
 
 export default function BlogPage() {
