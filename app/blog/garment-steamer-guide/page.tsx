@@ -49,8 +49,8 @@ const sections = [
 ];
 
 export const metadata = {
-  title: "How to Choose a Garment Steamer for Your Market | XINGYUE",
-  description: "A sourcing guide to garment steamers: steam iron vs steamer, power, tank capacity, soleplate materials, steam output and the rising vacuum steamer category.",
+  title: "How to Choose a Garment Steamer | Garment Steamer Manufacturer XINGYUE",
+  description: "Garment steamer sourcing guide: power, water tank, steam output and vacuum steamer trends. Buy wholesale garment steamers factory-direct from XINGYUE China.",
 };
 
 export default function GarmentSteamerGuide() {

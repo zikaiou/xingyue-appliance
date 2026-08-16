@@ -49,8 +49,8 @@ const sections = [
 ];
 
 export const metadata = {
-  title: "Vacuum Garment Steamer: The Next Big Category in Garment Care | XINGYUE",
-  description: "What is a vacuum garment steamer, how the technology works, key specifications to compare and why this category is growing fast in 2026.",
+  title: "Vacuum Garment Steamer: The Next Big Category | XINGYUE Manufacturer",
+  description: "What is a vacuum garment steamer and why it is growing fast. Discover 3-in-1 vacuum steamers with OEM customization from XINGYUE garment care manufacturer.",
 };
 
 export default function VacuumSteamerGuide() {

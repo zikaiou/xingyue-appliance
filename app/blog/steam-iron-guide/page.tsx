@@ -48,8 +48,8 @@ const sections = [
 ];
 
 export const metadata = {
-  title: "How to Choose a Steam Iron for Your Market | XINGYUE",
-  description: "A sourcing guide to steam irons: power and voltage, soleplate materials, tank capacity, steam functions, certifications and container planning.",
+  title: "How to Choose a Steam Iron for Your Market | XINGYUE China",
+  description: "Steam iron sourcing guide: power, soleplate, tank, steam functions and container planning. Source steam irons from XINGYUE, professional China manufacturer.",
 };
 
 export default function SteamIronGuide() {

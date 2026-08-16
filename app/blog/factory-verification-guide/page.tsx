@@ -48,8 +48,8 @@ const sections = [
 ];
 
 export const metadata = {
-  title: "How to Verify a Garment Care Factory in China: A Buyer's Checklist | XINGYUE",
-  description: "A practical checklist for verifying Chinese garment care factories: licenses, video tours, production capacity, certifications, sample testing and communication.",
+  title: "How to Verify a Garment Care Factory in China | XINGYUE",
+  description: "Buyer's checklist to verify Chinese garment care factories: licenses, video tours, capacity, certifications and samples. Trust a verified travel iron factory - XINGYUE.",
 };
 
 export default function FactoryVerificationGuide() {

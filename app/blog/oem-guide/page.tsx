@@ -51,8 +51,8 @@ const customizations = [
 ];
 
 export const metadata = {
-  title: "How OEM Garment Care Manufacturing Works | XINGYUE",
-  description: "A complete guide to OEM garment care manufacturing: concept, design, prototyping, testing, mass production and global shipping for brands.",
+  title: "How OEM Garment Care Manufacturing Works | OEM Supplier XINGYUE",
+  description: "OEM garment care manufacturing guide for brands: concept, design, prototype, mass production and shipping. Partner with XINGYUE, a factory-direct OEM supplier in China.",
 };
 
 export default function OEMGuide() {

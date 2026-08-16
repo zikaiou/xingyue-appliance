@@ -49,8 +49,8 @@ const sections = [
 ];
 
 export const metadata = {
-  title: "How to Choose a Travel Iron for Global Markets | XINGYUE",
-  description: "A manufacturer's guide to sourcing travel irons: voltage compatibility, soleplate materials, tank capacity, steam performance, certifications and OEM options for importers.",
+  title: "How to Choose a Travel Iron for Global Markets | Travel Iron Manufacturer XINGYUE",
+  description: "Travel iron manufacturer guide: voltage compatibility, ceramic soleplate, tank capacity and OEM options. Source professional travel irons factory-direct from XINGYUE China.",
 };
 
 export default function TravelIronGuide() {
