@@ -58,6 +58,22 @@ const posts = [
     category: "Supplier Guide",
     readTime: "6 min read",
   },
+  {
+    slug: "travel-iron-wholesale",
+    title: "How to Import Travel Irons Wholesale from China",
+    excerpt: "Pricing, MOQ, product mix, container planning and batch quality — the complete wholesale sourcing playbook.",
+    date: "August 2026",
+    category: "Wholesale Guide",
+    readTime: "7 min read",
+  },
+  {
+    slug: "vacuum-steamer-supplier",
+    title: "Vacuum Garment Steamer Suppliers: 5 Questions to Ask",
+    excerpt: "Vacuum steamers are a new category — the five questions that separate real manufacturers from traders.",
+    date: "August 2026",
+    category: "Supplier Guide",
+    readTime: "5 min read",
+  },
 ];
 
 export default function BlogPage() {
