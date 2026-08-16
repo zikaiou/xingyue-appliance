@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "6618 Garment Steamer | Foldable 3-Mode Steamer | XINGYUE",
+  description: "6618 foldable garment steamer with stainless steel panel, 150ml tank and 3 steam modes. Travel friendly design from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

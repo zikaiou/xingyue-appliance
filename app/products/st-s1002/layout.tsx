@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-S1002 Steam Iron | 3000W Ultra Power | XINGYUE",
+  description: "ST-S1002 ultra powerful 3000W steam iron with 420ml large water tank and auto shut-off. Premium garment care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

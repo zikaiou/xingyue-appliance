@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-718 Travel Iron | Compact Ceramic Soleplate | XINGYUE",
+  description: "ST-718 compact travel iron with ceramic soleplate, 1000W power and 140ml water tank. Professional garment care from XINGYUE manufacturer.",
+};
+
 ﻿export default function ST718Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

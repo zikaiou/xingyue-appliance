@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-S1003 Steam Iron | Ceramic Soleplate | XINGYUE",
+  description: "ST-S1003 steam iron with 2800W power, 330ml tank and ceramic/non-stick soleplate options. Professional ironing from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

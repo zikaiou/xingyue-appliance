@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "6617 Garment Steamer | 1800W Ceramic Panel | XINGYUE",
+  description: "6617 garment steamer with ceramic steam panel, 1800W power, 260ml tank and auto power off. Professional care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

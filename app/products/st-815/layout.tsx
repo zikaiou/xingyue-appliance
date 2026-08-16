@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-815 Garment Steamer | 1600W Handheld Steamer | XINGYUE",
+  description: "ST-815 handheld garment steamer with 1600W powerful steam, 340ml tank and dry/steam modes. Professional garment care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-717 Travel Iron | Portable Steam Iron | XINGYUE",
+  description: "ST-717 portable travel iron with 1200W fast heating and ceramic soleplate. Convenient travel ironing solution from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

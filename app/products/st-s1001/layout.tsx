@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-S1001 Steam Iron | 2800W Powerful | XINGYUE",
+  description: "ST-S1001 powerful steam iron with up to 2800W, 330ml water tank and adjustable steam. Professional household ironing from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "9003 Vacuum Garment Steamer | 3-in-1 Technology | XINGYUE",
+  description: "9003 3-in-1 vacuum garment steamer with dry, steam and vacuum functions, dual-level suction up to 5kPa. Professional care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-8807 Travel Iron | 1300W Powerful Steam | XINGYUE",
+  description: "ST-8807 professional travel iron with 1300W powerful steam and ceramic soleplate. Compact design for global travelers from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

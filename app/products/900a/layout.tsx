@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "900A Garment Steamer | Stainless Steel Panel | XINGYUE",
+  description: "900A compact garment steamer with stainless steel panel, 200ml tank and 3 steam gears. Portable steam care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

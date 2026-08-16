@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "9002 Vacuum Garment Steamer | 1500W LED Display | XINGYUE",
+  description: "9002 vacuum garment steamer with 1500W power, 400ml detachable tank and LED display. Professional vacuum steam care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

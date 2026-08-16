@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-812 Travel Iron | Lightweight Portable Iron | XINGYUE",
+  description: "ST-812 lightweight travel iron with 160ml tank and powerful steam. Quick wrinkle removal for global travelers from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

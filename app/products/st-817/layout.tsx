@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-817 Travel Iron | LCD Display & Sterilization | XINGYUE",
+  description: "ST-817 travel iron with digital LCD display, 4-range fabric control and steam sterilization. Premium fabric care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

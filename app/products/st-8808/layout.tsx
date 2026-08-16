@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-8808 Travel Iron | Foldable Steam Iron | XINGYUE",
+  description: "ST-8808 travel iron with 190ml water tank, ceramic soleplate and foldable travel design. Versatile ironing from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

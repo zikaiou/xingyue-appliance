@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-588 Travel Iron | Dry & Steam Function | XINGYUE",
+  description: "ST-588 compact travel iron with dry and steam function, 1200W power and 140ml water tank. Daily travel solution from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

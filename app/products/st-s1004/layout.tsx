@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-S1004 Steam Iron | Self-Clean System | XINGYUE",
+  description: "ST-S1004 self-clean steam iron with 2800W power, 330ml tank and anti-calc system. Easy maintenance from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

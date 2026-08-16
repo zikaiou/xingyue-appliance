@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "9004 Vacuum Garment Steamer | Rotatable Head | XINGYUE",
+  description: "9004 vacuum garment steamer with rotatable ironing head, 1300W power and automatic vacuum grip. Professional care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "9005 Vacuum Garment Steamer | Ceramic Soleplate | XINGYUE",
+  description: "9005 vacuum garment steamer with 1500W power, 400ml detachable tank, LED display and ceramic soleplate. Professional care from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",

@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ST-200A Travel Iron | Rotating Handle Iron | XINGYUE",
+  description: "ST-200A portable garment iron with 180-degree rotating handle, 190ml tank and ceramic soleplate. Multi-angle steaming from XINGYUE.",
+};
+
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
   const productSchema = {
     "@context": "https://schema.org",
