@@ -164,7 +164,7 @@ export default function ST817Page() {
         </Link>
       </section>
 
-      <RelatedProducts title="Related Products" products={relatedItems} />
+      <RelatedProducts title="Related Products"  />
       {/* 6. Final CTA Section */}
       <section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-817?</h2>

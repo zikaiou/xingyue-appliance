@@ -124,7 +124,7 @@ export default function P9004Page() {
         <Link href="/contact?product=9004" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Request OEM Quote</Link>
       </section>
 
-            <RelatedProducts title="Related Products" products={relatedItems} />
+            <RelatedProducts title="Related Products"  />
 
 <section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in 9004?</h2>

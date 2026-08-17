@@ -50,7 +50,6 @@ export default function ST812Page() {
     if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
   };
 
-  const relatedItems = [{ model: "ST-718", img: "/images/products/ST-718.jpg", desc: "650g compact travel iron with ceramic soleplate" },{ model: "ST-717", img: "/images/products/ST-717.jpg", desc: "1200W portable travel iron with fast heating" },{ model: "ST-588", img: "/images/products/ST-588.png", desc: "Compact travel iron with dry & steam function" },{ model: "ST-8807", img: "/images/products/ST-8807.jpg", desc: "1300W professional travel iron" }];
 
   return (
     <div className="bg-[#050507] text-white min-h-screen">
@@ -155,7 +154,7 @@ export default function ST812Page() {
         <Link href="/contact?product=ST-812" className="mt-8 inline-block px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">Request OEM Quote</Link>
       </section>
 
-            <RelatedProducts title="Related Products" products={relatedItems} />
+            <RelatedProducts title="Related Products"  />
 
 <section className="border-t border-white/8 py-20 text-center px-6">
         <h2 className="text-3xl font-bold">Interested in ST-812?</h2>
