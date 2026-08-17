@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -76,9 +76,11 @@ export default function SteamerSupplierGuide() {
       </header>
 
       <article className="max-w-3xl mx-auto px-6 pb-12">
-        <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden mb-10">
-          <div className="aspect-[16/9] relative">
+        <div className="max-w-md mx-auto mb-10">
+          <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
+          <div className="aspect-square relative">
             <Image src="/images/products/ST-815.png" alt="Garment steamer supplier guide - choose professional steamer manufacturer XINGYUE" fill className="object-contain p-4" unoptimized />
+          </div>
           </div>
         </div>
 

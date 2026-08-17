@@ -80,9 +80,11 @@ export default function TravelIronGuide() {
 
       {/* Article Body */}
       <article className="max-w-3xl mx-auto px-6 pb-12">
-        <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden mb-10">
-          <div className="aspect-[16/9] relative">
-            <Image src="/images/products/ST-718.jpg" alt="How to choose travel iron for global markets - XINGYUE manufacturer guide" fill className="object-cover" unoptimized />
+        <div className="max-w-md mx-auto mb-10">
+          <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
+            <div className="aspect-square relative">
+              <Image src="/images/products/ST-718.jpg" alt="How to choose travel iron for global markets - XINGYUE manufacturer guide" fill className="object-contain p-6" unoptimized />
+            </div>
           </div>
         </div>
 
