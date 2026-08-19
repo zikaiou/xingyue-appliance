@@ -88,12 +88,12 @@ export default function ProductsPage() {
         </p>
       </section>
 
-      <div className="flex justify-center flex-wrap gap-2 px-4 pb-2">
+      <div className="flex justify-start md:justify-center gap-2 px-4 pb-2 overflow-x-auto no-scrollbar">
         {categories.map((cat, i) => (
           <button
             key={cat.name}
             onClick={() => setActive(i)}
-            className={`px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition ${
+            className={`shrink-0 px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition ${
               i === active
                 ? "bg-[#ff2f7d] text-white"
                 : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white"
@@ -106,7 +106,7 @@ export default function ProductsPage() {
 
       <section className="max-w-6xl mx-auto px-6 py-12">
         {categories[active].products.length > 0 ? (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {categories[active].products.map((p) => (
               <div
                 key={p.model}
@@ -133,16 +133,16 @@ export default function ProductsPage() {
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-4 flex gap-3">
+                  <div className="mt-4 flex gap-3 max-md:grid max-md:grid-cols-2 max-md:gap-2">
                     <Link
                       href={`/products/${p.model.toLowerCase()}`}
-                      className="text-xs font-semibold text-[#ff2f7d] hover:underline"
+                      className="text-xs font-semibold text-[#ff2f7d] hover:underline max-md:inline-flex max-md:items-center max-md:justify-center max-md:rounded-full max-md:border max-md:border-[#ff2f7d]/30 max-md:bg-[#ff2f7d]/10 max-md:px-4 max-md:py-3 max-md:text-[13px] max-md:hover:no-underline"
                     >
-                      View Details →
+                      View Details
                     </Link>
                     <Link
                       href={`/contact?product=${p.model}`}
-                      className="text-xs font-semibold text-white/70 hover:text-white transition"
+                      className="text-xs font-semibold text-white/70 hover:text-white transition max-md:inline-flex max-md:items-center max-md:justify-center max-md:rounded-full max-md:border max-md:border-white/15 max-md:px-4 max-md:py-3 max-md:text-[13px]"
                     >
                       Get Quote
                     </Link>

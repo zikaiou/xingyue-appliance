@@ -60,7 +60,7 @@ export default function ST815Page() {
         </Link>
       </div>
 
-      <section className="max-w-6xl mx-auto px-6 py-8 grid gap-10 lg:grid-cols-2 items-start">
+      <section className="max-w-6xl mx-auto px-6 py-8 grid gap-10 lg:grid-cols-2 items-start product-hero-grid">
         <div>
           <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-3">Garment Steamer</p>
           <h1 className="text-5xl md:text-6xl font-black tracking-tight">ST-815</h1>
@@ -74,17 +74,17 @@ export default function ST815Page() {
               </div>
             ))}
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/contact?product=ST-815" className="px-5 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
+          <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3">
+            <Link href="/contact?product=ST-815" className="w-full sm:w-auto justify-center px-5 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition inline-flex items-center gap-2">
               Request Quote
             </Link>
-            <a href="/specs/st-815-spec.pdf" download className="px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
+            <a href="/specs/st-815-spec.pdf" download className="w-full sm:w-auto justify-center px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
               <Download size={15} /> Download Specification
             </a>
           </div>
         </div>
 
-        <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8">
+        <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 product-gallery">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
             <Image src={images[imgIdx]} alt="ST-815 handheld garment steamer 1600W, professional garment care" fill className="object-contain p-4" unoptimized />
             <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition"><ArrowLeft size={18} /></button>
@@ -130,7 +130,7 @@ export default function ST815Page() {
           {specs.map(([label, value], i) => (
             <div key={label} className={`flex justify-between px-6 py-4 ${i < specs.length - 1 ? "border-b border-white/6" : ""}`}>
               <span className="text-white/50 text-sm">{label}</span>
-              <span className="text-white font-medium text-sm text-right max-w-[55%]">{value}</span>
+              <span className="text-white font-medium text-sm text-right max-w-[55%] break-words">{value}</span>
             </div>
           ))}
         </div>

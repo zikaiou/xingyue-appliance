@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import MobileCTABar from "@/components/MobileCTABar";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
@@ -86,6 +87,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <MobileCTABar />
       </body>
     </html>
   );

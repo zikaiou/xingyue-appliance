@@ -237,3 +237,78 @@ body{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;font-synthesis:none
 @media(max-width:1050px){.v72-hero-inner{grid-template-columns:53% 47%}.v72-hero-product img{width:64vw}.hero-features{gap:16px}.v72-factory-overlay{background:linear-gradient(90deg,#050507 0%,rgba(5,5,7,.96) 52%,rgba(5,5,7,.3) 100%)}}
 @media(max-width:760px){.site-logo{width:118px}.v72-hero{min-height:auto}.v72-hero-inner{display:flex;flex-direction:column;padding-top:62px;padding-bottom:48px}.v72-hero-copy{width:100%}.v72-hero h1{font-size:clamp(47px,12vw,68px)}.v72-hero-product{order:-1;height:320px;margin-bottom:-28px}.v72-hero-product img{width:min(590px,110vw);transform:translate(12%,0)}.hero-features{grid-template-columns:repeat(3,1fr);gap:10px}.hero-features small{font-size:10px}.hero-features strong{font-size:12px}.desktop-only{display:none}.v72-hero-orbit{right:-520px;top:60px}.v72-factory{min-height:630px}.v72-factory-photo img{object-position:67% center}.v72-factory-overlay{background:linear-gradient(180deg,#050507 0%,rgba(5,5,7,.94) 58%,rgba(5,5,7,.35) 100%)}.v72-factory-content{padding-top:55px}.factory-stats{grid-template-columns:repeat(2,minmax(0,145px))}}
 @media(max-width:460px){.v72-hero-product{height:260px}.hero-actions{flex-direction:column;align-items:stretch}.hero-cta{width:100%}.hero-features{grid-template-columns:1fr}.hero-features>div{display:grid;grid-template-columns:48px 1fr;column-gap:12px}.hero-feature-icon{grid-row:1/3}.hero-features small br{display:none}.factory-stats{grid-template-columns:1fr 1fr}}
+
+/* ============================================================
+   Mobile Responsive V1 (desktop unchanged — these rules only
+   apply below their breakpoints)
+   ============================================================ */
+html, body { overflow-x: hidden; }
+
+/* Mobile side padding 16-20px for container-shell */
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+@media (max-width: 639px) {
+  .container-shell { width: min(100% - 36px, 1180px); }
+}
+
+/* ---- Homepage hero: no title overflow, no product crop ---- */
+@media (max-width: 760px) {
+  .v72-hero h1 { font-size: clamp(32px, 9vw, 42px); line-height: 1.04; }
+  .v72-hero h1 .hero-line,
+  .v72-hero h1 em { white-space: normal; }
+  .v72-hero-product { height: auto; margin-bottom: 0; }
+  .v72-hero-product img { width: min(460px, 92vw); transform: none; }
+}
+@media (max-width: 460px) {
+  .v72-hero-product img { width: min(400px, 94vw); }
+}
+
+/* ---- Tighten large homepage section gaps on small screens ---- */
+@media (max-width: 560px) {
+  .featured-section { padding-top: 56px; padding-bottom: 56px; }
+  .products-section { padding-top: 64px; padding-bottom: 72px; }
+  .reviews-section { padding-top: 56px; padding-bottom: 56px; }
+}
+
+/* ---- Product detail pages: hero stacks image first on mobile ---- */
+@media (max-width: 1023px) {
+  .product-hero-grid { display: flex; flex-direction: column; }
+  .product-hero-grid .product-gallery { order: -1; }
+}
+
+/* ---- Mobile sticky CTA bar ---- */
+.mobile-cta-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  gap: 10px;
+  padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(5, 5, 7, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-cta-bar a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.mobile-cta-bar a:active { transform: scale(.98); }
+.mobile-cta-bar .cta-quote { background: linear-gradient(135deg, #ff337f, #ed005b); color: #fff; }
+.mobile-cta-bar .cta-whatsapp { border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(255, 255, 255, 0.05); color: #fff; }
+@media (min-width: 768px) {
+  .mobile-cta-bar { display: none; }
+}
+@media (max-width: 767px) {
+  body { padding-bottom: 74px; }
+}

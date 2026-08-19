@@ -54,7 +54,7 @@ export default function P9005Page() {
         </Link>
       </div>
 
-      <section className="max-w-6xl mx-auto px-6 py-8 grid gap-10 lg:grid-cols-2 items-start">
+      <section className="max-w-6xl mx-auto px-6 py-8 grid gap-10 lg:grid-cols-2 items-start product-hero-grid">
         <div className="reveal is-visible">
           <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-3">Vacuum Garment Steamer</p>
           <h1 className="text-5xl md:text-6xl font-black tracking-tight">9005</h1>
@@ -70,17 +70,17 @@ export default function P9005Page() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/contact?product=9005" className="px-5 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
+          <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3">
+            <Link href="/contact?product=9005" className="w-full sm:w-auto justify-center px-5 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition inline-flex items-center gap-2">
               Request Quote
             </Link>
-            <a href="/specs/9005-spec.pdf" download className="px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
+            <a href="/specs/9005-spec.pdf" download className="w-full sm:w-auto justify-center px-5 py-3 border border-white/20 text-white font-semibold rounded-full text-sm hover:border-white/50 transition inline-flex items-center gap-2">
               <Download size={15} /> Download Specification
             </a>
           </div>
         </div>
 
-        <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible">
+        <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible product-gallery">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
             <Image src={images[imgIdx]} alt="9005 vacuum garment steamer with LED display and ceramic soleplate" fill className="object-contain p-4" unoptimized />
           </div>
@@ -107,7 +107,7 @@ export default function P9005Page() {
           {specs.map(([label, value], i) => (
             <div key={label} className={`flex justify-between px-6 py-4 ${i < specs.length - 1 ? "border-b border-white/6" : ""}`}>
               <span className="text-white/50 text-sm">{label}</span>
-              <span className="text-white font-medium text-sm text-right max-w-[55%]">{value}</span>
+              <span className="text-white font-medium text-sm text-right max-w-[55%] break-words">{value}</span>
             </div>
           ))}
         </div>

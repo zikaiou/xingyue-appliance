@@ -243,12 +243,12 @@ export default function OEMPage() {
           </form>
           
           <div className="mt-8 pt-8 border-t border-white/8 flex flex-wrap justify-center gap-6 text-xs text-white/40">
-            <span className="flex items-center gap-1.5">
-              <span className="text-[#ff2f7d] font-bold">Email:</span> info@xingyue-appliance.com
-            </span>
-            <span className="flex items-center gap-1.5">
-              <span className="text-[#ff2f7d] font-bold">WhatsApp:</span> +86 138 0000 0000
-            </span>
+            <a href="mailto:amy@xingyue.store" className="flex items-center gap-1.5 hover:text-white/70 transition">
+              <span className="text-[#ff2f7d] font-bold">Email:</span> amy@xingyue.store
+            </a>
+            <a href="https://wa.me/8615913881634" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-white/70 transition">
+              <span className="text-[#ff2f7d] font-bold">WhatsApp:</span> +86 159 1388 1634
+            </a>
             <span className="flex items-center gap-1.5">
               <span className="text-[#ff2f7d] font-bold">Response Time:</span> Within 24 hours
             </span>
