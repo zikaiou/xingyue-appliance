@@ -273,7 +273,7 @@ html, body { overflow-x: hidden; }
 /* ---- Product detail pages: hero stacks image first on mobile ---- */
 @media (max-width: 1023px) {
   .product-hero-grid { display: flex; flex-direction: column; }
-  .product-hero-grid .product-gallery { order: -1; }
+  .product-hero-grid .product-gallery { order: -1; width: 100%; }
 }
 
 /* ---- Mobile sticky CTA bar ---- */
