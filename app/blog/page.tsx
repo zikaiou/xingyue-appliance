@@ -3,6 +3,46 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
   {
+    slug: "travel-iron-moq",
+    title: "Travel Iron MOQ Explained: Minimum Order Quantities for Importers",
+    excerpt: "Why factories set MOQs, what affects yours, and how to plan your first travel iron import order.",
+    date: "August 2026",
+    category: "Sourcing Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "travel-iron-cost",
+    title: "How Much Does a Travel Iron Cost? Wholesale Price Breakdown",
+    excerpt: "Materials, certifications, customization, quantity and logistics — the cost structure behind every wholesale quote.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "travel-iron-voltage",
+    title: "Travel Iron Voltage Guide: 110V vs 220V vs Dual Voltage",
+    excerpt: "How to configure voltage and plugs for every market — and why separate SKUs beat relying on dual voltage.",
+    date: "August 2026",
+    category: "Sourcing Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "hotel-steamer-vs-iron",
+    title: "Garment Steamer vs Steam Iron for Hotels: Which to Stock",
+    excerpt: "Hospitality buyers: how steamers and irons complement each other across guest rooms, housekeeping and laundry.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "garment-steamer-import-tariffs",
+    title: "How to Import Garment Steamers from China: Duties & Tariffs",
+    excerpt: "HS codes, customs duties, VAT and incoterms — the clearance side of garment steamer importing.",
+    date: "August 2026",
+    category: "Import Guide",
+    readTime: "7 min read",
+  },
+  {
     slug: "travel-iron-guide",
     title: "How to Choose a Travel Iron for Global Markets: A Manufacturer's Guide",
     excerpt: "Voltage compatibility, soleplate materials, tank capacity and what importers should check before placing a bulk order.",
