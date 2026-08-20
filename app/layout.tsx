@@ -48,6 +48,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/_next/image?url=%2Fimages%2Fv72%2Fhero-product.png&w=640&q=75"
+          media="(max-width: 760px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/_next/image?url=%2Fimages%2Fv72%2Fhero-product.png&w=1200&q=75"
+          media="(min-width: 761px)"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
