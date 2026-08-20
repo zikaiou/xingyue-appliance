@@ -3,6 +3,46 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
   {
+    slug: "travel-iron-vs-steam-iron",
+    title: "Travel Iron vs Steam Iron: Which Product Line Should You Source?",
+    excerpt: "Category size, margins and competition — and why the best wholesalers often stock both.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "garment-steamer-wattage",
+    title: "Garment Steamer Wattage Guide: What Power Do You Need?",
+    excerpt: "How much power a garment steamer really needs — and how to match it to your market.",
+    date: "August 2026",
+    category: "Sourcing Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "oem-partner-checklist",
+    title: "How to Choose an OEM Partner for Travel Irons (Checklist)",
+    excerpt: "The eight-point checklist that separates a reliable factory partner from a costly mistake.",
+    date: "August 2026",
+    category: "OEM Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "travel-iron-tank-capacity",
+    title: "Travel Iron Water Tank Capacity: How Much Is Enough?",
+    excerpt: "The trade-off between refill frequency, weight and price — and what to check in the spec sheet.",
+    date: "August 2026",
+    category: "Sourcing Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "steam-iron-features",
+    title: "Steam Iron Features That Actually Matter for Wholesale Buyers",
+    excerpt: "The five features wholesale buyers compare — and how to read a spec sheet like a pro.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "6 min read",
+  },
+  {
     slug: "travel-iron-certifications",
     title: "Travel Iron Certifications: CE, RoHS, CB, ETL for Buyers",
     excerpt: "Which certificates your travel iron needs, market by market — and how to verify them with any supplier.",
