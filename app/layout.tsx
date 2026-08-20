@@ -51,13 +51,13 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=%2Fimages%2Fv72%2Fhero-product.png&w=640&q=75"
+          href="/images/v72/hero-product-828.webp"
           media="(max-width: 760px)"
         />
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=%2Fimages%2Fv72%2Fhero-product.png&w=1200&q=75"
+          href="/images/v72/hero-product-1200.webp"
           media="(min-width: 761px)"
         />
         <script

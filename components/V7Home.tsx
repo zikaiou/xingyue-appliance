@@ -83,7 +83,16 @@ export default function V7Home() {
             </div>
           </div>
           <div className="v72-hero-product" aria-hidden="true">
-            <Image src="/images/v72/hero-product.png" alt="" width={1100} height={1100} priority sizes="(max-width: 760px) 92vw, 62vw" />
+            <img
+              src="/images/v72/hero-product-828.webp"
+              srcSet="/images/v72/hero-product-640.webp 640w, /images/v72/hero-product-828.webp 828w, /images/v72/hero-product-1200.webp 1200w"
+              sizes="(max-width: 760px) 92vw, 62vw"
+              alt=""
+              width={2048}
+              height={2048}
+              fetchPriority="high"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
