@@ -90,6 +90,12 @@ export default function SizeGuidePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-6 pb-24">
+        <div className="bg-[#0d0d12] border border-[#ff2f7d]/30 rounded-2xl p-6 mb-6">
+          <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-2">Quick Answer</p>
+          <p className="text-sm md:text-base text-white/75 leading-relaxed">
+            Match voltage to the destination market (<span className="text-white font-semibold">110–120V</span> for North America and Japan, <span className="text-white font-semibold">220–240V</span> for Europe and Asia), choose wattage by use case (<span className="text-white font-semibold">1000W</span> compact travel irons, <span className="text-white font-semibold">1800W</span> handheld steamers, <span className="text-white font-semibold">2800W+</span> full-size irons), and pick tank size by session length (around 140ml for travel, larger for home and professional use).
+          </p>
+        </div>
         <div className="bg-white/4 border border-white/8 rounded-2xl p-8 md:p-10 space-y-8">
           <div>
             <h2 className="text-2xl font-bold mb-3"><Plug size={20} className="inline text-[#ff2f7d] mr-2" />Voltage & Plug Configuration</h2>

@@ -82,6 +82,12 @@ export default function MoqGuidePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-6 pb-24">
+        <div className="bg-[#0d0d12] border border-[#ff2f7d]/30 rounded-2xl p-6 mb-6">
+          <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-2">Quick Answer</p>
+          <p className="text-sm md:text-base text-white/75 leading-relaxed">
+            A MOQ (minimum order quantity) is the smallest batch a factory will accept for a production run. XINGYUE&apos;s MOQ for travel irons and garment steamers typically starts at <span className="text-white font-semibold">500–1,000 pieces per model</span>. Choose existing models with standard configuration to get the lowest minimums.
+          </p>
+        </div>
         <div className="bg-white/4 border border-white/8 rounded-2xl p-8 md:p-10 space-y-6">
           <div>
             <h2 className="text-2xl font-bold mb-3">Why Suppliers Set a MOQ</h2>

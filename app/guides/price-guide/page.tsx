@@ -82,6 +82,12 @@ export default function PriceGuidePage() {
       </section>
 
       <section className="max-w-3xl mx-auto px-6 pb-24">
+        <div className="bg-[#0d0d12] border border-[#ff2f7d]/30 rounded-2xl p-6 mb-6">
+          <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-2">Quick Answer</p>
+          <p className="text-sm md:text-base text-white/75 leading-relaxed">
+            B2B appliance prices are <span className="text-white font-semibold">specification-driven</span>: model, configuration, quantity, certification and incoterm all change the number. To compare quotes fairly, request the price ladder across quantities and always compare on the same incoterm (FOB vs CIF/DDP).
+          </p>
+        </div>
         <div className="bg-white/4 border border-white/8 rounded-2xl p-8 md:p-10 space-y-6">
           <div>
             <h2 className="text-2xl font-bold mb-3">Why There Is No Public Price List</h2>
