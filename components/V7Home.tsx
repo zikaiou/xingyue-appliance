@@ -34,6 +34,30 @@ export default function V7Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
+  const [openFaq, setOpenFaq] = useState(0);
+
+  const faqItems = [
+    {
+      q: "Are you a factory or a trading company?",
+      a: "XINGYUE is a direct manufacturer with a 35,000 m² production base in Huizhou, China. We specialize in travel irons, garment steamers, steam irons and vacuum garment steamers with 16+ years of export experience.",
+    },
+    {
+      q: "What is the minimum order quantity (MOQ) for OEM orders?",
+      a: "Our MOQ varies by model, typically starting from 500-1,000 pieces for standard OEM orders. Please contact us with your target model and quantity for a tailored quotation.",
+    },
+    {
+      q: "Can you customize the logo, color and packaging for our brand?",
+      a: "Yes. We offer full OEM/ODM customization including logo printing, custom colors, bespoke packaging design, soleplate options, plug types and multi-language user manuals.",
+    },
+    {
+      q: "What is the typical production lead time?",
+      a: "Standard production lead time is 30-45 days after sample approval, depending on order quantity. Our production scheduling and 500+ skilled workers ensure on-time delivery.",
+    },
+    {
+      q: "Do your products have certifications for export?",
+      a: "Yes. Our products are certified with CE, RoHS and CB for European markets, with ETL available for North America. We provide current certificates for the specific models you source.",
+    },
+  ];
 
   // Lazy-load the brand film: only start streaming/playing when scrolled into view
   useEffect(() => {
@@ -166,6 +190,29 @@ export default function V7Home() {
       </section>
 
       <section className="service-strip section-shell">{[ "Factory Direct","OEM/ODM Service","Quality Assurance","Global Support" ].map((item,i)=><Reveal className="service-item" key={item}><span>0{i+1}</span><h3>{item}</h3><p>Professional support with consistent quality and responsive service.</p></Reveal>)}</section>
+
+      {/* FAQ — visible Q&A matching the FAQPage schema */}
+      <section className="faq-section section-shell" id="faq">
+        <Reveal className="reviews-heading">
+          <span className="reviews-eyebrow">FREQUENTLY ASKED QUESTIONS</span>
+          <h2>Questions We Get All the Time</h2>
+        </Reveal>
+        <div className="faq-list">
+          {faqItems.map((item, i) => (
+            <div className={`faq-item ${openFaq === i ? "open" : ""}`} key={item.q}>
+              <button
+                className="faq-question"
+                onClick={() => setOpenFaq(openFaq === i ? -1 : i)}
+                aria-expanded={openFaq === i}
+              >
+                <span>{item.q}</span>
+                <span className="faq-toggle">{openFaq === i ? "−" : "+"}</span>
+              </button>
+              <div className="faq-answer">{item.a}</div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
