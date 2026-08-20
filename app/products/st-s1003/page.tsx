@@ -75,7 +75,7 @@ export default function STS1003Page() {
 
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible product-gallery">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="ST-S1003 steam iron 2800W with ceramic non-stick soleplate, China factory" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="ST-S1003 steam iron 2800W with ceramic non-stick soleplate, China factory" fill sizes="(max-width:1023px) 100vw, 50vw" className="object-contain p-4" />
           </div>
         </div>
       </section>

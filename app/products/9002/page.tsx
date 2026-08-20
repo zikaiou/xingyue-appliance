@@ -83,7 +83,7 @@ export default function P9002Page() {
 
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible product-gallery">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="9002 vacuum garment steamer with LED display, professional iron factory" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="9002 vacuum garment steamer with LED display, professional iron factory" fill sizes="(max-width:1023px) 100vw, 50vw" className="object-contain p-4" />
             {images.length > 1 && (
               <>
                 <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 flex items-center justify-center hover:bg-black/80 transition"><ArrowLeft size={18} /></button>

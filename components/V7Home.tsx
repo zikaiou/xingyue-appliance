@@ -35,6 +35,25 @@ export default function V7Home() {
   const [playing, setPlaying] = useState(true);
   const [muted, setMuted] = useState(true);
 
+  // Lazy-load the brand film: only start streaming/playing when scrolled into view
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().then(() => setPlaying(true)).catch(() => {});
+        } else {
+          video.pause();
+          setPlaying(false);
+        }
+      },
+      { threshold: 0.25 }
+    );
+    io.observe(video);
+    return () => io.disconnect();
+  }, []);
+
   const togglePlay = () => {
     const video = videoRef.current;
     if (!video) return;
@@ -64,13 +83,13 @@ export default function V7Home() {
             </div>
           </div>
           <div className="v72-hero-product" aria-hidden="true">
-            <Image src="/images/v72/hero-product.png" alt="" width={1100} height={1100} priority unoptimized />
+            <Image src="/images/v72/hero-product.png" alt="" width={1100} height={1100} priority sizes="(max-width: 760px) 92vw, 62vw" />
           </div>
         </div>
       </section>
 
       <section id="brand-film" className="brand-film-section">
-        <video ref={videoRef} className="brand-film-video" autoPlay muted={muted} loop playsInline preload="metadata">
+        <video ref={videoRef} className="brand-film-video" muted={muted} loop playsInline preload="none" poster="/images/v7/factory-locked.png">
           <source src="/videos/brand-film.mp4" type="video/mp4" />
         </video>
         <div className="brand-film-shade" />
@@ -96,7 +115,7 @@ export default function V7Home() {
       </section>
 
       <section id="factory" className="v72-factory" aria-label="Advanced Production For Superior Quality">
-        <div className="v72-factory-photo" aria-hidden="true"><Image src="/images/v7/factory-locked.png" alt="" fill sizes="100vw" unoptimized /></div>
+        <div className="v72-factory-photo" aria-hidden="true"><Image src="/images/v7/factory-locked.png" alt="" fill sizes="100vw" /></div>
         <div className="v72-factory-overlay" aria-hidden="true" />
         <div className="v72-factory-content" data-crisp-text>
           <h2>Advanced Production<br/>For Superior Quality</h2>

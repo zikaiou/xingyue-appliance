@@ -80,7 +80,7 @@ export default function P9003Page() {
 
         <div className="bg-[#0d0d12] rounded-2xl overflow-hidden border border-white/8 reveal is-visible product-gallery">
           <div className="aspect-square relative" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-            <Image src={images[imgIdx]} alt="9003 3-in-1 vacuum garment steamer with dual-level steam and suction" fill className="object-contain p-4" unoptimized />
+            <Image src={images[imgIdx]} alt="9003 3-in-1 vacuum garment steamer with dual-level steam and suction" fill sizes="(max-width:1023px) 100vw, 50vw" className="object-contain p-4" />
           </div>
         </div>
       </section>

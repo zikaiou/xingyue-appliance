@@ -119,7 +119,6 @@ export default function ProductsPage() {
                     width={300}
                     height={300}
                     className="object-contain w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-5">
