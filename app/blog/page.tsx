@@ -3,6 +3,46 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
   {
+    slug: "travel-iron-certifications",
+    title: "Travel Iron Certifications: CE, RoHS, CB, ETL for Buyers",
+    excerpt: "Which certificates your travel iron needs, market by market — and how to verify them with any supplier.",
+    date: "August 2026",
+    category: "Compliance Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "garment-steamer-lead-time",
+    title: "Garment Steamer Lead Times: How Long Does OEM Production Take?",
+    excerpt: "From sample to container — the real OEM production timeline, and how to plan it into your inventory cycle.",
+    date: "August 2026",
+    category: "OEM Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "travel-iron-soleplate",
+    title: "Travel Iron Soleplate Guide: Ceramic vs Stainless vs Titanium",
+    excerpt: "The material under the iron decides glide, heat and price — how to choose for your market.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "lower-moq-china-factory",
+    title: "How to Get a Lower MOQ from a Chinese Appliance Factory",
+    excerpt: "Six supplier-friendly strategies that reduce your effective minimum order quantity.",
+    date: "August 2026",
+    category: "Sourcing Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "vacuum-steamer-wholesale",
+    title: "Vacuum Garment Steamer Wholesale: Market Outlook for Importers",
+    excerpt: "An emerging category with early-mover advantages — what to check before stocking vacuum steamers.",
+    date: "August 2026",
+    category: "Industry Insight",
+    readTime: "6 min read",
+  },
+  {
     slug: "travel-iron-moq",
     title: "Travel Iron MOQ Explained: Minimum Order Quantities for Importers",
     excerpt: "Why factories set MOQs, what affects yours, and how to plan your first travel iron import order.",
