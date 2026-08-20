@@ -3,6 +3,46 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 
 const posts = [
   {
+    slug: "steamer-accessories",
+    title: "Garment Steamer Accessories: Brushes, Nozzles & Attachments",
+    excerpt: "Which accessories matter, what to confirm in the spec, and how accessories add revenue.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "factory-vs-trading-company",
+    title: "China Factory vs Trading Company for Steam Irons: How to Tell",
+    excerpt: "Four signals that separate a genuine appliance manufacturer from a middleman.",
+    date: "August 2026",
+    category: "Supplier Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "travel-iron-packaging",
+    title: "Travel Iron Packaging & Retail Display Options for Brands",
+    excerpt: "Retail boxes, hang tags, gift sets and carton planning — how brands turn a travel iron into a shelf-ready product.",
+    date: "August 2026",
+    category: "Brand Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "steam-iron-anti-calc",
+    title: "Steam Iron Anti-Calc Systems: Why They Matter",
+    excerpt: "Scale is the silent killer of steam irons — and the feature that prevents it is worth its premium.",
+    date: "August 2026",
+    category: "Buyer Guide",
+    readTime: "5 min read",
+  },
+  {
+    slug: "garment-care-market-trends",
+    title: "2026 Garment Care Market Trends for Wholesalers",
+    excerpt: "Vacuum steamers, travel-first demand, private label growth and multi-market SKU planning.",
+    date: "August 2026",
+    category: "Industry Insight",
+    readTime: "6 min read",
+  },
+  {
     slug: "travel-iron-vs-steam-iron",
     title: "Travel Iron vs Steam Iron: Which Product Line Should You Source?",
     excerpt: "Category size, margins and competition — and why the best wholesalers often stock both.",
