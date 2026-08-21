@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
       <div className="container-shell flex h-20 items-center justify-between">
         <Link href="/" aria-label="XINGYUE home">
-          <img src="/images/v72/xingyue-logo-magenta.png" alt="XINGYUE" className="site-logo" />
+          <img src="/images/v72/xingyue-logo-magenta.webp" alt="XINGYUE" className="site-logo" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">

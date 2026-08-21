@@ -115,14 +115,13 @@ export default function V7Home() {
               width={2048}
               height={2048}
               fetchPriority="high"
-              decoding="async"
             />
           </div>
         </div>
       </section>
 
       <section id="brand-film" className="brand-film-section">
-        <video ref={videoRef} className="brand-film-video" muted={muted} loop playsInline preload="none" poster="/images/v7/factory-locked.png">
+        <video ref={videoRef} className="brand-film-video" muted={muted} loop playsInline preload="none" poster="/images/v7/factory-poster-640.webp">
           <source src="/videos/brand-film.mp4" type="video/mp4" />
         </video>
         <div className="brand-film-shade" />
@@ -138,7 +137,7 @@ export default function V7Home() {
           <p>Powerful steam. Intelligent care.<br/>Designed for every fabric.</p>
           <Link href="/products/st-812" className="pink-button">Learn More <ArrowRight size={17}/></Link>
         </Reveal>
-        <Reveal className="featured-product-wrap"><div className="product-glow" /><img src="/images/v7/st-812.png" alt="Professional Garment Steamer" className="featured-product-image" /></Reveal>
+        <Reveal className="featured-product-wrap"><div className="product-glow" /><img src="/images/v7/st-812.webp" alt="Professional Garment Steamer" className="featured-product-image" loading="lazy" /></Reveal>
         <Reveal className="feature-list">{[ ["Rapid Heat-Up","Ready in 15 seconds"],["Strong Penetrating Steam","Removes wrinkles easily"],["Multiple Fabric Care Modes","Care for every fabric"],["Lightweight & Portable","Easy to hold, easy to use"],["Dry & Wet Ironing","Horizontal & Vertical"] ].map(([title,text],index)=><div className="feature-row" key={title}><span>{String(index+1).padStart(2,"0")}</span><div><strong>{title}</strong><small>{text}</small></div></div>)}</Reveal>
       </section>
 
