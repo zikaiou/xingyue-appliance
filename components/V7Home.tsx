@@ -109,7 +109,7 @@ export default function V7Home() {
           <div className="v72-hero-product" aria-hidden="true">
             <img
               src="/images/v72/hero-product-828.webp"
-              srcSet="/images/v72/hero-product-640.webp 640w, /images/v72/hero-product-828.webp 828w, /images/v72/hero-product-1200.webp 1200w"
+              srcSet="/images/v72/hero-product-640.webp 640w, /images/v72/hero-product-720.webp 720w, /images/v72/hero-product-828.webp 828w, /images/v72/hero-product-1200.webp 1200w"
               sizes="(max-width: 760px) 92vw, 62vw"
               alt=""
               width={2048}
