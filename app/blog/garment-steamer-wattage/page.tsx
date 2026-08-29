@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/garment-steamer-wattage" },
   title: "Garment Steamer Wattage Guide: What Power Do You Need? | XINGYUE",
   description:
     "How much wattage a garment steamer needs: 1000W travel models, 1800W handheld professional steamers, and 2800W full-size irons — with XINGYUE model examples.",

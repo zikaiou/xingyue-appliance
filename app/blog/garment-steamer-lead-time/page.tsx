@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/garment-steamer-lead-time" },
   title: "Garment Steamer Lead Times: How Long Does OEM Production Take? | XINGYUE",
   description:
     "OEM garment steamer production timeline explained: samples, tooling, mass production and shipping. XINGYUE standard lead time is 30–45 days after sample approval.",

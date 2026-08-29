@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/garment-care-market-trends" },
   title: "2026 Garment Care Market Trends for Wholesalers | XINGYUE",
   description:
     "Garment care market trends for 2026: the rise of vacuum steamers, travel-adjacent demand, private label growth and what they mean for importers and wholesalers.",

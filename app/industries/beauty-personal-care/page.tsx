@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/beauty-personal-care" },
   title: "Travel Iron for Beauty Brands | Beauty & Personal Care Gifts | XINGYUE",
   description:
     "Compact travel irons and steamers for beauty and personal care brands — co-branded sets, gift packaging and retail-ready SKUs from XINGYUE.",

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "900A Garment Steamer | Stainless Steel Panel | XINGYUE",
   description: "900A compact garment steamer with stainless steel panel, 200ml tank and 3 steam gears. Portable steam care from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/900a" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "900A compact garment steamer with stainless steel panel, 200ml water tank and 3 steam gears. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Enguerran TOFFA" },
-      reviewBody: "The cable is long enough, the steam is powerful. I am satisfied.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Garment Steamer",
   };
   const breadcrumbSchema = {
@@ -28,7 +23,8 @@ export const metadata: Metadata = {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xingyue-appliance.com" },
       { "@type": "ListItem", position: 2, name: "Products", item: "https://www.xingyue-appliance.com/products" },
-      { "@type": "ListItem", position: 3, name: "900A", item: "https://www.xingyue-appliance.com/products/900a" }
+      { "@type": "ListItem", position: 3, name: "Garment Steamers", item: "https://www.xingyue-appliance.com/products/garment-steamers" },
+      { "@type": "ListItem", position: 4, name: "900A", item: "https://www.xingyue-appliance.com/products/900a" }
     ],
   };
   return (

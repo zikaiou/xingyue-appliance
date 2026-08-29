@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-cost" },
   title: "How Much Does a Travel Iron Cost? Wholesale Price Breakdown | XINGYUE",
   description:
     "What determines travel iron wholesale prices: materials, certifications, customization, quantity and logistics. Learn the cost structure so you can compare factory quotes confidently.",

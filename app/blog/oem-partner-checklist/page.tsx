@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/oem-partner-checklist" },
   title: "How to Choose an OEM Partner for Travel Irons (Checklist) | XINGYUE",
   description:
     "A practical checklist for selecting an OEM partner for travel irons and steamers: factory verification, samples, certifications, quality system and communication.",

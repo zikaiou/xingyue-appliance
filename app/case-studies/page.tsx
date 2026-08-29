@@ -50,6 +50,7 @@ const cases = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/case-studies" },
   title: "Case Studies | XINGYUE Garment Care Manufacturer",
   description: "Real-world OEM and wholesale success stories with XINGYUE: travel iron lines, vacuum steamer early entries and factory-direct garment steamer sourcing.",
 };

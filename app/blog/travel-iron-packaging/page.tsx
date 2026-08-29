@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-packaging" },
   title: "Travel Iron Packaging & Retail Display Options for Brands | XINGYUE",
   description:
     "Travel iron packaging and retail display options: retail boxes, hang tags, gift sets and carton planning — how brands turn a travel iron into a shelf-ready product.",

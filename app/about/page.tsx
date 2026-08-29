@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About XINGYUE | Travel Iron & Garment Steamer Manufacturer",
+  description:
+    "Xingyue Technology Co., Ltd. develops modern steam-care appliances for global markets. Learn about the XINGYUE manufacturer behind travel irons and garment steamers.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/about" },
+};
 
 export default function Page() {
   return (

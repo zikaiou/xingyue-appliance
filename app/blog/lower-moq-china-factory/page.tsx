@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/lower-moq-china-factory" },
   title: "How to Get a Lower MOQ from a Chinese Appliance Factory | XINGYUE",
   description:
     "Six practical ways to reduce your minimum order quantity with a Chinese appliance factory: existing models, standard configurations, mixed orders, trial runs and more.",

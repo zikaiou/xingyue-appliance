@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/corporate-gifting" },
   title: "Steam Iron Corporate Gifts | Logo Branded Appliances | XINGYUE",
   description:
     "Corporate gifting programs with logo-branded steam irons and travel irons. Custom engraving, gift packaging and volume scheduling from XINGYUE.",

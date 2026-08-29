@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/steam-iron-features" },
   title: "Steam Iron Features That Actually Matter for Wholesale Buyers | XINGYUE",
   description:
     "Which steam iron features drive sales: power, soleplate, continuous steam, anti-calc, self-clean and safety. A buyer's guide to spec sheets that matter.",

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ST-588 Travel Iron | Dry & Steam Function | XINGYUE",
   description: "ST-588 compact travel iron with dry and steam function, 1200W power and 140ml water tank. Daily travel solution from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/st-588" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "ST-588 travel iron with dry and steam function, ceramic soleplate and 140ml water tank. Compact design by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Sergio Lopes" },
-      reviewBody: "I thought it was sensationalist advertising, but it's not.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Travel Iron",
   };
   const breadcrumbSchema = {
@@ -28,7 +23,8 @@ export const metadata: Metadata = {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xingyue-appliance.com" },
       { "@type": "ListItem", position: 2, name: "Products", item: "https://www.xingyue-appliance.com/products" },
-      { "@type": "ListItem", position: 3, name: "ST-588", item: "https://www.xingyue-appliance.com/products/st-588" }
+      { "@type": "ListItem", position: 3, name: "Travel Irons", item: "https://www.xingyue-appliance.com/products/travel-irons" },
+      { "@type": "ListItem", position: 4, name: "ST-588", item: "https://www.xingyue-appliance.com/products/st-588" }
     ],
   };
   const videoSchema = {

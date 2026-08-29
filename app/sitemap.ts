@@ -1,73 +1,46 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+import { productCatalog } from "@/lib/product-catalog";
+
+const base = "https://www.xingyue-appliance.com";
+const page = (path: string, changeFrequency: "weekly" | "monthly", priority: number): MetadataRoute.Sitemap[number] => ({
+  url: `${base}${path}`,
+  lastModified: new Date(),
+  changeFrequency,
+  priority,
+});
+
+const blogSlugs = [
+  "travel-iron-guide", "oem-guide", "garment-steamer-guide", "vacuum-steamer-guide", "factory-verification-guide", "steam-iron-guide", "steamer-supplier-guide", "travel-iron-wholesale", "vacuum-steamer-supplier", "steamer-vs-iron", "private-label-guide", "travel-iron-moq", "travel-iron-cost", "travel-iron-voltage", "hotel-steamer-vs-iron", "garment-steamer-import-tariffs", "travel-iron-certifications", "garment-steamer-lead-time", "travel-iron-soleplate", "lower-moq-china-factory", "vacuum-steamer-wholesale", "travel-iron-vs-steam-iron", "garment-steamer-wattage", "oem-partner-checklist", "travel-iron-tank-capacity", "steam-iron-features", "steamer-accessories", "factory-vs-trading-company", "travel-iron-packaging", "steam-iron-anti-calc", "garment-care-market-trends",
+];
+
+const industrySlugs = [
+  "hotel-hospitality-laundry", "dry-cleaning-services", "travel-retail", "home-appliance-brands", "d2c-ecommerce-brands", "corporate-gifting", "beauty-personal-care", "apparel-textile",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://www.xingyue-appliance.com";
-  const products = [
-    "st-718","st-717","st-588","st-812","st-8807","st-8808","st-817","st-200a",
-    "st-815","6617","900a","6618",
-    "st-s1001","st-s1002","st-s1003","st-s1004",
-    "9002","9003","9004","9005",
-  ];
   return [
-    { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-    { url: `${base}/products`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${base}/factory`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/oem`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${base}/case-studies`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/oem-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/garment-steamer-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/vacuum-steamer-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/factory-verification-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steam-iron-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steamer-supplier-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-wholesale`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/vacuum-steamer-supplier`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steamer-vs-iron`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/private-label-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-moq`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-cost`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-voltage`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/hotel-steamer-vs-iron`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/garment-steamer-import-tariffs`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-certifications`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/garment-steamer-lead-time`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-soleplate`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/lower-moq-china-factory`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/vacuum-steamer-wholesale`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-vs-steam-iron`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/garment-steamer-wattage`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/oem-partner-checklist`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-tank-capacity`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steam-iron-features`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steamer-accessories`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/factory-vs-trading-company`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/travel-iron-packaging`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/steam-iron-anti-calc`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/blog/garment-care-market-trends`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/wholesale-travel-irons`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/garment-steamer-manufacturer`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/steam-iron-factory`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/vacuum-garment-steamer-supplier`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/certifications`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/guides/moq-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/guides/price-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/guides/size-guide`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/hotel-hospitality-laundry`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/dry-cleaning-services`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/travel-retail`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/home-appliance-brands`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/d2c-ecommerce-brands`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/corporate-gifting`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/beauty-personal-care`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/industries/apparel-textile`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    ...products.map((p) => ({
-      url: `${base}/products/${p}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
+    page("/", "weekly", 1),
+    page("/products", "weekly", 0.9),
+    page("/products/travel-irons", "monthly", 0.85),
+    page("/products/garment-steamers", "monthly", 0.85),
+    page("/products/steam-irons", "monthly", 0.85),
+    page("/products/vacuum-garment-steamers", "monthly", 0.85),
+    page("/factory", "monthly", 0.8),
+    page("/oem", "monthly", 0.8),
+    page("/about", "monthly", 0.7),
+    page("/contact", "monthly", 0.7),
+    page("/blog", "weekly", 0.8),
+    page("/case-studies", "monthly", 0.7),
+    page("/certifications", "monthly", 0.7),
+    page("/wholesale-travel-irons", "monthly", 0.8),
+    page("/garment-steamer-manufacturer", "monthly", 0.8),
+    page("/steam-iron-factory", "monthly", 0.8),
+    page("/vacuum-garment-steamer-supplier", "monthly", 0.8),
+    page("/guides/moq-guide", "monthly", 0.7),
+    page("/guides/price-guide", "monthly", 0.7),
+    page("/guides/size-guide", "monthly", 0.7),
+    ...blogSlugs.map((slug) => page(`/blog/${slug}`, "monthly", 0.7)),
+    ...industrySlugs.map((slug) => page(`/industries/${slug}`, "monthly", 0.7)),
+    ...productCatalog.map((product) => page(`/products/${product.slug}`, "monthly", 0.7)),
   ];
 }

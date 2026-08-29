@@ -10,6 +10,7 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.xingyue-appliance.com"),
+  alternates: { canonical: "https://www.xingyue-appliance.com/" },
   title: {
     default: "XINGYUE | Travel Iron & Garment Steamer Manufacturer | OEM/ODM Factory",
     template: "%s | XINGYUE",
@@ -71,12 +72,6 @@ export default function RootLayout({
               description: "Professional travel iron and garment steamer manufacturer providing OEM/ODM services for global brands.",
               foundingDate: "2010",
               areaServed: "Worldwide",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.7",
-                reviewCount: "595",
-                bestRating: "5",
-              },
             }),
           }}
         />

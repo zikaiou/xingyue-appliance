@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Factory, Package, ShieldCheck, Truck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/vacuum-garment-steamer-supplier" },
   title: "Vacuum Garment Steamer Supplier | Early Category Advantage | XINGYUE",
   description:
     "Vacuum garment steamer supplier with dedicated manufacturing: 9002–9005 series, OEM customization and early-mover advantage for importers in an emerging category.",

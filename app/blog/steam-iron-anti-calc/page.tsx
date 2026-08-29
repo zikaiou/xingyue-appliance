@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/steam-iron-anti-calc" },
   title: "Steam Iron Anti-Calc Systems: Why They Matter | XINGYUE",
   description:
     "Anti-calc and self-clean systems in steam irons: what they do, why they reduce complaints, and how to position them in your product line.",

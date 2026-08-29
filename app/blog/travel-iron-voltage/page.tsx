@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-voltage" },
   title: "Travel Iron Voltage Guide | 110V vs 220V vs Dual Voltage | XINGYUE",
   description:
     "How to choose the right voltage and plug configuration for travel irons: 110–120V for North America, 220–240V for Europe and Asia. Plan separate SKUs per market.",

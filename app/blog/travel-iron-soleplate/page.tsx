@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-soleplate" },
   title: "Travel Iron Soleplate Guide: Ceramic vs Stainless vs Titanium | XINGYUE",
   description:
     "Ceramic, stainless steel or titanium soleplates — which is right for your travel iron? Compare glide, durability, heat distribution and cost for importers.",

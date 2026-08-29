@@ -49,6 +49,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-guide" },
   title: "How to Choose a Travel Iron for Global Markets | Travel Iron Manufacturer XINGYUE",
   description: "Travel iron manufacturer guide: voltage compatibility, ceramic soleplate, tank capacity and OEM options. Source professional travel irons factory-direct from XINGYUE China.",
 };

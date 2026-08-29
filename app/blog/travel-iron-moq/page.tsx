@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-moq" },
   title: "Travel Iron MOQ Explained | Minimum Order Quantities for Importers | XINGYUE",
   description:
     "What is the minimum order quantity for travel irons? Why factories set MOQs, what affects them, and how to plan your first import order. XINGYUE MOQs typically start at 500–1,000 pcs.",

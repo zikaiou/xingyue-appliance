@@ -174,7 +174,7 @@ export default function OEMPage() {
               { k: "name", label: "Contact Name *", ph: "Your full name", required: true },
               { k: "country", label: "Country / Region *", ph: "Your country", required: true },
               { k: "email", label: "Email *", ph: "your@email.com", required: true, type: "email" },
-              { k: "whatsapp", label: "WhatsApp", ph: "+86 138 0000 0000" },
+              { k: "whatsapp", label: "WhatsApp", ph: "+86 159 1388 1634" },
               { k: "website", label: "Website", ph: "www.yourcompany.com" },
             ].map((f) => (
               <div key={f.k}>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-vs-steam-iron" },
   title: "Travel Iron vs Steam Iron: Which Product Line Should You Source? | XINGYUE",
   description:
     "Travel irons vs full-size steam irons for wholesalers: category size, margins, competition and product mix strategy — with XINGYUE models for each line.",

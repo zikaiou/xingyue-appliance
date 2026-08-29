@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/hotel-hospitality-laundry" },
   title: "Hotel Garment Steamer Supplier | Hospitality Laundry Solutions | XINGYUE",
   description:
     "Garment steamers and steam irons for hotels, hospitality and laundry services. XINGYUE supplies 1800W handheld steamers and high-power irons configured for guest rooms and housekeeping.",
