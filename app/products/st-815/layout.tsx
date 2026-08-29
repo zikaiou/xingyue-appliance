@@ -23,7 +23,8 @@ export const metadata: Metadata = {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://www.xingyue-appliance.com" },
       { "@type": "ListItem", position: 2, name: "Products", item: "https://www.xingyue-appliance.com/products" },
-      { "@type": "ListItem", position: 3, name: "ST-815", item: "https://www.xingyue-appliance.com/products/st-815" }
+      { "@type": "ListItem", position: 3, name: "Garment Steamers", item: "https://www.xingyue-appliance.com/products/garment-steamers" },
+      { "@type": "ListItem", position: 4, name: "ST-815", item: "https://www.xingyue-appliance.com/products/st-815" }
     ],
   };
   const videoSchema = {
