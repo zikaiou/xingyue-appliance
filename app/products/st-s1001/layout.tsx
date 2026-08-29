@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ST-S1001 Steam Iron | 2800W Powerful | XINGYUE",
   description: "ST-S1001 powerful steam iron with up to 2800W, 330ml water tank and adjustable steam. Professional household ironing from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/st-s1001" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "ST-S1001 powerful steam iron with up to 2800W power, 330ml water tank and adjustable steam. Professional household ironing by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Sergio Lopes" },
-      reviewBody: "I thought it was sensationalist advertising, but it's not.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Steam Iron",
   };
   const breadcrumbSchema = {

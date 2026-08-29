@@ -104,6 +104,13 @@ export default function ProductsPage() {
         ))}
       </div>
 
+      <nav aria-label="Product categories" className="mx-auto flex max-w-6xl flex-wrap justify-center gap-3 px-6 pt-6 text-sm">
+        <Link href="/products/travel-irons" className="rounded-full border border-white/10 px-4 py-2 text-white/65 hover:border-[#ff2f7d]/50 hover:text-white">Travel Irons</Link>
+        <Link href="/products/garment-steamers" className="rounded-full border border-white/10 px-4 py-2 text-white/65 hover:border-[#ff2f7d]/50 hover:text-white">Garment Steamers</Link>
+        <Link href="/products/steam-irons" className="rounded-full border border-white/10 px-4 py-2 text-white/65 hover:border-[#ff2f7d]/50 hover:text-white">Steam Irons</Link>
+        <Link href="/products/vacuum-garment-steamers" className="rounded-full border border-white/10 px-4 py-2 text-white/65 hover:border-[#ff2f7d]/50 hover:text-white">Vacuum Garment Steamers</Link>
+      </nav>
+
       <section className="max-w-6xl mx-auto px-6 py-12">
         {categories[active].products.length > 0 ? (
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

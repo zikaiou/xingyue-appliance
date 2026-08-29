@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Boxes, Package, Layers, FileCheck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/guides/moq-guide" },
   title: "MOQ Guide for Travel Irons & Garment Steamers | XINGYUE",
   description:
     "What is a MOQ, why Chinese appliance factories set them, and how to plan quantities for travel irons, garment steamers and steam irons. XINGYUE MOQs typically start at 500–1,000 pcs.",

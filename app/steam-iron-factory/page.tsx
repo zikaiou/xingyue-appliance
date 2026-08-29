@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Factory, Package, ShieldCheck, Truck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/steam-iron-factory" },
   title: "Steam Iron Factory in China | High Power Steam Irons | XINGYUE",
   description:
     "Steam iron factory in China: 2800W professional steam irons, OEM/ODM customization and factory-direct supply. XINGYUE — 16+ years of appliance manufacturing.",

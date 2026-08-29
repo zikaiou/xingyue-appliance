@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Factory, Package, ShieldCheck, Truck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/garment-steamer-manufacturer" },
   title: "Garment Steamer Manufacturer in China | Factory Direct | XINGYUE",
   description:
     "Garment steamer manufacturer in China: handheld and professional steamers, OEM/ODM customization, MOQ from 500 pcs. Factory-direct supply with CE/RoHS/CB/ETL certification.",

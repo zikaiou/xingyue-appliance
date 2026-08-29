@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/vacuum-steamer-wholesale" },
   title: "Vacuum Garment Steamer Wholesale: Market Outlook for Importers | XINGYUE",
   description:
     "Why vacuum garment steamers are the category to watch: professional pressing results without an ironing board, early competition, and what importers should check before stocking.",

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -51,6 +51,7 @@ const customizations = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/oem-guide" },
   title: "How OEM Garment Care Manufacturing Works | OEM Supplier XINGYUE",
   description: "OEM garment care manufacturing guide for brands: concept, design, prototype, mass production and shipping. Partner with XINGYUE, a factory-direct OEM supplier in China.",
 };

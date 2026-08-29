@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, DollarSign, Truck, ShieldCheck, Ruler } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/guides/price-guide" },
   title: "B2B Appliance Pricing Guide | Travel Iron & Steamer Costs | XINGYUE",
   description:
     "How wholesale pricing for travel irons and garment steamers is built: materials, certifications, packaging and logistics. Learn what affects factory-direct prices before you request a quote.",

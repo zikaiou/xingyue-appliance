@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/home-appliance-brands" },
   title: "Private Label Home Appliance Manufacturer | OEM for Appliance Brands | XINGYUE",
   description:
     "OEM/ODM partner for home appliance brands: travel irons, garment steamers, steam irons and vacuum steamers built under your brand. From concept to container.",

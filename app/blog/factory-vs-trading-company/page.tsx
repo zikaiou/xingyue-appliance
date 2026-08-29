@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/factory-vs-trading-company" },
   title: "China Factory vs Trading Company for Steam Irons: How to Tell | XINGYUE",
   description:
     "How to tell a genuine Chinese appliance factory from a trading company: price, verification, samples and production evidence — a practical buyer's checklist.",

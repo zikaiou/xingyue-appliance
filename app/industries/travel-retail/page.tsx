@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/travel-retail" },
   title: "Travel Iron for Travel Retail | Duty-Free & Travel Retail Programs | XINGYUE",
   description:
     "Compact travel irons for travel retail and duty-free programs. XINGYUE supplies 1000W carry-on-friendly irons with voltage configured for every destination market.",

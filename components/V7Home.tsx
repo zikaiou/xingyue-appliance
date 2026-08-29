@@ -142,7 +142,7 @@ export default function V7Home() {
       </section>
 
       <section id="products" className="products-section section-shell">
-        <Reveal className="products-heading"><div><h2>Explore Our Steam Iron Collection</h2></div><Link href="/products">View All Products <ArrowRight size={16}/></Link></Reveal>
+        <Reveal className="products-heading"><div><h2>Explore Our Garment Care Products</h2></div><Link href="/products">View All Products <ArrowRight size={16}/></Link></Reveal>
         <div className="product-grid">{products.map(([name,type,image],index)=><Reveal key={`${name}-${index}`} className="product-card"><Link href={`/products/${name.toLowerCase()}`} aria-label={`View ${name}`}><div className="product-image-box"><Image src={image} alt={name} fill sizes="(max-width:768px) 50vw, 25vw" /></div><div className="product-card-body"><h3>{name}</h3><p>{type}</p><span>View Product <ArrowRight size={14}/></span></div></Link></Reveal>)}</div>
       </section>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-certifications" },
   title: "Travel Iron Certifications: CE, RoHS, CB, ETL for Buyers | XINGYUE",
   description:
     "Which certifications do travel irons need for EU, US and other markets? CE, RoHS, CB and ETL explained for importers — and why certified models matter.",

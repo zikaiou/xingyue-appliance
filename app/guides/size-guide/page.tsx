@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Zap, Droplets, Plug, Scale } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/guides/size-guide" },
   title: "Travel Iron Size & Voltage Guide | Power, Capacity, Plug Types | XINGYUE",
   description:
     "How to select power, water tank capacity and voltage configuration for travel irons and garment steamers — with real XINGYUE model examples for each use case.",

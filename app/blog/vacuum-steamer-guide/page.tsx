@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -49,6 +49,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/vacuum-steamer-guide" },
   title: "Vacuum Garment Steamer: The Next Big Category | XINGYUE Manufacturer",
   description: "What is a vacuum garment steamer and why it is growing fast. Discover 3-in-1 vacuum steamers with OEM customization from XINGYUE garment care manufacturer.",
 };

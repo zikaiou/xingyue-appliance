@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -48,6 +48,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-wholesale" },
   title: "How to Import Travel Irons Wholesale from China | Travel Iron Wholesale Supplier XINGYUE",
   description: "Travel iron wholesale guide: pricing structure, MOQ, product mix, container planning and batch quality. Source travel irons wholesale factory-direct from XINGYUE China.",
 };

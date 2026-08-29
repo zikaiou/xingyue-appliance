@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/d2c-ecommerce-brands" },
   title: "Garment Steamer for D2C E-commerce Brands | Low MOQ Private Label | XINGYUE",
   description:
     "Garment steamers and travel irons for D2C e-commerce brands. Launch your own product line with low-MOQ private label and e-commerce-ready packaging.",

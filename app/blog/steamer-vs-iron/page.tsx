@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -48,6 +48,7 @@ const comparisons = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/steamer-vs-iron" },
   title: "Steam Iron vs Garment Steamer: Which to Source? | XINGYUE",
   description: "Steam iron vs garment steamer comparison for wholesalers: heat-up, wrinkle removal, fabric safety, cost and market strategy. Source both from XINGYUE China manufacturer.",
 };

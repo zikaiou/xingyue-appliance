@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, Leaf, Globe, BadgeCheck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/certifications" },
   title: "Certifications & Compliance | CE, RoHS, CB, ETL | XINGYUE",
   description:
     "XINGYUE products are certified CE, RoHS and CB for European markets, with ETL available for North America. Request current certificates for your target model.",

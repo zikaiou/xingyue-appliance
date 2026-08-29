@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "9003 Vacuum Garment Steamer | 3-in-1 Technology | XINGYUE",
   description: "9003 3-in-1 vacuum garment steamer with dry, steam and vacuum functions, dual-level suction up to 5kPa. Professional care from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/9003" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "9003 3-in-1 vacuum garment steamer with dry, steam and vacuum functions, dual-level steam and suction up to 5kPa. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Enguerran TOFFA" },
-      reviewBody: "The cable is long enough, the steam is powerful. I am satisfied.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Vacuum Garment Steamer",
   };
   const breadcrumbSchema = {

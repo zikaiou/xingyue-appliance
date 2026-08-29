@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/hotel-steamer-vs-iron" },
   title: "Garment Steamer vs Steam Iron for Hotels: Which to Stock | XINGYUE",
   description:
     "Hotels and hospitality buyers: should you stock garment steamers, steam irons, or both? Compare use cases, durability and guest experience with XINGYUE models.",

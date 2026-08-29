@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ST-812 Travel Iron | Lightweight Portable Iron | XINGYUE",
   description: "ST-812 lightweight travel iron with 160ml tank and powerful steam. Quick wrinkle removal for global travelers from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/st-812" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "ST-812 lightweight travel iron with ceramic soleplate, 160ml water tank and powerful steam. Portable garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Sergio Lopes" },
-      reviewBody: "I thought it was sensationalist advertising, but it's not.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Travel Iron",
   };
   const breadcrumbSchema = {

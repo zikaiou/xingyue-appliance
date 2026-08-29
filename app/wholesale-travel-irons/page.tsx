@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Factory, Package, ShieldCheck, Truck } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/wholesale-travel-irons" },
   title: "Travel Irons Wholesale from China | Factory Direct Prices | XINGYUE",
   description:
     "Wholesale travel irons directly from the XINGYUE factory: 1000W compact models, OEM customization, MOQ from 500 pcs, CE/RoHS/CB/ETL certified. Factory-direct pricing.",

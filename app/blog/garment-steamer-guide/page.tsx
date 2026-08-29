@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -49,6 +49,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/garment-steamer-guide" },
   title: "How to Choose a Garment Steamer | Garment Steamer Manufacturer XINGYUE",
   description: "Garment steamer sourcing guide: power, water tank, steam output and vacuum steamer trends. Buy wholesale garment steamers factory-direct from XINGYUE China.",
 };

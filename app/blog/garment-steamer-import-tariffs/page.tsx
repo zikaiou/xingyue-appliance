@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/garment-steamer-import-tariffs" },
   title: "How to Import Garment Steamers from China: Duties & Tariffs | XINGYUE",
   description:
     "Importing garment steamers from China: HS codes, customs duties, VAT and incoterms explained for importers — and how to plan landed costs before you order.",

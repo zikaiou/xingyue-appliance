@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/steamer-accessories" },
   title: "Garment Steamer Accessories: Brushes, Nozzles & Attachments | XINGYUE",
   description:
     "Garment steamer accessories explained: fabric brushes, crease attachments, nozzles and hose mounts — which matter for buyers, and what to stock alongside steamers.",

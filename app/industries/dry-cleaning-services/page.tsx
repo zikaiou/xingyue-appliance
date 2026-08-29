@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/dry-cleaning-services" },
   title: "Garment Steamer for Dry Cleaners | Professional Steam Equipment | XINGYUE",
   description:
     "Garment steamers and finishing equipment for dry cleaning services. XINGYUE professional steamers deliver consistent steam output for daily high-volume use.",

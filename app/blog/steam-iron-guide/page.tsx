@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -48,6 +48,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/steam-iron-guide" },
   title: "How to Choose a Steam Iron for Your Market | XINGYUE China",
   description: "Steam iron sourcing guide: power, soleplate, tank, steam functions and container planning. Source steam irons from XINGYUE, professional China manufacturer.",
 };

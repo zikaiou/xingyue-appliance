@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/industries/apparel-textile" },
   title: "Steam Iron for Apparel Brands | Garment Care for Textile Companies | XINGYUE",
   description:
     "Steam irons and garment care equipment for apparel and textile brands, showrooms and production facilities. XINGYUE supplies high-power steam irons for professional use.",

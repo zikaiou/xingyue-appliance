@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -48,6 +48,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/factory-verification-guide" },
   title: "How to Verify a Garment Care Factory in China | XINGYUE",
   description: "Buyer's checklist to verify Chinese garment care factories: licenses, video tours, capacity, certifications and samples. Trust a verified travel iron factory - XINGYUE.",
 };

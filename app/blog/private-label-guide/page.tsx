@@ -48,6 +48,7 @@ const sections = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/private-label-guide" },
   title: "How to Start a Private Label Appliance Brand | OEM Guide XINGYUE",
   description: "Private label appliance brand guide: define your niche, choose an OEM partner, plan customization, budget, protect quality and scale. Start your brand with XINGYUE OEM manufacturer.",
 };

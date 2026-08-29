@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
 
@@ -26,6 +26,7 @@ const questions = [
 ];
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/vacuum-steamer-supplier" },
   title: "Vacuum Garment Steamer Suppliers: 5 Questions to Ask | XINGYUE",
   description: "Vacuum garment steamer supplier guide: suction pressure, integrated systems, MOQ, platform range and certifications. Partner with a professional vacuum steamer manufacturer XINGYUE.",
 };

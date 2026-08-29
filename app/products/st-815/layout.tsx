@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ST-815 Garment Steamer | 1600W Handheld Steamer | XINGYUE",
   description: "ST-815 handheld garment steamer with 1600W powerful steam, 340ml tank and dry/steam modes. Professional garment care from XINGYUE.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/products/st-815" },
 };
 
 ﻿export default function Layout({ children }: { children: React.ReactNode }) {
@@ -14,12 +15,6 @@ export const metadata: Metadata = {
     description: "ST-815 handheld garment steamer with 1600W powerful steam, 340ml water tank and dry and steam modes. Professional garment care by XINGYUE manufacturer.",
     brand: { "@type": "Brand", name: "XINGYUE" },
     manufacturer: { "@type": "Organization", name: "Huizhou Xingyue Technology Co., Ltd." },
-    review: [{
-      "@type": "Review",
-      author: { "@type": "Person", "name": "Enguerran TOFFA" },
-      reviewBody: "The cable is long enough, the steam is powerful. I am satisfied.",
-      reviewRating: { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
-    }],
     category: "Garment Steamer",
   };
   const breadcrumbSchema = {

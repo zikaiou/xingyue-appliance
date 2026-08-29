@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const metadata = {
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog/travel-iron-tank-capacity" },
   title: "Travel Iron Water Tank Capacity: How Much Is Enough? | XINGYUE",
   description:
     "Water tank capacity in travel irons explained: 140ml compact models, refill frequency and how tank size affects weight, price and user experience.",

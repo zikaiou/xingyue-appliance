@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Calendar, User } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Garment Care Sourcing Guides & Industry Insights | XINGYUE",
+  description: "Practical sourcing guides and industry insights for buyers of travel irons, garment steamers, steam irons and vacuum garment steamers.",
+  alternates: { canonical: "https://www.xingyue-appliance.com/blog" },
+};
 
 const posts = [
   {
