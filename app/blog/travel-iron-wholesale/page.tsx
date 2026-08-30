@@ -35,14 +35,14 @@ const sections = [
     title: "5. Quality Consistency Across Batches",
     body: [
       "The greatest risk in wholesale sourcing is batch-to-batch inconsistency. Establish your QC expectations in the contract: pre-shipment inspection, sample retention, and defect tolerance. Work with suppliers who maintain strict multi-stage checks — material inspection, assembly testing, steam performance test and final audit.",
-      "Our factory's 93.9% on-time delivery rate and 4.9 product quality score reflect the consistency we build into every batch. Ask any supplier for their quality metrics before committing.",
+      "Our production process is organized around documented specifications, sample approval and multi-stage quality checks. Ask any supplier for current quality and delivery documentation before committing.",
     ],
   },
   {
     title: "6. Build a Long-Term Wholesale Partnership",
     body: [
       "The best wholesale relationships are partnerships, not transactions. A dedicated supplier offers stable pricing for repeat orders, early access to new models and honest supply-chain advice. Over time, you can negotiate better terms as volumes grow.",
-      "At XINGYUE, wholesale buyers enjoy direct factory access, a dedicated account manager and OEM upgrade paths — start with branded wholesale, then move to full private-label when volumes justify it. This is how many of our partners grew from first containers to 50,000+ unit annual programs.",
+      "At XINGYUE, wholesale buyers can discuss factory-direct supply, OEM upgrade paths and private-label customization. Start with a focused product line, then expand the range as your commercial requirements develop.",
     ],
   },
 ];
