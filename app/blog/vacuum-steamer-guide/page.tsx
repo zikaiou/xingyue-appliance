@@ -125,6 +125,8 @@ export default function VacuumSteamerGuide() {
           </div>
         </section>
 
+        <p className="my-8 text-center text-sm text-white/55">Explore the documented <Link href="/products/vacuum-garment-steamers" className="text-[#ff2f7d] hover:underline">vacuum garment steamer solutions</Link> or <Link href="/oem" className="text-[#ff2f7d] hover:underline">contact the OEM team</Link> for a market-specific discussion.</p>
+
         {/* CTA */}
         <section className="text-center py-10">
           <h2 className="text-2xl font-bold">Interested in the Vacuum Steamer Category?</h2>

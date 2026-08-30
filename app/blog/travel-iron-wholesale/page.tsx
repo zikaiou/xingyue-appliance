@@ -124,6 +124,8 @@ export default function TravelIronWholesale() {
           </div>
         </section>
 
+        <p className="my-8 text-center text-sm text-white/55">Looking for a dedicated <Link href="/products/travel-irons" className="text-[#ff2f7d] hover:underline">travel iron manufacturing range</Link>? Review the category page or <Link href="/oem" className="text-[#ff2f7d] hover:underline">discuss an OEM program</Link> with XINGYUE.</p>
+
         {/* CTA */}
         <section className="text-center py-10">
           <h2 className="text-2xl font-bold">Request Wholesale Pricing</h2>

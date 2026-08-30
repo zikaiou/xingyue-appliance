@@ -124,6 +124,8 @@ export default function SteamIronGuide() {
           </div>
         </section>
 
+        <p className="my-8 text-center text-sm text-white/55">See the current <Link href="/products/steam-irons" className="text-[#ff2f7d] hover:underline">steam iron product range</Link> or <Link href="/oem" className="text-[#ff2f7d] hover:underline">discuss an OEM steam iron program</Link> with XINGYUE.</p>
+
         {/* CTA */}
         <section className="text-center py-10">
           <h2 className="text-2xl font-bold">Ready to Source Steam Irons?</h2>

@@ -12,6 +12,8 @@ export type CategoryPageConfig = {
   applicationsTitle: string;
   applications: string;
   customization: string;
+  whySource: string;
+  resourceLinks: { href: string; label: string }[];
   faqs: { question: string; answer: string }[];
 };
 
@@ -32,7 +34,7 @@ export default function ProductCategoryPage({ config, products }: { config: Cate
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
       { "@type": "ListItem", position: 2, name: "Products", item: `${SITE_URL}/products` },
-      { "@type": "ListItem", position: 3, name: config.title, item: `${SITE_URL}/products/${categorySlug}` },
+      { "@type": "ListItem", position: 3, name: `${config.category}s`, item: `${SITE_URL}/products/${categorySlug}` },
     ],
   };
 
@@ -46,10 +48,23 @@ export default function ProductCategoryPage({ config, products }: { config: Cate
     })),
   };
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${config.category} product range`,
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: `${product.model} ${product.name}`,
+      url: `${SITE_URL}/products/${product.slug}`,
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-[#050507] text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
       <nav aria-label="Breadcrumb" className="mx-auto max-w-6xl px-6 pt-8 text-sm text-white/45">
         <Link href="/" className="hover:text-white">Home</Link><span className="mx-2">/</span>
@@ -109,13 +124,32 @@ export default function ProductCategoryPage({ config, products }: { config: Cate
 
       <section className="mx-auto max-w-6xl px-6 py-16" aria-labelledby="applications-heading">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ff2f7d]">Buyer Applications</p>
-        <h2 id="applications-heading" className="mt-3 text-2xl font-bold">Built for practical garment care programs</h2>
-        <p className="mt-4 max-w-3xl leading-7 text-white/60">{config.applicationsTitle}: {config.applications}</p>
+        <h2 id="applications-heading" className="mt-3 text-2xl font-bold">{config.applicationsTitle}</h2>
+        <p className="mt-4 max-w-3xl leading-7 text-white/60">{config.applications}</p>
+      </section>
+
+      <section className="border-y border-white/8 bg-[#0a0a0e]" aria-labelledby="why-source-heading">
+        <div className="mx-auto max-w-6xl px-6 py-14">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ff2f7d]">Why Source from XINGYUE</p>
+          <h2 id="why-source-heading" className="mt-3 text-2xl font-bold">A practical manufacturing partner for B2B buyers</h2>
+          <p className="mt-4 max-w-4xl leading-7 text-white/60">{config.whySource}</p>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/55">
+            <span>OEM / ODM support</span><span>MOQ typically 500–1,000 pcs</span><span>Production lead time 30–45 days</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-12" aria-labelledby="resources-heading">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ff2f7d]">Buyer Resources</p>
+        <h2 id="resources-heading" className="mt-3 text-2xl font-bold">Continue your sourcing research</h2>
+        <div className="mt-5 flex flex-wrap gap-3">
+          {config.resourceLinks.map((resource) => <Link key={resource.href} href={resource.href} className="rounded-full border border-white/10 px-4 py-2 text-sm text-white/65 hover:border-[#ff2f7d]/50 hover:text-white">{resource.label}</Link>)}
+        </div>
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-16" aria-labelledby="faq-heading">
         <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#ff2f7d]">Buyer FAQ</p>
-        <h2 id="faq-heading" className="mt-3 text-center text-2xl font-bold">Questions from sourcing teams</h2>
+        <h2 id="faq-heading" className="mt-3 text-center text-2xl font-bold">Category sourcing questions</h2>
         <div className="mt-8 divide-y divide-white/10 rounded-2xl border border-white/8">
           {config.faqs.map((faq) => (
             <details key={faq.question} className="group p-5">

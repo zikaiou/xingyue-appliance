@@ -117,6 +117,8 @@ export default function OEMGuide() {
           </div>
         </section>
 
+        <p className="my-8 text-center text-sm text-white/55">Review the <Link href="/oem" className="text-[#ff2f7d] hover:underline">garment care OEM process</Link> or browse the <Link href="/products" className="text-[#ff2f7d] hover:underline">product hub</Link> before requesting a quote.</p>
+
         {/* CTA */}
         <section className="text-center py-10">
           <h2 className="text-2xl font-bold">Start Your OEM Project</h2>
