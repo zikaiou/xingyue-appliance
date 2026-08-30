@@ -125,6 +125,8 @@ export default function GarmentSteamerGuide() {
           </div>
         </section>
 
+        <p className="my-8 text-center text-sm text-white/55">For a documented <Link href="/products/garment-steamers" className="text-[#ff2f7d] hover:underline">garment steamer range</Link>, compare the current models or <Link href="/oem" className="text-[#ff2f7d] hover:underline">review OEM / ODM options</Link> with XINGYUE.</p>
+
         {/* CTA */}
         <section className="text-center py-10">
           <h2 className="text-2xl font-bold">Ready to Source Garment Steamers?</h2>
