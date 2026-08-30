@@ -4,65 +4,65 @@ import { ArrowRight, TrendingUp, Globe, Factory } from "lucide-react";
 const cases = [
   {
     icon: TrendingUp,
-    region: "Europe",
-    title: "From Zero to 50,000 Units: A European Brand's Travel Iron Line",
-    summary: "How a mid-size EU appliance brand launched a complete travel iron range with a proven manufacturer platform, cutting development time from 12 months to 4.",
+    region: "Travel Iron OEM",
+    title: "Travel Iron OEM / ODM Project Solution",
+    summary: "A manufacturing solution for brands developing a portable travel iron line with an existing product platform and documented product options.",
     metrics: [
-      ["4 months", "From concept to container"],
-      ["50,000 pcs", "Annual volume after 2 years"],
-      ["4.7★", "Verified Alibaba store rating"],
+      ["Volume Production", "Travel iron manufacturing"],
+      ["Cost-Optimized Solution", "Platform-based development"],
+      ["Performance Verified", "Testing and quality control"],
     ],
     story: [
-      "A European importer wanted to launch its own travel iron brand but had no product development team. Instead of starting from zero, they chose a proven platform model: selecting an existing XINGYUE design and customizing logo, colors and packaging.",
-      "Within 4 months they had a container-ready product — a process that would typically take 12+ months from scratch. The ceramic soleplate and 140ml tank configuration matched their market's preference for compact travel designs.",
+      "XINGYUE supports travel iron programs from product selection and engineering through prototype development, testing and mass production. Brands can build on an existing model and discuss logo, color and packaging customization.",
+      "The manufacturing workflow keeps the project focused on documented product requirements, sample approval and production readiness. Available configurations include portable designs, ceramic soleplates and model-specific water-tank options.",
     ],
   },
   {
     icon: Globe,
-    region: "North America",
-    title: "The Vacuum Steamer Early Mover: Winning a New Category",
-    summary: "A US retailer positioned itself ahead of the curve by entering the vacuum garment steamer category before mainstream competitors.",
+    region: "Vacuum Garment Steamer OEM",
+    title: "Vacuum Garment Steamer Manufacturing Solution",
+    summary: "A product development solution for brands evaluating integrated dry, steam and vacuum garment-care models.",
     metrics: [
-      ["6 months", "Shelf-to-order cycle"],
-      ["New category", "Zero existing competition"],
-      ["OEM support", "Custom colors & packaging"],
+      ["Product Development Solution", "3-in-1 model options"],
+      ["OEM Support", "Custom colors and packaging"],
+      ["Export Support", "Market-specific configuration"],
     ],
     story: [
-      "Vacuum garment steamers were a blank space in the North American market. One forward-thinking retailer saw the potential and partnered with XINGYUE to bring a customized 3-in-1 model to market.",
-      "With OEM support for custom colors, packaging and plug configuration, they launched a differentiated SKU in a category with almost no competition — capturing early search traffic and retail shelf space.",
+      "XINGYUE develops vacuum garment steamer solutions for brands and importers evaluating integrated garment-care products. The documented range includes models combining dry, steam and vacuum functions.",
+      "OEM discussions can cover model selection, product engineering, logo customization, colors, packaging and plug configuration. Prototype development, performance testing and quality control remain part of the project workflow.",
     ],
   },
   {
     icon: Factory,
-    region: "Latin America",
-    title: "Scaling a Garment Steamer Business with Factory-Direct Supply",
-    summary: "A regional distributor consolidated its supply chain by sourcing handheld steamers directly from the factory, improving margins and delivery reliability.",
+    region: "Garment Steamer OEM",
+    title: "Garment Steamer Factory-Direct OEM Solution",
+    summary: "A manufacturing solution for importers and brands sourcing handheld garment steamers with direct OEM / ODM support.",
     metrics: [
-      ["-18%", "Unit cost vs. trading company"],
-      ["93.9%", "On-time delivery rate"],
-      ["100+", "Countries served by XINGYUE"],
+      ["Cost-Optimized Solution", "Factory-direct sourcing model"],
+      ["Reliable Production & Delivery", "Production planning support"],
+      ["Performance Verified", "Quality control and testing"],
     ],
     story: [
-      "A Latin American distributor previously sourced through trading companies, paying markups and facing unpredictable delivery. They switched to factory-direct supply from XINGYUE for their handheld garment steamer line.",
-      "Direct sourcing cut unit costs by 18%, while the factory's 93.9% on-time delivery rate stabilized their inventory planning. Quality scores of 4.9 on product performance gave their retail partners confidence.",
+      "XINGYUE supports factory-direct garment steamer programs for importers, distributors and private-label brands. The workflow connects product selection with engineering, prototype development, testing and mass production.",
+      "Buyers can discuss handheld steamer models, logo and color customization, packaging, plug configuration and export support. Production and delivery planning are reviewed against the selected model and confirmed project requirements.",
     ],
   },
 ];
 
 export const metadata = {
   alternates: { canonical: "https://www.xingyue-appliance.com/case-studies" },
-  title: "Case Studies | XINGYUE Garment Care Manufacturer",
-  description: "Real-world OEM and wholesale success stories with XINGYUE: travel iron lines, vacuum steamer early entries and factory-direct garment steamer sourcing.",
+  title: "OEM / ODM Project Solutions | XINGYUE Garment Care Manufacturer",
+  description: "Manufacturing solution examples from XINGYUE: travel iron OEM, vacuum garment steamer development and factory-direct garment steamer sourcing support.",
 };
 
 export default function CaseStudiesPage() {
   return (
     <div className="bg-[#050507] text-white min-h-screen font-sans">
       <section className="pt-32 pb-12 text-center px-6">
-        <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">Case Studies</p>
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight">How Brands Grow with XINGYUE</h1>
+        <p className="text-[#ff2f7d] text-xs font-bold uppercase tracking-widest mb-4">OEM / ODM Project Solutions</p>
+        <h1 className="text-4xl md:text-5xl font-black tracking-tight">Manufacturing Solutions with XINGYUE</h1>
         <p className="mt-4 text-white/50 max-w-xl mx-auto">
-          Real sourcing models our partners use — from OEM launches to new-category first movers.
+          Practical manufacturing solution examples — from OEM product development to factory-direct garment care sourcing.
         </p>
       </section>
 
@@ -98,9 +98,9 @@ export default function CaseStudiesPage() {
         ))}
 
         <div className="text-center pt-8">
-          <h2 className="text-2xl font-bold">Your Success Story Could Be Next</h2>
+          <h2 className="text-2xl font-bold">Build Your OEM / ODM Solution</h2>
           <p className="mt-3 text-white/50 max-w-md mx-auto text-sm">
-            Start your OEM or wholesale project with a proven manufacturer.
+            Discuss your product development, customization and manufacturing requirements with XINGYUE.
           </p>
           <Link href="/contact" className="mt-6 inline-flex items-center gap-2 px-8 py-3 bg-[#ff2f7d] text-white font-semibold rounded-full text-sm hover:bg-[#e6006f] transition">
             Start Your Project <ArrowRight size={16} />
