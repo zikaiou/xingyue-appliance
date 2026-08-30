@@ -43,7 +43,7 @@ const sections = [
     title: "6. OEM / ODM: Building Your Own Brand Line",
     body: [
       "Most buyers sourcing travel irons from China are not selling under a global brand — they are building one. A full-service OEM partner handles logo printing, custom colors, bespoke packaging design and even specification adjustments.",
-      "At XINGYUE, our OEM process covers concept, industrial design, prototype, testing and mass production. Whether you need 1,000 or 100,000 units, our 35,000m² factory with 500+ workers ensures consistent quality and on-time delivery to over 100 countries.",
+      "At XINGYUE, our OEM process covers concept, industrial design, prototype, testing and mass production. Our 35,000m² factory with 500+ workers supports product programs for brands and importers across more than 100 export markets.",
     ],
   },
 ];

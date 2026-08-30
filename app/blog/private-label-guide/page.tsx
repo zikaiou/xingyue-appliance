@@ -42,7 +42,7 @@ const sections = [
     title: "6. Launch, Learn and Scale",
     body: [
       "Start with a focused first order that tests demand — one or two models in your primary market. Gather sales and return data, then scale: expand models, add colors, improve packaging, and negotiate better pricing with your supplier as volume grows.",
-      "This incremental approach is how many of our partners grew from a first container to 50,000+ unit annual programs. Private label is a marathon, and the brands that win iterate quickly with a manufacturing partner who supports growth.",
+      "This incremental approach supports scalable volume production: test a focused line, learn from the market, then expand models, colors and packaging with a manufacturing partner that supports the next stage.",
     ],
   },
 ];

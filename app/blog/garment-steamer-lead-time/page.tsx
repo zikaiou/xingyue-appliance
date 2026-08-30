@@ -59,7 +59,7 @@ const sections = [
     title: "Mass Production: 30–45 Days Is Standard",
     body: [
       "After sample approval, standard production lead time is 30–45 days depending on order quantity. Larger orders and heavily customized configurations sit at the upper end; existing models in standard setup move faster.",
-      "XINGYUE's 500+ skilled workers and established production scheduling keep this window consistent — our on-time delivery rate is a metric we publish because it matters to importers planning inventory.",
+      "XINGYUE's 500+ skilled workers and production scheduling support this standard lead-time window. Confirm the current production schedule against your selected model, order quantity and customization requirements.",
     ],
   },
   {
