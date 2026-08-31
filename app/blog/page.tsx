@@ -10,6 +10,38 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "how-to-choose-garment-steamer-manufacturer",
+    title: "How to Choose a Garment Steamer Manufacturer: A B2B Buyer's Guide",
+    excerpt: "How importers and private-label buyers can evaluate garment steamer ranges, OEM capability, samples, quality control, MOQ and lead time.",
+    date: "August 31, 2026",
+    category: "Garment Steamer Sourcing",
+    readTime: "10 min read",
+  },
+  {
+    slug: "how-to-choose-travel-iron-manufacturer",
+    title: "How to Choose a Travel Iron Manufacturer for OEM & Private Label",
+    excerpt: "A practical sourcing guide covering voltage, steam, portability, samples, branding, MOQ, quality control and packaging.",
+    date: "August 31, 2026",
+    category: "Travel Iron Sourcing",
+    readTime: "9 min read",
+  },
+  {
+    slug: "garment-steamer-oem-process",
+    title: "Garment Steamer OEM Process: From Product Selection to Mass Production",
+    excerpt: "A step-by-step guide to garment steamer OEM requirements, customization, samples, compliance, production, QC and shipment.",
+    date: "August 31, 2026",
+    category: "Garment Steamer OEM",
+    readTime: "9 min read",
+  },
+  {
+    slug: "vacuum-garment-steamer-manufacturer-guide",
+    title: "Vacuum Garment Steamer Manufacturer: B2B Sourcing Guide",
+    excerpt: "How B2B buyers should evaluate steam, suction, water handling, safety, testing and OEM capability.",
+    date: "August 31, 2026",
+    category: "Vacuum Garment Steamer Sourcing",
+    readTime: "8 min read",
+  },
+  {
     slug: "steamer-accessories",
     title: "Garment Steamer Accessories: Brushes, Nozzles & Attachments",
     excerpt: "Which accessories matter, what to confirm in the spec, and how accessories add revenue.",

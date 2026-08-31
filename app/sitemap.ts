@@ -10,6 +10,7 @@ const page = (path: string, changeFrequency: "weekly" | "monthly", priority: num
 });
 
 const blogSlugs = [
+  "how-to-choose-garment-steamer-manufacturer", "how-to-choose-travel-iron-manufacturer", "garment-steamer-oem-process", "vacuum-garment-steamer-manufacturer-guide",
   "travel-iron-guide", "oem-guide", "garment-steamer-guide", "vacuum-steamer-guide", "factory-verification-guide", "steam-iron-guide", "steamer-supplier-guide", "travel-iron-wholesale", "vacuum-steamer-supplier", "steamer-vs-iron", "private-label-guide", "travel-iron-moq", "travel-iron-cost", "travel-iron-voltage", "hotel-steamer-vs-iron", "garment-steamer-import-tariffs", "travel-iron-certifications", "garment-steamer-lead-time", "travel-iron-soleplate", "lower-moq-china-factory", "vacuum-steamer-wholesale", "travel-iron-vs-steam-iron", "garment-steamer-wattage", "oem-partner-checklist", "travel-iron-tank-capacity", "steam-iron-features", "steamer-accessories", "factory-vs-trading-company", "travel-iron-packaging", "steam-iron-anti-calc", "garment-care-market-trends",
 ];
 

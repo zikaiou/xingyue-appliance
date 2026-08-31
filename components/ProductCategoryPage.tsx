@@ -163,7 +163,10 @@ export default function ProductCategoryPage({ config, products }: { config: Cate
       <section className="border-t border-white/8 bg-[#0a0a0e] px-6 py-14 text-center">
         <h2 className="text-2xl font-bold">Discuss your {config.category.toLowerCase()} program</h2>
         <p className="mx-auto mt-3 max-w-2xl text-white/55">Share your target market, model interests and customization requirements with the XINGYUE team.</p>
-        <Link href="/contact" className="mt-6 inline-flex rounded-full bg-[#ff2f7d] px-7 py-4 font-semibold text-white">Request a Quote</Link>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Link href="/contact" className="inline-flex rounded-full bg-[#ff2f7d] px-7 py-4 font-semibold text-white">Request a Quote</Link>
+          <a href="https://wa.me/8615913881634" target="_blank" rel="noreferrer" className="inline-flex rounded-full border border-white/20 px-7 py-4 font-semibold text-white hover:border-white/50">Contact on WhatsApp</a>
+        </div>
       </section>
     </main>
   );
