@@ -11,7 +11,7 @@ const sections = [
     ],
   },
   {
-    title: "2. How to Shortlist Garment Steamer Suppliers",
+    title: "2. How to Compare Garment Steamer Supplier Quotations",
     body: [
       "Start with a structured shortlist of 5-8 candidates from Alibaba, Global Sources and trade directories. For each supplier, record: factory location, years in garment care manufacturing, product platform count, MOQ, and whether they are a manufacturer or trading company.",
       "Verify the factory claim. Ask for the business license, factory videos and a video call inside the workshop. Genuine garment steamer manufacturers — like XINGYUE with our 35,000 m² base in Huizhou — welcome this transparency. Trading companies usually cannot produce live production footage.",
@@ -49,8 +49,8 @@ const sections = [
 
 export const metadata = {
   alternates: { canonical: "https://www.xingyue-appliance.com/blog/steamer-supplier-guide" },
-  title: "How to Choose a Garment Steamer Supplier | Garment Steamer Supplier XINGYUE",
-  description: "Garment steamer supplier guide: how to verify factories, compare specifications, check certifications and source wholesale garment steamers factory-direct from XINGYUE China.",
+  title: "Garment Steamer Supplier Evaluation Checklist | XINGYUE",
+  description: "A practical garment steamer supplier evaluation checklist covering quotation comparison, samples, documentation, commercial terms, communication and order readiness.",
 };
 
 export default function SteamerSupplierGuide() {
@@ -69,14 +69,15 @@ export default function SteamerSupplierGuide() {
           <span>6 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
-          How to Choose a Garment Steamer Supplier
+          Garment Steamer Supplier Evaluation Checklist
         </h1>
         <p className="mt-4 text-white/55">
-          A practical guide to shortlisting, verifying and working with professional garment steamer manufacturers in China.
+          A practical checklist for comparing garment steamer suppliers after you receive quotations, samples and commercial documentation.
         </p>
       </header>
 
       <article className="max-w-3xl mx-auto px-6 pb-12">
+        <p className="mb-8 text-sm text-white/55">For the primary garment steamer manufacturing range, visit <Link href="/products/garment-steamers" className="text-[#ff2f7d] hover:underline">our garment steamer range</Link>. For OEM and ODM manufacturing support, see <Link href="/oem" className="text-[#ff2f7d] hover:underline">OEM and ODM manufacturing</Link>.</p>
         <div className="max-w-md mx-auto mb-10">
           <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
           <div className="aspect-square relative">
@@ -86,7 +87,7 @@ export default function SteamerSupplierGuide() {
         </div>
 
         <p className="text-white/70 leading-relaxed mb-8">
-          The garment steamer market is growing, and so is the number of suppliers claiming to manufacture it. For importers, the challenge is separating dedicated manufacturers from generalists and trading companies. This guide covers the six factors we recommend evaluating when choosing a garment steamer supplier, based on 16 years of manufacturing handheld and vacuum steamers for buyers worldwide.
+          Once you have a shortlist, supplier evaluation becomes a comparison exercise rather than a broad manufacturer search. Put each quotation into the same format and check responsiveness, samples, model-specific documents, commercial terms and order communication. This guide is intentionally focused on supplier evaluation; factory due diligence and manufacturer selection are separate questions.
         </p>
 
         {sections.map((s, idx) => (
