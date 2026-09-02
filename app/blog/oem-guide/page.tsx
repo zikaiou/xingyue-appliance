@@ -52,8 +52,8 @@ const customizations = [
 
 export const metadata = {
   alternates: { canonical: "https://www.xingyue-appliance.com/blog/oem-guide" },
-  title: "How OEM Garment Care Manufacturing Works | OEM Supplier XINGYUE",
-  description: "OEM garment care manufacturing guide for brands: concept, design, prototype, mass production and shipping. Partner with XINGYUE, a factory-direct OEM supplier in China.",
+  title: "Garment Care OEM Manufacturing Process | XINGYUE",
+  description: "A broad garment care OEM process overview for brands: requirements, platform selection, customization, sampling, production, quality control and export coordination.",
 };
 
 export default function OEMGuide() {
@@ -72,14 +72,15 @@ export default function OEMGuide() {
           <span>7 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
-          How OEM Garment Care Manufacturing Works: A Complete Guide for Brands
+          Garment Care OEM Manufacturing Process: A Broad Overview for Brands
         </h1>
         <p className="mt-4 text-white/55">
-          From a rough concept to a container of your own branded products — the six stages of working with a garment care manufacturer.
+          A broad overview of how brands move from a product brief to a documented OEM program across garment-care categories.
         </p>
       </header>
 
       <article className="max-w-3xl mx-auto px-6 pb-12">
+        <p className="mb-8 text-sm text-white/55">The <Link href="/oem" className="text-[#ff2f7d] hover:underline">garment care OEM manufacturing</Link> page is the commercial pillar. This article supports that page with a cross-category process overview.</p>
         <div className="max-w-md mx-auto mb-10">
           <div className="bg-[#0d0d12] border border-white/8 rounded-2xl overflow-hidden">
           <div className="aspect-square relative">
@@ -89,7 +90,7 @@ export default function OEMGuide() {
         </div>
 
         <p className="text-white/70 leading-relaxed mb-8">
-          Building your own brand of travel irons or garment steamers is one of the most effective ways to differentiate in a crowded market. But for first-time importers, the OEM process can feel like a black box. This guide walks you through the six stages of working with a professional garment care manufacturer, based on how we manage OEM projects for brands in over 100 countries.
+          A garment care OEM program can cover travel irons, garment steamers, steam irons or vacuum garment steamers. This broad overview explains the commercial sequence—brief, platform selection, customization, sampling, compliance, production, quality control and export coordination. For the detailed garment steamer production workflow, see the dedicated OEM process guide; for private-label launch planning, see the private-label guide.
         </p>
 
         {steps.map((s, idx) => (
@@ -117,7 +118,7 @@ export default function OEMGuide() {
           </div>
         </section>
 
-        <p className="my-8 text-center text-sm text-white/55">Review the <Link href="/oem" className="text-[#ff2f7d] hover:underline">garment care OEM process</Link> or browse the <Link href="/products" className="text-[#ff2f7d] hover:underline">product hub</Link> before requesting a quote.</p>
+        <p className="my-8 text-center text-sm text-white/55">For the detailed product workflow, read the <Link href="/blog/garment-steamer-oem-process" className="text-[#ff2f7d] hover:underline">garment steamer OEM process guide</Link>, review the <Link href="/blog/private-label-guide" className="text-[#ff2f7d] hover:underline">private-label launch guide</Link>, then use <Link href="/oem" className="text-[#ff2f7d] hover:underline">OEM and ODM manufacturing support</Link> before requesting a quote.</p>
 
         {/* CTA */}
         <section className="text-center py-10">
